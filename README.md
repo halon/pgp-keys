@@ -2,6 +2,22 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r5
+Released on 2014-05-23
+- **`New`** Added [SetDelayedDeliver()](http://wiki.halon.se/HSL_Mail_Content#SetDelayedDeliver) function to [HSL](http://wiki.halon.se/HSL) for extra queueing time before delivery
+- **`New`** Added [builtin](http://wiki.halon.se/HSL_control_structures#builtin) and [global](http://wiki.halon.se/HSL_control_structures#global) control structures to [HSL](http://wiki.halon.se/HSL) functions
+- **`New`** Added [json_encode()](http://wiki.halon.se/HSL_core_functions#json_encode) function to [HSL](http://wiki.halon.se/HSL)
+- **`Imp`** Added max depth option [HSL](http://wiki.halon.se/HSL)'s [ScanDLP()](http://wiki.halon.se/HSL_Mail_Content#ScanDLP), useful for file extension matching in archives, eg.
+- **`Imp`** Added named match groups to [HSL](http://wiki.halon.se/HSL)'s [PCRE](http://wiki.halon.se/HSL_core_functions#pcre_match) functions
+- **`Imp`** Adding filtering on retry and sender field to [HSL](http://wiki.halon.se/HSL)'s [GetMailQueueMetric](http://wiki.halon.se/HSL_Mail_Content#GetMailQueueMetric) function
+- **`Imp`** Updated SpamAssassin to 3.4.0
+- **`Imp`** Web terminal (command page) support pasting with Ctrl+V
+- **`Imp`** Always prefer IPv6 when clustering with hostnames
+- **`Imp`** Support RFC 2231 header parsing
+- **`Imp`** Various web admin enhancements, such as links from quarantine page to tracking
+- **`Imp`** Overall performance and reliability improved
+- **`Bug`** Resolved issue where adding and removing headers with zero offset conflicted
+
 ## 3.2-r4
 Released on 2014-04-28
 - **`Dep`** Deprecated updateNetwork SOAP API function
