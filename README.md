@@ -2,6 +2,22 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.4
+Released on 2009-10-21
+- **`Warning`** Storage disk must be at least 2GB for all units and configurations
+- **`Imp`** Automatic initialization of new Storage disks for VSP/SPG
+- **`Imp`** Firmware updates by self hosted Web Updates
+- **`Imp`** Getting Started -guide in Console and Web Administration
+- **`Imp`** IPv6 support in Web Administration
+- **`Imp`** Keep current search in History/Queues while browsing and performing actions
+- **`Imp`** IP-address whitelist in Content-Flow
+- **`Imp`** Quarantine action "Empty" only empties the selected folder
+- **`Imp`** Japanese language support in Quarantine
+- **`Bug`** If no MX is found, try to use the A/AAAA record
+- **`Bug`** SNMP and NTP problems with reconfiguration
+- **`Imp`** 3rd party components updated
+- **`Imp`** Overall improvements in functionality and reliability
+
 ## 2.1.3.1
 Released on 2009-08-09
 - **`Imp`** Overall improvements in functionality and reliability
