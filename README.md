@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.3
+Released on 2008-05-15
+- **`Imp`** Added Italian, Spanish and Korean language support
+- **`Imp`** Overall reliability improved
+
 ## 2.0.2
 Released on 2008-05-12
 - **`Bug`** SPF calculated $spamscore incorrectly
