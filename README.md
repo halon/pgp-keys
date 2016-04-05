@@ -2,6 +2,14 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3-r3
+Released on 2015-04-22
+- **`Imp`** Updated a lot of FreeBSD packages to quarterly
+- **`Imp`** Support for Intel(R) 10Gb (ix) network adapters
+- **`Bug`** SOAP request could be delayed with up to 1 second on idle systems
+- **`Bug`** Adding too large text files in the File store now returns an error
+- **`Dep`** switch statement in HSL with [explicit variable](http://wiki.halon.se/Deprecation#Switch_with_variable) storage
+
 ## 3.3-r2
 Released on 2015-04-16
 - **`New`** [dovecot_lookup_auth()](http://wiki.halon.se/HSL_core_functions#dovecot_lookup_auth) to authenticate using Dovecot's [authentication protocol](http://wiki.dovecot.org/Authentication%20Protocol)
