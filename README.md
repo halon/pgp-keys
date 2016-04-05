@@ -2,6 +2,26 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.1
+Released on 2009-06-03
+- **`New`** Advanced options on Mail Content Flow with custom rules
+- **`Imp`** Larger history (100.000 msgs.) for small disks (4 GB)
+- **`Imp`** Anti-virus and Pattern Analysis (SA) results in history
+- **`Imp`** Quarantine allows users to download messages
+- **`Imp`** Quarantine web interface scales content to browser size
+- **`Imp`** Quarantine accepts LDAP sign-in using alias as username
+- **`Imp`** Quarantine has Korean translation
+- **`Imp`** Quarantine displays outgoing queue
+- **`Imp`** Quarantine displays folder's message count on mouse over
+- **`Imp`** SPF module has trusted forwarders white-list field
+- **`Imp`** Option to reject messages with virus
+- **`Imp`** Recipient Flows reports the reason for rejection to sender
+- **`Imp`** Overall performance and reliability improved
+- **`Bug`** Quarantine now shows attachments correctly
+- **`Bug`** Delivery forced default transport during certain circumstances
+- **`Bug`** Quarantine now honors the LDAP version setting
+- **`Bug`** It is now possible to mix recipient flows with "disabled"
+
 ## 2.1
 Released on 2009-05-18
 - **`Imp`** New Quarantine with LDAP support and Clustering
