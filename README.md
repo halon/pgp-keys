@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.6.2
+Released on 2011-05-05
+- **`Imp`** Updated 3rd-party components (Commtouch, Kaspersky, etc.)
+- **`Imp`** Overall reliability and performance improved
+
 ## 2.2.6.1
 Released on 2011-04-06
 - **`Bug`** Mitigating HSL data type issue
