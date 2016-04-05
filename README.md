@@ -2,6 +2,29 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4-r4
+Released on 2016-02-16
+- **`New`** [DATA](http://docs.halon.se/hsl/data.html) context [MIME](http://docs.halon.se/hsl/data.html#data.MIME) class for working with an email's body
+- **`New`** Standard library [MIME](http://docs.halon.se/hsl/functions.html#MIME) class for creating MIME parts
+- **`New`** [closures](http://docs.halon.se/hsl/structures.html#closure-functions) in addition to lambda functions
+- **`New`** [dnscname()](http://docs.halon.se/hsl/functions.html#dnscname) function to resolve CNAME records (RR)
+- **`New`** [is_function()](http://docs.halon.se/hsl/functions.html#is_function) function to check if data is a function
+- **`New`** [array_sort()](http://docs.halon.se/hsl/functions.html#array_sort) function to sort arrays
+- **`New`** [HSL cache](http://docs.halon.se/hsl/structures.html#cache) statistics in [SOAP](http://wiki.halon.se/SOAP) and web admin
+- **`Imp`** The [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) function can return where matches were found with `partid` option
+- **`Imp`** Added [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context `$tlsprotocol`, `$tlscipher` and `$tlskeysize` variables
+- **`Imp`** Clear [HSL rate()](http://docs.halon.se/hsl/functions.html#rate)s based on a query (namespace and/or entry) over [SOAP](http://wiki.halon.se/SOAP) or web admin
+- **`Imp`** Updated components
+ - [CYREN](http://wiki.halon.io/CYREN) IP reputation (ctipd) and RPD (ctasd) engines
+ - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+ - FreeBSD [10.2-RELEASE-p9](https://www.freebsd.org/security/advisories/FreeBSD-SA-16:11.openssl.asc) fixing CVE-2015-3197 (SSLv2 disabled by default)
+- **`Dep`** Removed the `system_default_quarantine` configuration key
+- **`Dep`** Removed the `GetMailTransport()` function
+- **`Dep`** Removed the [DeliverAsSpam()](http://wiki.halon.se/Deprecation#DeliverAsSpam) function
+- **`Dep`** Deprecated the [WrapMessage()](http://wiki.halon.se/Deprecation#WrapMessage) function
+- **`Dep`** Renamed the domain type `any` (catch-all) to the literal `*` in the configuration (converted)
+- **`Dep`** Many default settings were moved to the user configuration (making them removable)
+
 ## 3.4-r3
 Released on 2015-12-07
 - **`New`** Added [anonymous functions](http://docs.halon.se/hsl/literals.html#function) and named function pointers
