@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.6.2
+Released on 2008-11-25
+- **`Bug`** Quarantine templates
+
 ## 2.0.6.1
 Released on 2008-11-20
 - **`Bug`** Quarantine templates
