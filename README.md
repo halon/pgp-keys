@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.0.1
+Released on 2010-05-19
+- **`Bug`** syslog needs to be restarted in order for hostname to be applied
+- **`Bug`** If STARTTLS was announced but failed, optional TLS aborted
+- **`Bug`** LDAP queries failed in HSL
+
 ## 2.2
 Released on 2010-05-17
 - **`New`** DNSSEC support and an internal DNS cache
