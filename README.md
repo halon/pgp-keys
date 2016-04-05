@@ -2,6 +2,34 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.4
+Released on 2012-10-09
+- **`New`** Based on FreeBSD 9
+- **`New`** ScanSA() got fair queueing, time estimation, size limit, etc
+- **`New`** Boot-time management via bootsysmgr
+- **`New`** TTL argument to IP Policy's Allow() and Block()
+- **`Imp`** Improved performance
+- **`Imp`** Improved watchdog with better logging
+- **`Imp`** Save RAM by only starting maildlpd if ScanDLP() is used
+- **`Imp`** In case of storage disk problems, boot without storage
+- **`Imp`** Allow messages to be viewed instead of downloaded in quarantine
+- **`Imp`** GetDSN() and GetDSNHeader() to support text/rfc822-headers
+- **`Imp`** DNS shuffling based on MessageID (always the same per message)
+- **`Imp`** Reboot/shutdown is significantly faster
+- **`Bug`** Missing {FOOTER} replacement in WrapMessage
+- **`Dep`** The following SOAP API's has been removed:
+ - System_Reboot_Hard
+ - System_Shutdown_Hard
+ - System_Online_Status
+ - Management_SetStorageRecover
+ - Management_StorageRecoverStatus
+ - Management_SetStorageMigrate
+ - Mail_Domain_Report
+ - Config_Diff
+ - System_GetKey("system_config_revision")
+ - System_Command_Run_XXX (replaced with by System_Command_Run)
+ - Management_GetArguments' filter parameter
+
 ## 2.3.6.3
 Released on 2012-09-07
 - **`Bug`** Regression in `backend`'s SOAP server
