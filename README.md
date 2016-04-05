@@ -2,6 +2,30 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r2
+Released on 2014-03-10
+- **`New`** Extended the [HSL scripting](http://wiki.halon.se/HSL) language
+ - [GetMailQueueMetric()](http://wiki.halon.se/HSL_DATA_context#GetMailQueueMetric) to implement usage quotas in queues
+ - [json_decode()](http://wiki.halon.se/HSL_core_functions#json_decode), is_string() and is_number() for making API calls, etc
+ - [http()](http://wiki.halon.se/HSL_core_functions#http) function now supports custom request method and headers
+ - %= and **= operators
+ - Switch statements validates that a switch is directly followed by a case or default label
+- **`Imp`** Updated [SOAP API](http://wiki.halon.se/SOAP)
+ - configKeys() now takes "key" (filter) argument which is also exported in $soapargs[]
+ - configKeySet() allows partial updates (not all parameters needs to be specified)
+ - hslRate() and hslRateClear() exports "ns" and "entry" to $soapargs[]
+ - hslRate() and statList() now implements pagination and backend-side search/filtering
+ - mailQueue() and mailHistory() includes msgsasl for username and msgts0 for GMT timestamp
+ - mailQueue() and mailHistory() supports filtering on sasl=
+- **`Imp`** SASL username can be viewed on tracking page
+- **`Imp`** DSN messages now include original header "Undeliverable: This was the original header"
+- **`Imp`** Support for Broadcom's [bge](http://www.freebsd.org/cgi/man.cgi?query=bge) NICs
+- **`Bug`** Web UI fixes
+ - Netcat (nc) command with custom port was not correctly documented
+ - Active HTTPS sessions may not be degraded to HTTP
+ - The authentication script test sandbox could produce the wrong output
+ - Some quarantine retention policies were kept for too long, affected users need to reselect their intended policy
+
 ## 3.2-p1
 Released on 2014-02-12
 - **`Bug`** Xen PVHVM network driver "xn" was not detected properly
