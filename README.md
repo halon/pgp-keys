@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.6.1
+Released on 2012-07-18
+- **`Bug`** Fixes various spam assassin errors
+- **`Bug`** Fixes clustering page when clustering is not configured
+
 ## 2.3.6
 Released on 2012-07-04
 - **`New`** Introduces pattern analysis rules from Halon
