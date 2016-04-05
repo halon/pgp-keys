@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.1-r4p1
+Released on 2014-01-16
+- **`Bug`** Prevent NTP [reflection attacks](http://www.freebsd.org/security/advisories/FreeBSD-SA-14:02.ntpd.asc)
+
 ## 3.1-r4
 Released on 2013-12-20
 - **`Imp`** Refactoring for performance improvements
