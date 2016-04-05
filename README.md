@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.4.0.3
+Released on 2013-02-21
+- **`Imp`** Microsoft Hyper-V legacy network driver support
+- **`Bug`** Some freshclam still couldn't download daily updates
+
 ## 2.4.0.2
 Released on 2013-02-18
 - **`Bug`** ScanSA() could miscalculate the estimated queue wait time
