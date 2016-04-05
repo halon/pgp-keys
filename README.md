@@ -2,6 +2,48 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2
+Released on 2010-05-17
+- **`New`** DNSSEC support and an internal DNS cache
+- **`New`** DKIM signing and validation in Content flow
+- **`New`** Reworked statistics with JavaScript graphs and a new layout
+- **`New`** Show Script button on flows, displaying generated HSL code
+- **`New`** Ability to write reject/defer messages in flow blocks
+- **`New`** HSL variables $service (IP) and $messageid (Content) added
+- **`New`** HSL functions file() and file_get_contents() added
+- **`New`** Defer(), SetMailTransport() and AddHeader() in Content flow
+- **`New`** Trusted (whitelist) block in Recipient flow
+- **`New`** Web Administration organization with flows in one section
+- **`New`** Unit identification used as internal hostname
+- **`New`** Button for jumping to flows and profiles
+- **`New`** Warning messages before discarding unsaved changes
+- **`New`** Bookmarks to sections and tabs in Web Administration
+- **`Imp`** Renamed processes to mailscand and mailqueued
+- **`Imp`** Major performance improvement in mailscand
+- **`Imp`** Overall performance from chunked statistic updates
+- **`Imp`** Free-text search in Activity > Logging
+- **`Imp`** Quarantine mail listing show scores and logging
+- **`Imp`** Clustering menu and timeouts improved
+- **`Imp`** E-mail file maintenance (lostfiles) added
+- **`Imp`** Outbreak (RPDAV) anti-virus accuracy improved
+- **`Imp`** Web Administration performance and caching improved
+- **`Imp`** Updated 3rd-party components
+- **`Imp`** Hop count in mailscand implemented
+- **`Imp`** Overall performance and stability improved
+- **`Bug`** SpamAssassin update bug resolved
+- **`Bug`** SNMP label swapping bug resolved
+- **`Bug`** Disabling of certain domains bug resolved
+- **`Bug`** Zero-bitmask error in in_network() function resolved
+- **`Bug`** IPv6 scope in network functions is now discarded
+- **`Bug`** GMT timezone confusion on System > Time clarified
+- **`Del`** Domain statistics reports removed
+- **`Del`** Deprecated recipient databases migrated into flows
+- **`Del`** Incoming listener (smtpd) doesn't listen to localhost
+- **`Del`** Removed Deliver() as error fallback action
+- **`Del`** Invalid PKI certificates no longer validates in config
+- **`Del`** Deprecated $spamscore and LDAPLookup() removed
+- **`Del`** Diagnostics > Troubleshooter tab removed
+
 ## 2.1.5
 Released on 2010-03-01
 - **`New`** Clustering of multiple SPG/VSP units
