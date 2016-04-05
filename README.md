@@ -2,6 +2,35 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.5.1
+Released on 2011-01-24
+- **`New`** VMware Zimbra integration in quarantine
+- **`New`** Custom authentication with System Authentication Script
+- **`New`** RADIUS (rad_authen) function for System Authentication
+- **`New`** TACACS+ (tacplus_authen and tacplus_author) functions
+- **`New`** Context-aware help (links to the doc. wiki) in Web Admin.
+- **`Imp`** Updated 3rd-party components (ctipd, syslog, clamav, php)
+- **`Imp`** Include kernel debugging in logs
+- **`Imp`** Quarantine > Users, double-click users to 'sign as' as them
+- **`Imp`** Activity > Logging has time interval option for faster searching
+- **`Imp`** Some HSL functions are cached per default (per-message)
+- **`Imp`** Admins can change quarantine users' passwords
+- **`Imp`** Force web browsers to update cache on H/OS upgrades
+- **`Imp`** HSL arrays may be initiated with [ ] instead of array()
+- **`Imp`** LDAP debugging command hides passwords
+- **`Imp`** Sort user's joined accounts in quarantine
+- **`Imp`** Support for [IPv6 address]:port in network tools
+- **`Imp`** New strnatcmp JavaScript library for better natural ordering
+- **`Bug`** GlobalView, etc. stability improved with glibc patch
+- **`Bug`** Fixed host name length (was limited to 32)
+- **`Bug`** Fixed SMTP DNS lookup implementation misbehaviour
+- **`Bug`** Heartbeat probe for Spam Assassin to resolve locks
+- **`Bug`** Fixed missing SSL chain for certificates
+- **`Bug`** Fixed multiple pages bug in Activity section of Web Admin.
+- **`Note`** Configuration key config_user renamed to to system_user
+- **`Note`** Signed in account used to browse cluster in Web Admin.
+- **`Note`** Admin. accounts must use @local for quarantine sign-in
+
 ## 2.2.4
 Released on 2010-11-25
 - **`Imp`** Performance optimizations on message delivery
