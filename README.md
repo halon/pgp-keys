@@ -2,6 +2,21 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.3
+Released on 2012-02-23
+- **`Imp`** Multi-line reject/defer messages
+- **`Imp`** Updated 3d-party modules (ctipd, ctengine, postfix, clamav, openldap)
+- **`Imp`** Added user defined callback to cache[], using "ttl_function" argument
+- **`Imp`** Include SMTP transaction state in SMTP errors
+- **`Imp`** Support for CA in LDAPs
+- **`Bug`** Web admin could visually overflow if too many remote systems
+- **`Bug`** Resolved rare bug with anti-virus engine
+- **`Bug`** Fix TLS warning on startup
+- **`Bug`** Verify last fingerprint in SSL chain (consistently)
+- **`Bug`** Scripting console could not connect to SMTP servers over TLS
+- **`Bug`** Resolved issue with HSL construct barrier {}
+- **`Bug`** SMTP lookup recipient could cache entires for too long
+
 ## 2.3.2
 Released on 2011-12-21
 - **`Imp`** Quarantining informs sender; rejects (550) instead of accepts (220)
