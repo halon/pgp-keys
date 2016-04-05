@@ -2,6 +2,16 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.1-r4
+Released on 2013-12-20
+- **`Imp`** Refactoring for performance improvements
+- **`Imp`** Warn about 32-bit hosts as preparation for 64-bit releases
+- **`Imp`** Estimates the number of mail tracking search results
+- **`Imp`** Changed various settings from byte to megabyte
+- **`Imp`** Overall web administration improvements
+- **`Bug`** Unable to add cluster nodes with literal IPv6
+- **`Bug`** Regression on graph page's rate counter
+
 ## 3.1-p3
 Released on 2013-11-21
 - **`New`** [Clustered](http://www.halon.se/blogs/centralised-and-cluster-synchronised-rate-limiting/) `rated` process for improved [rate limiting](http://wiki.halon.se/Rate_limiting)
