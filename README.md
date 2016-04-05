@@ -2,6 +2,27 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.5
+Released on 2008-08-21
+- **`Imp`** Improved quarantine with reports
+- **`Imp`** Statistics in Web Administration
+- **`Imp`** Domain reports with additional statistics
+- **`Imp`** Logging is separated and improved
+- **`Imp`** Message tracking (Activity)
+- **`Imp`** Web Administration re-organization
+- **`Bug`** Storage recovery from power failures
+- **`Imp`** Certificate tunable "Optional but Verify"
+- **`Imp`** Error messages are displayed as dialogues
+- **`Imp`** Generate SSL certificates (Diagnostics section)
+- **`Imp`** Name (tag) configuration revisions
+- **`Imp`** SOAP configuration API (using WSDL file)
+- **`Imp`** NFS replaces SMB for network storage
+- **`Imp`** Graceful shutdown and restart
+- **`Imp`** Boot procedure with progress and log
+- **`Imp`** Multidimensional arrays in HSL
+- **`Imp`** Headers are UTF-8 decoded in HSL
+- **`Imp`** GetDSN(), GetRoute(), DeliverAsSpam() in HSL
+
 ## 2.0.4.1
 Released on 2008-06-09
 - **`Bug`** Web Administration error on factory reset units
