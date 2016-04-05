@@ -2,6 +2,16 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p4
+Released on 2013-07-24
+- **`New`** Black/whitelist module for end-user interface
+- **`Imp`** Full-text search in subject lines
+- **`Imp`** Clear search query on tracking page
+- **`Imp`** Return to referring page when editing profiles, etc
+- **`Imp`** Export users per domain on license page
+- **`Imp`** Prefer outbound CRAM-MD5 authentication method if supported
+- **`Bug`** BATV interoperability improvements
+
 ## 3.0-p3
 Released on 2013-07-05
 - **`Imp`** Search filters are now case-insensitive for from/to/ip
