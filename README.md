@@ -2,6 +2,31 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.7.1
+Released on 2009-01-16
+- **`Imp`** SMTP/LDAP SMTP authentication support
+- **`Bug`** Disk Operation Stability
+- **`Imp`** Storage Management (backup and restore)
+- **`Imp`** Add multiple domains from Web Admin
+- **`Imp`** Authentication and Recipient Flows
+- **`Imp`** Many new functions added to HSL (see Wiki)
+- **`Imp`** Secure Disk Wipe from Recovery Console
+- **`Imp`** Send test mail to administrator from Web Admin
+- **`Imp`** Reset Statistics in Web Admin
+- **`Bug`** DNS/MX resolving
+- **`Imp`** Authentication in Outgoing Transports
+- **`Imp`** Preview mail in Quarantine
+- **`Bug`** Quarantine handles quoted-printable
+- **`Bug`** Quarantine reports handles quoted-printable
+- **`Imp`** Warn users when Quarantine getting full
+- **`Imp`** Scripting Testing Tool
+- **`Imp`** Searching logs indicates when showing realtime
+- **`Imp`** Custom icons for script blocks in Web Admin
+- **`Imp`** Improved anti-virus detection
+- **`Imp`** SOAP Interface improvements
+- **`Imp`** Better Default Flows
+- **`Bug`** Resolved back-to-default-config bug
+
 ## 2.0.6.2
 Released on 2008-11-25
 - **`Bug`** Quarantine templates
