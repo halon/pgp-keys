@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p7
+Released on 2013-08-12
+- **`Imp`** SMTP client prefers "strongest" SASL method announced by server
+- **`Bug`** Memory leak in the console UI
+
 ## 3.0-p6
 Released on 2013-08-09
 - **`Bug`** Initial vApp configuration imported multiple times
