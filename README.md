@@ -2,6 +2,27 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.6
+Released on 2011-03-31
+- **`New`** IPv6 support in IP Policy Flows (added $family variable)
+- **`New`** Automatic configuration truncation option (System > Configuration)
+- **`Imp`** dnsbl() function now queries for IPv6 according to RFC5782
+- **`Imp`** Improved the Web Administration with some new functionality
+- **`Imp`** Internet Explorer 9 support in Web Administration
+- **`Imp`** Improved phishing protection
+- **`Imp`** Improved SMTP IPv6 handling (prioritized)
+- **`Imp`** DSN messages now includes only message/rfc822-headers
+- **`Imp`** DKIMWithDeliver() now returns 500-error on un-signable messages
+- **`Imp`** Updated 3rd-party components (libc, postfix, htmlpurifier etc.)
+- **`Imp`** Overall performance improved
+- **`Bug`** Folders created on FTP did not appear until after a reboot
+- **`Bug`** IP Policy Flow's $serverport variable was not a number (string)
+- **`Bug`** dnsptr() now supports compressed IPv6 addresses
+- **`Bug`** Kaspersky's logfile not available on first run
+- **`Bug`** Web Administration over IPv6 was partly broken
+- **`Bug`** smtp_lookup_\*() should not use transport fallbacks
+- **`Bug`** Quarantine() function did not honour SetMailTransport()
+
 ## 2.2.5.2
 Released on 2011-02-10
 - **`New`** Prioritized queues (per mail transports)
