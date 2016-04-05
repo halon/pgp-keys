@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.3.2
+Released on 2009-08-09
+- **`Imp`** Overall improvements in functionality and reliability
+
 ## 2.1.3
 Released on 2009-07-10
 - **`Imp`** Throughput vastly improved, read the [guidelines](http://wiki.halon.se/Mail_Gateway_Performance)
