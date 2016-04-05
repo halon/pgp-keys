@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r6p1
+Released on 2014-06-18
+- **`Bug`** Resolved uncommon stability issue
+
 ## 3.2-r6
 Released on 2014-06-10
 - **`Sec`** Fix [OpenSSL CVE-2014-0195](http://www.freebsd.org/security/advisories/FreeBSD-SA-14:14.openssl.asc), 2014-0221, 2014-0224 and 2014-3470
