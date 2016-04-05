@@ -2,6 +2,20 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.2
+Released on 2010-07-07
+- **`New`** Backscatter protection with [BATV](http://wiki.halon.se/BATV)
+- **`New`** Comments (C++ style, //) in address lists in web administration
+- **`New`** Minger protocol recipient lookup function [minger_lookup()](http://wiki.halon.se/HSL_Core_Functions#minger_lookup.28.24host.2C_.24address.2C_.24options.29) in HSL
+- **`New`** [SetRecipient()](http://wiki.halon.se/HSL_Mail_Content_Functions#SetRecipient.28.24recipient.29) function in HSL's Content Flow
+- **`New`** HSL control structure "[barrier](http://wiki.halon.se/HSL_Control_Structures#barrier)" to do advanced synchronous scripting
+- **`New`** HSL [isset()](http://wiki.halon.se/HSL_Core_Functions#isset.28.24variable.29) function, to check if a variable is defined or not
+- **`New`** Set listen addresses for SSH, FTP and SNMP services
+- **`New`** Prompted configuration download in web administration
+- **`New`** Show configuration changes between revisions
+- **`Imp`** Changed default IP to 169.254.1.1 (not to conflict with customer networks)
+- **`Bug`** Do not allow recipient with trailing "." in the domain name
+
 ## 2.2.1.1
 Released on 2010-06-17
 - **`Bug`** A script validation error in Web Administration fixed
