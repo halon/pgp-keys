@@ -2,6 +2,18 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.1-p2
+Released on 2013-10-29
+- **`Imp`** Improved mail queue/quarantine delivery performance
+- **`Imp`** Significantly improved mail tracking performance
+- **`Imp`** Support for more than two NTP servers
+- **`Imp`** Returns to current page, when fixing TLS fingerprints
+- **`Imp`** Warns about [Cisco SMTP fixup](http://wiki.halon.se/FAQ#Cisco_SMTP_fixup_problems) which is known to cause issues
+- **`Imp`** Shows inode usage on storage/hardware page
+- **`Imp`** Other minor improvements
+- **`Bug`** Detect scrolling more accurately when viewing logs
+- **`Bug`** Windows users couldn't type @ in the terminal
+
 ## 3.1-p1
 Released on 2013-10-10
 - **`Imp`** Improved Bayesian performance using SDBM database
