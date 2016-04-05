@@ -2,6 +2,25 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4-r3
+Released on 2015-12-07
+- **`New`** Added [anonymous functions](http://docs.halon.se/hsl/literals.html#function) and named function pointers
+- **`New`** Added [array_filter()](http://docs.halon.se/hsl/functions.html#array_filter), array_map() and array_reduce() functions
+- **`Imp`** The [in_file()](http://docs.halon.se/hsl/functions.html#in_file), [in_array()](http://docs.halon.se/hsl/functions.html#in_array) and [pcre_replace()](http://docs.halon.se/hsl/functions.html#pcre_replace) may take a function callback as argument
+- **`New`** Added [csv_explode()](http://docs.halon.se/hsl/functions.html#csv_explode) function
+- **`New`** `$serverip` in AUTH, RCPT TO and DATA context
+- **`Imp`** Options `tls_protocols` and `tls_ciphers` added to [SetTLS()](http://docs.halon.se/hsl/predelivery.html#SetTLS) and smtp_lookup_\*
+- **`Imp`** Reconnect without TLS if STARTTLS fails for optional TLS connections
+- **`Imp`** SSLv3 disabled by default on outbound SMTP connections
+- **`Imp`** Renamed DKIM function to [DKIMSign()](http://docs.halon.se/hsl/data.html#data.DKIMSign), which may return signature as a string
+- **`New`** Added [csv_explode()](http://docs.halon.se/hsl/functions.html#csv_explode) function
+- **`Imp`** [Deny()](http://docs.halon.se/hsl/api.html#Deny) in SOAP API may give a reason as faultstring
+- **`Imp`** Improve logging in mailqueued (with queueid)
+- **`Imp`** Setting `syslog_use_fqdn` which sends the FQDN in syslog messages
+- **`Imp`** Overall elegance, design and usability improved
+- **`Sec`** Updated FreeBSD to [10.2-RELEASE-p8](https://www.freebsd.org/security/advisories/FreeBSD-SA-15:26.openssl.asc) which fixes CVE-2015-3194 to 3196
+- **`Bug`** Improved DNS reloading in HSL; affected the spf() and ldap_\*, tacplus_\* and radius_\* functions
+
 ## 3.4-r2
 Released on 2015-11-04
 - **`New`** [DANE](http://wiki.halon.io/DANE) support
