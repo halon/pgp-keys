@@ -2,6 +2,17 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r4
+Released on 2014-04-28
+- **`Dep`** Deprecated updateNetwork SOAP API function
+- **`Dep`** Deprecated HSL's null coalescing operator
+- **`New`** Added [default function arguments](http://wiki.halon.se/HSL_control_structures#Default_arguments) in HSL
+- **`Imp`** HSL's [header functions](http://wiki.halon.se/HSL_Mail_Content#Message_header_functions) decode and refold by default
+- **`Imp`** Added `msgqueueid` to mailHistory [API](http://wiki.halon.se/SOAP) and `historyid` [search filter](http://wiki.halon.se/Search_filter)
+- **`Imp`** Overall performance and stability improved
+- **`Bug`** HSL's `per_message` [cache](http://wiki.halon.se/HSL_control_structures#cache) now works in functions
+- **`Bug`** Pressing back button in Firefox no longer reset forms
+
 ## 3.2-r3
 Released on 2014-04-08
 - **`Sec`** Patched OpenSSL ["heartbleed"](http://heartbleed.com) vulnerability (CVE-2014-0160)
