@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r10p1
+Released on 2014-12-23
+- **`Bug`** Stability fixes in `mailscand`
+- **`Bug`** Fixes regression that caused some admin and `clusterd` requests to fail
+
 ## 3.2-r10
 Released on 2014-11-17
 - **`Imp`** [SetSender()](http://wiki.halon.se/HSL_Mail_Queue#SetSender) in pre-delivery (queue) script
