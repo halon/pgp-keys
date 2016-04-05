@@ -2,6 +2,43 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2
+Released on 2014-02-10
+- **`New`** Hyper-V para-virtualization; gigabit network, VLANs, SCSI disks, etc
+- **`New`** Virtio (KVM) para-virtualization; improved network and disk performance
+- **`New`** VMware VMXNET3 support
+- **`New`** Xen PVHVM support
+- **`New`** Line graphs showing disk IOPS and latency
+- **`New`** Show message modifications when browsing queued or quarantined messages
+- **`New`** The [DATA flow registers](http://wiki.halon.se/HSL_DATA_context#Pre-defined_variables) `$recipients` and `$recipentdomains`
+- **`New`** New HSL function [`abs()`](http://wiki.halon.se/HSL_core_functions#abs)
+- **`New`** Added [`tcpdump`](http://www.freebsd.org/cgi/man.cgi?query=tcpdump) to API and web administration
+- **`Imp`** Based on [FreeBSD 10](https://www.freebsd.org/releases/10.0R/announce.html) and compiled with clang
+- **`Imp`** LDNS and Unbound as replacement for BIND (as resolver and DNS cache)
+- **`Imp`** Automatically grow storage disk when resized in hypervisor
+- **`Imp`** Overall throughput increased by careful profiling
+- **`Imp`** Large number of HSL scripting language optimisations, such as
+ - R-value optimisations
+ - Made `str_replace()` significantly faster
+ - Optimised [augmented assignments](http://wiki.halon.se/HSL_operators#Augmented_assignment_operators)
+ - Pre-compiled [regular expressions](http://wiki.halon.se/HSL_variables_and_data_types#Regular_expressions)
+- **`Imp`** More concise and helpful logging throughout the system
+- **`Imp`** Increased swap partition size to 2 GB
+- **`Imp`** Updated all 3rd-party components
+- **`Imp`** Show warnings if no storage disk is found or configured
+- **`Imp`** Rebrand Commtouch as [CYREN](http://www.cyren.com)
+- **`Imp`** Enable some [SpamAssassin](http://wiki.halon.se/SpamAssassin) DNSBLs by default
+- **`Imp`** Cache DKIM signature for all recipients
+- **`Imp`** Overall improvements
+- **`Bug`** DKIM DNS generator lacked `_domainkey` part
+- **`Bug`** Under certain circumstances, the command API could fail
+- **`Bug`** Reload flows when file store objects are changed
+- **`Bug`** Fixed issue with pre-boot command line shutdown
+- **`Dep`** Deprecated the second argument to HSL's `round()` function
+- **`Dep`** Deprecated the DATA flow's `$result` and `$directprocessing` predefined variables
+- **`Note`** New (S)ATA storage disks are identified as "ada" instead of "ad"
+- **`Note`** At least one DNS server is necessary; unbound is not configured to traverse from the DNS root
+
 ## 3.1-r4p1
 Released on 2014-01-16
 - **`Bug`** Prevent NTP [reflection attacks](http://www.freebsd.org/security/advisories/FreeBSD-SA-14:02.ntpd.asc)
