@@ -2,6 +2,23 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.6.2
+Released on 2012-09-04
+- **`New`** Deliver to an MX of a hostname using lookup-mx:hostname
+- **`Imp`** Configuration diff is coloured in red and green
+- **`Imp`** SPF module is moved to content flow in default configuration
+- **`Imp`** SOAP API's WSDL file moved to /remote/?wsdl
+- **`Imp`** SOAP API deprecated key system_config_revision, use GetHistoryEntries
+- **`Imp`** SOAP API deprecated Config_Diff
+- **`Imp`** SOAP API's gSOAP updated
+- **`Imp`** Disallow saving a configuration with no changes
+- **`Imp`** Web administration checkbox labels made clickable
+- **`Imp`** backend's watchdog report error codes
+- **`Bug`** SPF couldn't verify IPv6 senders
+- **`Bug`** The configuration partition wasn't checked properly
+- **`Bug`** Monotonic time was not used for all timers
+- **`Bug`** Visual bugs in web administration resolved
+
 ## 2.3.6.1
 Released on 2012-07-18
 - **`Bug`** Fixes various spam assassin errors
