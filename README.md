@@ -2,6 +2,15 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.4.3
+Released on 2010-01-07
+- **`Imp`** Automatically format and use available disk (Xen and Hardware)
+- **`Bug`** Xen could not leave firmware OS
+- **`Bug`** Wrap-around long log lines in Web Administration
+- **`Bug`** Rate-control would cause random reboots
+- **`Bug`** GlobalView did not always start at boot
+- **`Bug`** Newly downloaded SpamAssassin rules were not applied until reboot
+
 ## 2.1.4.2
 Released on 2009-12-22
 - **`New`** Console in Web Administration (Diagnostics > Local Console)
