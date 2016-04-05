@@ -2,6 +2,13 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.3
+Released on 2009-07-10
+- **`Imp`** Throughput vastly improved, read the [guidelines](http://wiki.halon.se/Mail_Gateway_Performance)
+- **`Imp`** Option to disable internal statistics and history
+- **`New`** New [HSL](http://wiki.halon.se/HSL) functions
+- **`Imp`** Overall improvements in functionality and reliability
+
 ## 2.1.2
 Released on 2009-06-25
 - **`New`** SNMP monitoring; custom MIB with statistics and information
