@@ -2,6 +2,24 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.2
+Released on 2011-12-21
+- **`Imp`** Quarantining informs sender; rejects (550) instead of accepts (220)
+- **`Imp`** The SMTP recipient lookup forwards errors from the mail server
+- **`Imp`** Removed the incoming mail queue
+- **`Imp`** Show Script looks much better with colors and formatting
+- **`Imp`** The getting started has an option to trust server (use as smart host)
+- **`Imp`** Clustering operations are faster thanks to new `rpcmplexd`
+- **`Imp`** Option to export list of users per domain
+- **`Imp`** The reporting's pie charts reflects selected period (day/month)
+- **`Imp`** The console supports page up/down
+- **`Imp`** The log viewer (searchlog) is faster
+- **`Imp`** Korean language updated
+- **`Imp`** Support for Internet Explorer 10
+- **`Bug`** Issue with quarantine's history and domain administrators resolved
+- **`Bug`** Anonymous LDAP authentication issue resolved
+- **`Bug`** Issue with HSL's in_network() resolved
+
 ## 2.3.1
 Released on 2011-10-04
 - **`New`** View and reset rate control (Diagnostics > Rate Control)
