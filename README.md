@@ -2,6 +2,31 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.2
+Released on 2009-06-25
+- **`New`** SNMP monitoring; custom MIB with statistics and information
+- **`Bug`** Fixed Kaspersky engine error
+- **`Imp`** Truncate configuration from CLI to save memory
+- **`Bug`** Cache timeout set at execution instead of completion
+- **`Imp`** IP Policy may also block UDP packets ($protocol)
+- **`Imp`** Removed start-up related warnings
+- **`Bug`** http() function can handle more than 10 parameters
+- **`Imp`** Exceptions in Recipient Flow are reported as Defer()
+- **`Imp`** Global quarantine admin users may blacklist globally
+- **`Imp`** Blacklist handles domains and wildcard (%@domain)
+- **`Imp`** Notify senders that they are blacklisted
+- **`Imp`** Re-arranged tabs into new system menu in Web Admin.
+- **`Bug`** Redirection bug when accessing a HTTPS interface using HTTP
+- **`Bug`** Configuration upgrade for remote systems could cause timeouts
+- **`Imp`** Better transport-lookup for messages generated internally
+- **`Imp`** Mail function GetRoute() in HSL improved
+- **`Imp`** Array function array_reverse() in HSL
+- **`Imp`** Rate control function rate() in HSL
+- **`Imp`** Rate control module in Recipient and Authentication Flows
+- **`Imp`** Default message rate for authenticated users is 100 msg/h
+- **`Imp`** HSL may cache results per message/session
+- **`Imp`** Overall improvements in functionality and reliability
+
 ## 2.1.1
 Released on 2009-06-03
 - **`New`** Advanced options on Mail Content Flow with custom rules
