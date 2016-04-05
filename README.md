@@ -2,6 +2,19 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.4
+Released on 2012-03-22
+- **`New`** Mail tracking supports [boolean search filters](http://wiki.halon.se/SP/Search_filter)
+- **`New`** Mail tracking integrates history and queue
+- **`New`** HSL [pcre_match](http://wiki.halon.se/SP/HSL_core_functions#pcre_match.28.24pattern.2C_.24input.29) functions
+- **`New`** HSL Mail Content [GetHeaders](http://wiki.halon.se/SP/HSL_Mail_Content#GetHeaders.28.24header.2C_.24wordencode_.3D_true.29) function
+- **`Imp`** Cluster mail tracking displays scores, and more
+- **`Imp`** Jump between message tracking and logging seamlessly
+- **`Imp`** Jump between pages/tabs before loading completes
+- **`Bug`** Issue with DSNs/NDRs displaying in Microsoft OWA resolved
+- **`Bug`** Issue with UDP when ARP tables changes resolved
+- **`Bug`** Web administration diagnostics issue resolved
+
 ## 2.3.3
 Released on 2012-02-23
 - **`Imp`** Multi-line reject/defer messages
