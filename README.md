@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.0.4
+Released on 2011-09-22
+- **`Imp`** Quarantine automatically sanitizes input
+- **`Imp`** Pattern analysis' update is run every 6th hour
+- **`Bug`** Pattern analysis' update error reporting issue resolved
+
 ## 2.3.0.3
 Released on 2011-09-14
 - **`Bug`** Serial console issue on SPG-150 resolved
