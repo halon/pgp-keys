@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4-r4p1
+Released on 2016-02-20
+- **`Bug`** Fix regression in [CYREN](http://wiki.halon.se/CYREN)'s ctipd 4.0.32 (included in 3.4-r4) by rolling back to 4.0.31
+
 ## 3.4-r4
 Released on 2016-02-16
 - **`New`** [DATA](http://docs.halon.se/hsl/data.html) context [MIME](http://docs.halon.se/hsl/data.html#data.MIME) class for working with an email's body
