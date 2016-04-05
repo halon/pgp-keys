@@ -2,6 +2,23 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r9
+Released on 2014-10-01
+- **`New`** Added [LMTP](http://en.wikipedia.org/wiki/Local_Mail_Transfer_Protocol) support, useful for more efficient [Dovecot](http://wiki2.dovecot.org/LMTP) delivery
+- **`Imp`** retry=x in [search filter](http://wiki.halon.se/Search_filter), useful to show [delayed](http://wiki.halon.se/HSL_Mail_Content#SetDelayedDeliver) [messages](http://wiki.halon.se/HSL_Mail_Queue#Reschedule)
+- **`Imp`** Added "\r\n\t" syntax in HSL strings
+- **`Imp`** Added HSL http() max-time timeout, also renamed connect_timeout
+- **`Imp`** Added the [SMTP ping](https://github.com/halonsecurity/smtpping) command
+- **`Imp`** Decouple antivird and clamd for more efficient RAM utilisation
+- **`Imp`** New installations are 64-bit, with VMware "guest OS" set to "freebsd-64"
+- **`Imp`** Review before save on virtual text files and DLP pages
+- **`Imp`** New certificates are generated with SHA256
+- **`Imp`** Faster clearing of rate limits (may interrupt garbage collection)
+- **`Imp`** Faster connect() timeout in smtp_lookup_rcpt()
+- **`Imp`** Lower connect() timeout to 30s (like Postfix)
+- **`Bug`** Problem when searching rates in web user interface
+- **`Note`** Undefined values in HSL was branched as true (not false)
+
 ## 3.2-r8
 Released on 2014-09-11
 - **`Sec`** Updated to FreeBSD 10.0-RELEASE-p8 which addresses new [OpenSSL](https://www.freebsd.org/security/advisories/FreeBSD-SA-14:18.openssl.asc) bugs
