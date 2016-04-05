@@ -2,6 +2,13 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p2
+Released on 2013-06-25
+- **`New`** [Complete overhaul](https://halon.io/blog/sneak-peek-of-the-email-gateway-sp-version-3-0/) of the product
+- **`Imp`** The [SOAP API](http://wiki.halon.se/SOAP) is completely changed
+- **`Imp`** [SNMP MIB](http://wiki.halon.se/SNMP) is completely changed
+- **`Dep`** [Quarantine](http://wiki.halon.se/Quarantine) is deprecated; moved from the system to a [GitHub project](https://github.com/halonsecurity/sp-enduser)
+
 ## 2.4.0.3
 Released on 2013-02-21
 - **`Imp`** Microsoft Hyper-V legacy network driver support
