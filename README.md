@@ -2,6 +2,26 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3
+Released on 2011-08-02
+- **`New`** Based on FreeBSD 8.2
+- **`New`** Content Inspection (DLP), ScanDLP() function
+- **`New`** File store with CSV editor, deprecates FTP, in_file() function updated
+- **`New`** Support for VMware vmxnet adapters
+- **`New`** View history in Quarantine interface
+- **`New`** Show header modifications in Quarantine interface
+- **`Imp`** Quarantine interface is now fully clustered (user creation)
+- **`Imp`** Updated Commtouch RPD and GlobalView engines
+- **`Imp`** Updated Kaspersky anti-virus engine
+- **`Imp`** Option to reset SpamAssassin bayesian database
+- **`Imp`** The mail() function has a plain-text option
+- **`Imp`** Fullscreen editors has "import from file" functionality
+- **`Imp`** VMware/serial console auto-logout after 10 minutes
+- **`Imp`** Mail Gateway > Domain section tables show more information
+- **`Imp`** Many small improvements in functionality and stability
+- **`Bug`** Storage fallback to memory issue resolved
+- **`Bug`** Issues with static routes resolved
+
 ## 2.2.6.3
 Released on 2011-05-11
 - **`Imp`** Web Administration improvements (translations, statistics)
