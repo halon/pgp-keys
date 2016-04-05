@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.2.1
+Released on 2010-07-29
+- **`New`** Novell GroupWise support in quarantine
+- **`Imp`** 3rd-party components updated
+- **`Bug`** Do not synchronize "fallback" configurations in cluster
+
 ## 2.2.2
 Released on 2010-07-07
 - **`New`** Backscatter protection with [BATV](http://wiki.halon.se/BATV)
