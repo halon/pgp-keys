@@ -2,6 +2,23 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p8
+Released on 2013-09-09
+- **`New`** DMARC flow block and [ScanDMARC](http://wiki.halon.se/HSL_DATA_context#ScanDMARC) function
+- **`Imp`** Convert white/blacklist input to lower case
+- **`Imp`** Optimized history/mail API (database API)
+- **`Imp`** Optimized message logs extractions (from 4 minutes to ~0 seconds)
+- **`Imp`** Improved charset detection (ICU)
+- **`Imp`** Updated ACE editor
+- **`Imp`** Updated Kaspersky anti-virus engine
+- **`Imp`** Improved escape sequence in VMware terminal (detach keyboard)
+- **`Imp`** [Search](http://wiki.halon.se/Search_filter) for scores and RPD ID in tracking
+- **`Imp`** Improved SPF caching
+- **`Bug`** IE9 had problems with search on tracking page
+- **`Bug`** Searchlog didn't always find message logs (if incomplete log)
+- **`Bug`** 7-zip couldn't open downloaded tar (message) archives
+- **`Bug`** Paging with a quarantine folder selected
+
 ## 3.0-p7
 Released on 2013-08-12
 - **`Imp`** SMTP client prefers "strongest" SASL method announced by server
