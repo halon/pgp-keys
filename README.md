@@ -2,6 +2,19 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3-r6
+Released on 2015-06-04
+- **`New`** Added an "update" function to the [cache](http://docs.halon.se/hsl/structures.html#cache) that can pick expired (but valid) items
+- **`New`** Added a `background` flag to the [http](http://docs.halon.se/hsl/functions.html#http) function for async, non-response calls
+- **`New`** Added a [hash](http://docs.halon.se/hsl/functions.html#hash) function, useful together with <code>http()</code>'s background mode
+- **`Imp`** Added a syslog port settings
+- **`Imp`** Support implicit SSL (wrapper mode) by specifying "465" as the first listener port
+- **`Imp`** Raised the free disk requirement to 1 GiB in order to receive new messages
+- **`Bug`** Fix regression when enabling the DLP process `maildlpd` and viewing license users
+- **`Bug`** Fixed augmented assignment (+=) behavior with function calls when dereferencing arrays
+- **`Bug`** First run didn't add the second domain to the relay table
+- **`Enduser`** If you use [end-user logging](https://wiki.halon.se/End-user#History_log), you may want to employ the new http background feature
+
 ## 3.3-r5
 Released on 2015-05-11
 - **`New`** Validate HSL scripts when saving a text file (File store)
