@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4-r4p2
+Released on 2016-03-02
+- **`Sec`** Addresses the [DROWN](https://openssl.org/news/secadv/20160301.txt) vulnerability (CVE-2016-0800)
+
 ## 3.4-r4p1
 Released on 2016-02-20
 - **`Bug`** Fix regression in [CYREN](http://wiki.halon.se/CYREN)'s ctipd 4.0.32 (included in 3.4-r4) by rolling back to 4.0.31
