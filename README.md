@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.1.1
+Released on 2010-06-17
+- **`Bug`** A script validation error in Web Administration fixed
+- **`Bug`** Syslog could fail at boot on rare occasions
+
 ## 2.2.1
 Released on 2010-06-14
 - **`Imp`** Show PKI information (X.509, private and public key)
