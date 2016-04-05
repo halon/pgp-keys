@@ -2,6 +2,34 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.9
+Released on 2009-03-24
+- **`New`** Import Configuration from Clipboard
+- **`Bug`** Installer on Windows 2000
+- **`Bug`** Installer field validation
+- **`Imp`** Warning on VMware Configuration Import
+- **`Imp`** Repair License in Web Admin.
+- **`Bug`** History Page in Internet Explorer fixed
+- **`Imp`** Changes in terminology (Process Flow = Content Flow, etc)
+- **`Bug`** Long lines message bug fixed
+- **`New`** Implemented [cache [] function();](http://wiki.halon.se/HSL/Core/Control_Structures#cache)
+- **`Bug`** IP Policy cache is now cleared properly
+- **`Imp`** Web Admin. Script fields is monospace and support [tab]
+- **`New`** Added !~ (negated regular expression) matching
+- **`Imp`** Updates 3d-party libraries
+- **`New`** Caches the Incoming's smtp_rcpt_lookup
+- **`Imp`** Clear [cache](http://wiki.halon.se/HSL/Core/Control_Structures#cache) button (Mail Gateway -> Settings)
+- **`Bug`** Non-UTF-8 bug (Mail Gateway -> Activity)
+- **`Imp`** IP Policy performance improved
+- **`Bug`** HTTP re-configured during address change
+- **`Imp`** Removed reverse DNS lookups
+- **`Bug`** Memory storage capacity resolved
+- **`Bug`** Authentication and Recipient Flow re-configuration
+- **`Bug`** NTP producing false error messages
+- **`Imp`** Autodetect language in Web Admin.
+- **`Imp`** Mail Content Flow didn't virus-check spam messages
+- **`Imp`** Overall improvements and stability
+
 ## 2.0.8
 Released on 2009-02-27
 - **`Imp`** Firmware Update with step-by-step guide
