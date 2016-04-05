@@ -2,6 +2,14 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.4.0.1
+Released on 2012-10-15
+- **`Imp`** Overall improvements
+- **`Bug`** Resolved bug in recipient flow's blacklist module's script generation
+- **`Bug`** Resolved statistics bug that could create spikes during database failures
+- **`Bug`** Resolved database issues generating warnings under rare circumstances
+- **`Bug`** Cluster overview's reporting could fail to load
+
 ## 2.4
 Released on 2012-10-09
 - **`New`** Based on FreeBSD 9
