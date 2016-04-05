@@ -2,6 +2,13 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p9
+Released on 2013-09-23
+- **`Imp`** Better user experience for Hyper-V deployments
+- **`Imp`** Pages loads faster thanks to GZIP compression
+- **`Imp`** Overall performance improvements
+- **`Bug`** Rebooting was required to effectuate some license changes
+
 ## 3.0-p8
 Released on 2013-09-09
 - **`New`** DMARC flow block and [ScanDMARC](http://wiki.halon.se/HSL_DATA_context#ScanDMARC) function
