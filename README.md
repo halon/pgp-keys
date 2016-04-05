@@ -2,6 +2,21 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.6
+Released on 2012-07-04
+- **`New`** Introduces pattern analysis rules from Halon
+- **`New`** Introduces valid bulk (RPD score 40) for non-spam
+- **`Imp`** Rate limits now summarized in cluster
+- **`Imp`** Display of rate limits and licensed users loads faster
+- **`Imp`** Table elements' full content shown on mouse over
+- **`Imp`** Improved cluster navigation behavior
+- **`Imp`** Updated 3rd-party libraries
+- **`Imp`** Faster spam-assassin updates
+- **`Imp`** Faster rendering of log files
+- **`Bug`** IP policy charts was not available on overview page
+- **`Bug`** Spam assassin error (introduces in previous release)
+- **`Bug`** Fixed MIME-decoding in quarantine
+
 ## 2.3.5
 Released on 2012-06-08
 - **`New`** French translations
