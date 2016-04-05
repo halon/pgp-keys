@@ -2,6 +2,29 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.4.2
+Released on 2009-12-22
+- **`New`** Console in Web Administration (Diagnostics > Local Console)
+- **`New`** Show licensed users in Web Administration and SOAP
+- **`New`** Access Quarantine from Web Administration
+- **`Imp`** 3rd-party components updated
+- **`Imp`** in_network() now supports IPv4 and IPv6
+- **`Imp`** dns() is now IPv6 ready, use dns4() or dns6() to choose
+- **`Imp`** Improved compatibility with "tag subject" and non UTF-8
+- **`Imp`** Colors in log search
+- **`Imp`** Fixed MX-shuffle (rare round-robin delivery problem)
+- **`Imp`** Delivery will only try the first three A/AAAA records
+- **`Imp`** Selecting text in Web Administration logs
+- **`Imp`** Many other improvements
+- **`Bug`** Next retry wasn't presented in the local timezone
+- **`Bug`** Rare bug while reverting between configurations
+- **`Bug`** Could not save whitelist in Internet Explorer 8
+- **`Bug`** Reload services when SSL certificate is updated
+- **`Bug`** Retention policy in Web Administration was restricted to 32-letter
+- **`Bug`** Adding one's own domains as domain alias confused quarantine
+- **`Bug`** Spelling corrections
+- **`Bug`** Overall stability fixes
+
 ## 2.1.4.1
 Released on 2009-11-06
 - **`Bug`** Better handling of questionable SMTP responses.
