@@ -2,6 +2,15 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p5
+Released on 2013-08-07
+- **`New`** Network setup guide in OVF (VMware vCenter)
+- **`Imp`** Create cluster with optional TLS
+- **`Imp`** Test end-user API with from scripting page
+- **`Imp`** Added an extra certificate (pki:2) for SMTP
+- **`Imp`** http() support HTTPS
+- **`Bug`** Clustering with SSL certificate chains
+
 ## 3.0-p4
 Released on 2013-07-24
 - **`New`** Black/whitelist module for end-user interface
