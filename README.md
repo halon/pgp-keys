@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3-r4
+Released on 2015-04-27
+- **`Imp`** <code>return</code> statement in HSL without a value
+- **`Bug`** `ESC` key in console may not work as expected if pressed twice rapidly
+- **`Bug`** Temp disk may become full
+
 ## 3.3-r3
 Released on 2015-04-22
 - **`Imp`** Updated a lot of FreeBSD packages to quarterly
