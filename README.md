@@ -2,6 +2,46 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3
+Released on 2015-02-16
+- **`New`** Updated to [FreeBSD 10.1](https://www.freebsd.org/releases/10.1R/announce.html)
+- **`New`** Added [transparent proxy](http://wiki.halon.se/Proxy) features
+ - The `system_nonlocal_source` setting enables [`SetSourceIP()`](http://wiki.halon.se/HSL_Mail_Queue#SetSourceIP) to spoof source IPs
+ - XCLIENT support for [external proxies](http://wiki.halon.se/Proxy#Fully_transparent_mode)
+- **`New`** Added new features to the scripting language (HSL)
+ - [`SetMetaData()`](http://wiki.halon.se/HSL_DATA_context#SetMetaData) and [`GetMetaData()`](http://wiki.halon.se/HSL_Mail_Queue#GetMetaData) to pass data between DATA and queue scripts
+ - [`syslog()`](http://wiki.halon.se/HSL_core_functions#syslog) function
+ - [`unset()`](http://wiki.halon.se/HSL_core_functions#unset) statement
+ - `SetRecipient()` in pre-delivery script
+ - `$senderhelo` in pre-delivery script
+ - `$transfertime` in post-delivery script
+ - `$saslusername` in queue (pre- and post-delivery) script
+ - [Raw strings](http://wiki.halon.se/HSL_variables_and_data_types#Raw_strings), like ''raw string''
+ - Allow `globalview()` and `dnsbl()` to be executed from `hsh`
+- **`New`** Extended [search filters](http://wiki.halon.se/Search_filter) (HQL) syntax
+ - `metadata.field=` corresponding to `SetMetaData()`
+ - `size=` (message body)
+ - `helo=` (HELO/EHLO hostname)
+- **`Imp`** Web admin interface
+ - Refreshed with many improvements (in layout and functionality)
+ - The icons and images are vectorized (to support retina/HiDPI displays)
+ - Button to reset (RRD) graphs
+ - Custom score popup for Internet Explorer (which allows spam scores and refid to be copied)
+- **`Imp`** Added "msgsize" and "msghelo" to [SOAP](http://wiki.halon.se/SOAP) API
+- **`Imp`** SMTP balancing uses uniform distribution of traffic
+- **`Imp`** Support for QLogic 10Gb (bxe) network adapters
+- **`Imp`** Searching text logs is a lot faster
+- **`Imp`** `mail_queue_threads` may now be raised
+- **`Imp`** Updated 3rd-party components such as CYREN (8.0.110) and Kaspersky (3.8.0.4)
+- **`Dep`** Built-in `batv_*()` is removed, use the [HSL implementation ](http://wik.halon.se/BATV)
+- **`Dep`** Renamed "gmt0" to "utc" in SOAP API
+- **`Dep`** `$recipientdomains` and `$recipients` in DATA context are now read-only
+- **`Dep`** [`http()`](http://wiki.halon.se/HSL_core_functions#http) return empty results on non 2** responses
+- **`Dep`** `GetAddressList()` returns empty list on parse errors instead of throwing an exception
+- **`Dep`** Web admin's flow block "Add header" appends a new header instead of using `SetHeader()`
+- **`Dep`** `GetID()` is now removed, was deprecated in 3.0
+- **`Dep`** `$directprocessing` is now removed, was deprecated in 3.2
+
 ## 3.2-r10p1
 Released on 2014-12-23
 - **`Bug`** Stability fixes in `mailscand`
