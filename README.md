@@ -2,6 +2,19 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.1
+Released on 2013-10-09
+- **`New`** Based on FreeBSD 9.2
+- **`New`** Support for KVM VirtIO networking
+- **`New`** Create pie graph from [rate()](http://wiki.halon.se/HSL_core_functions#rate) information [with r()](http://wiki.halon.se/Reporting)
+- **`New`** Buy licenses directly from within product
+- **`Imp`** Improved rate control page (with thresholds)
+- **`Imp`** DLP engine inspects more archive formats
+- **`Imp`** Download messages as ZIP instead of tar
+- **`Imp`** Restructured menu layout
+- **`Imp`** Script editor behaviour in Firefox and Internet Explorer
+- **`Imp`** Overall performance improvements
+
 ## 3.0-p9
 Released on 2013-09-23
 - **`Imp`** Better user experience for Hyper-V deployments
