@@ -2,6 +2,25 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.8
+Released on 2009-02-27
+- **`Imp`** Firmware Update with step-by-step guide
+- **`Imp`** VSP Installation with quick-start guide
+- **`Imp`** "Paging" in Mail Gateway Activity tabs
+- **`New`** dnstxt(), dnsmx() and implode() functions in [HSL](http://wiki.halon.se/HSL)
+- **`Bug`** 500-errors handled correctly
+- **`New`** Support for [alternative DNS](http://wiki.halon.se/Mail_Gateway#Lookup_MX) in lookup-mx
+- **`Bug`** Handle UTF-8 in Tag Subject i Mail Flow
+- **`New`** More languages added
+- **`Imp`** Graph directions changed (left to right)
+- **`Imp`** More SMTP debugging
+- **`New`** [Direct Processing](http://wiki.halon.se/Mail_Gateway/Direct_Processing) gives reject function
+- **`New`** Reject() function in Mail Flow
+- **`Imp`** Set concurrent connections per Incoming (server)
+- **`Imp`** Function declaration and "include" support in [HSL](http://wiki.halon.se/HSL)
+- **`Imp`** Full UTF-8 support
+- **`Imp`** Overall improvements and stability
+
 ## 2.0.7.1
 Released on 2009-01-16
 - **`Imp`** SMTP/LDAP SMTP authentication support
