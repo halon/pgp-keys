@@ -2,6 +2,28 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r7
+Released on 2014-08-20
+- **`New`** Implemented a [pre-delivery (queue)](http://wiki.halon.se/HSL_Mail_Queue) script for dynamic transport behaviour
+- **`New`** Added the [log()](http://wiki.halon.se/HSL_core_functions#log) function which can be used for things such as [GeoIP](http://wiki.halon.se/HSL_code_examples#GeoIP) lookup
+- **`New`** Added the [timelocal()](http://wiki.halon.se/HSL_core_functions#timelocal) function to get time in local time
+- **`New`** [Link aggregation](http://www.freebsd.org/cgi/man.cgi?query=lagg&amp;apropos=0&amp;sektion=0&amp;manpath=FreeBSD+10.0-RELEASE&amp;arch=default&amp;format=html) support
+- **`Imp`** Support using system disk as [storage](http://wiki.halon.se/Architecture#Disk_layout) on bare-metal installs, or if the virtual disk is grown
+- **`Imp`** The [post-delivery (transport)](http://wiki.halon.se/HSL_Mail_Transport) script is unified for all transport, on the flow page
+- **`Imp`** The [GetHeaders()](http://wiki.halon.se/HSL_Mail_Content#GetHeaders) function can be used to fetch all headers as a multidimensional array
+- **`Imp`** Allow multiple [include](http://wiki.halon.se/HSL_control_structures#include) of same file in HSL
+- **`Imp`** The [post-delivery (transport)](http://wiki.halon.se/HSL_Mail_Transport) script executed for successful deliveries, useful for external logging
+- **`Imp`** Added `$actionid` variable to DATA, queue and transport flows, for tracking of recipients, etc between flows
+- **`Imp`** Loopback addresses configuration, useful for DSR load balancing
+- **`Imp`** Change VLAN and link aggr. settings from console
+- **`Imp`** Updated FreeBSD packages to latest quarterly
+- **`Imp`** Auto-configuration on Google Compute Engine
+- **`Imp`** Many minor improvements
+- **`Bug`** Changed SpamAssassin queue algorithm to decrease wait time
+- **`Bug`** Issue when searching logs larger than 2 GiB fixed
+- **`Bug`** Issue where Kaspersky wrote files to /tmp fixed
+- **`Dep`** Disabled [Bayesian](http://wiki.halon.se/SpamAssassin) by default
+
 ## 3.2-r6p1
 Released on 2014-06-18
 - **`Bug`** Resolved uncommon stability issue
