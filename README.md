@@ -2,6 +2,21 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.2.2
+Released on 2010-09-02
+- **`Imp`** DNSSEC trusts newly signed root
+- **`Imp`** CPU indicator in clustering overview
+- **`Imp`** Simplified configuration management view
+- **`Imp`** Remote systems alphanumerically sorted
+- **`Imp`** Final actions terminate user defined functions
+- **`Imp`** 3rd-party modules updated
+- **`Imp`** Russian translations updated
+- **`Bug`** HSL isset() function now works on arrays
+- **`Bug`** IPv6 support in Syslog
+- **`Bug`** Detect primary domain from Active Directory
+- **`Bug`** Reporting tab timed out in large clusters
+- **`Bug`** Overall performance and stability improved
+
 ## 2.2.2.1
 Released on 2010-07-29
 - **`New`** Novell GroupWise support in quarantine
