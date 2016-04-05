@@ -2,6 +2,26 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1
+Released on 2009-05-18
+- **`Imp`** New Quarantine with LDAP support and Clustering
+- **`Imp`** Administrator can access the Quarantine using their credentials
+- **`Imp`** Quarantine has administrator-only folders (invisible to users)
+- **`Imp`** Reporting > Real Time Log displays Anti-Virus, LDAP, etc.
+- **`Imp`** The console's startup screen displays IP address
+- **`Imp`** FTP access requires full [permissions](http://wiki.halon.se/Administration) or the "f"-flag
+- **`Imp`** Administrators cannot change their own permissions
+- **`New`** Added "null" transport (discards messages)
+- **`Imp`** VMware ESXi users need to resize the disk during install
+- **`Imp`** Added "Per Domain" for the SMTP Recipient Flow lookup module
+- **`Bug`** Trace configuration revisions changes by administrator user.
+- **`Imp`** Recipient Flows are per-domain instead of per-incoming.
+- **`Imp`** Improved queue/history management responsiveness
+- **`Imp`** Performance optimizations
+- **`Imp`** 3:rd Party Components Updated
+- **`Imp`** CLI command "version" displays appliance information
+- **`Imp`** Overall performance and reliability improved
+
 ## 2.0.9
 Released on 2009-03-24
 - **`New`** Import Configuration from Clipboard
