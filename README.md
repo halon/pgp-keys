@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.4.0.2
+Released on 2013-02-18
+- **`Bug`** ScanSA() could miscalculate the estimated queue wait time
+- **`Bug`** Workaround for freshclam failing to update since ClamAV didn't create a daily diff
+
 ## 2.4.0.1
 Released on 2012-10-15
 - **`Imp`** Overall improvements
