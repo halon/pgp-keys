@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.0.1
+Released on 2011-08-17
+- **`Bug`** Updated list of time zones (some didn't exist)
+- **`Bug`** Guessing of character set issue resolved
+- **`Bug`** Pattern analysis (ScanSA) custom rules issue resolved
+
 ## 2.3
 Released on 2011-08-02
 - **`New`** Based on FreeBSD 8.2
