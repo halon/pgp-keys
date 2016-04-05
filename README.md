@@ -2,6 +2,15 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.1
+Released on 2011-10-04
+- **`New`** View and reset rate control (Diagnostics > Rate Control)
+- **`Imp`** Improved support for KVM virtualization platforms
+- **`Imp`** Disabled auto-scroll in logs on mouse scroll
+- **`Imp`** Improved graphs (bandwidth graphs and layout)
+- **`Imp`** HSL's GuessAttachmentType() is faster
+- **`Bug`** Resolved issues when upgrading 2.3-series on first boot
+
 ## 2.3.0.4
 Released on 2011-09-22
 - **`Imp`** Quarantine automatically sanitizes input
