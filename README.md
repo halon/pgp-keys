@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.0.3
+Released on 2011-09-14
+- **`Bug`** Serial console issue on SPG-150 resolved
+
 ## 2.3.0.2
 Released on 2011-09-02
 - **`Bug`** LDAP synchronization issue resolved
