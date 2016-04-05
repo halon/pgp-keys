@@ -2,6 +2,16 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3-r1
+Released on 2015-03-02
+- **`New`** VHD image runs on Microsoft Azure
+- **`New`** DHCP addressing, default on Azure and GCE
+- **`Imp`** Support [hardware-assisted software RAID](https://www.freebsd.org/doc/handbook/geom-graid.html) for many vendors such as Intel
+- **`Imp`** Support for VirtIO (vtbd) and Xen (xbd) disks
+- **`Imp`** Support for Intel 10Gb (igb) network adapters
+- **`Imp`** Ctrl+A/E in web terminal
+- **`Bug`** Fixed regressions in web admin
+
 ## 3.3
 Released on 2015-02-16
 - **`New`** Updated to [FreeBSD 10.1](https://www.freebsd.org/releases/10.1R/announce.html)
