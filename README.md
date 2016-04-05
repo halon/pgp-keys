@@ -2,6 +2,23 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r10
+Released on 2014-11-17
+- **`Imp`** [SetSender()](http://wiki.halon.se/HSL_Mail_Queue#SetSender) in pre-delivery (queue) script
+- **`Imp`** LSI MegaRAID tool ([mfiutil](https://www.freebsd.org/cgi/man.cgi?query=mfiutil)) available
+- **`Imp`** hslCacheClear() [SOAP API](http://wiki.halon.se/SOAP) may clear a specific namespace/function
+- **`Imp`** Added [SOAP API](http://wiki.halon.se/SOAP) mailQueueRetryBulk() function
+- **`Imp`** Added 'duplicate' option to [SOAP](http://wiki.halon.se/SOAP)'s queue function for cloning messages(s) from an [archive](http://wiki.halon.se/Archiving)
+- **`Imp`** Setting mail_log_size to zero will disable logging (even realtime)
+- **`Imp`** Disable SSLv2 and SSLv3 on administration UI (and SOAP)
+- **`Imp`** Add custom headers to HSL [mail()](http://wiki.halon.se/HSL_core_functions#mail) created messages
+- **`Imp`** [pcre_replace()](http://wiki.halon.se/HSL_core_functions#pcre_replace) HSL function
+- **`Imp`** [Variable substitution](http://wiki.halon.se/HSL_variables_and_data_types#Variable_interpolation) with ${name}
+- **`Bug`** 'Next retry' could be presented with the wrong timezone (didn't affect delivery)
+- **`Bug`** Memory usage could show erroneous on 64 bit platforms
+- **`Dep`** SOAP API mailQueueRetryAll() removed (reimplemented with mailQueueRetryBulk)
+- **`Dep`** SOAP API devList() removed
+
 ## 3.2-r9
 Released on 2014-10-01
 - **`New`** Added [LMTP](http://en.wikipedia.org/wiki/Local_Mail_Transfer_Protocol) support, useful for more efficient [Dovecot](http://wiki2.dovecot.org/LMTP) delivery
