@@ -2,6 +2,24 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.4.1
+Released on 2008-06-09
+- **`Bug`** Web Administration error on factory reset units
+- **`Imp`** Added German and Japanese language support
+- **`Imp`** HSL Scripting in Outgoing Queue
+- **`Imp`** Domain name variable in HSL
+- **`Imp`** WrapMessageAddHeader function added in HSL
+- **`Imp`** Revert to default config upon fatal errors
+- **`Imp`** Disable Incoming Listeners upon storage failure
+- **`Imp`** Regular Expression modifiers in HSL
+- **`Imp`** Initial Access Control Flow statistics
+- **`Imp`** Incoming Queue shows entire message
+- **`Imp`** http() and explode() functions added to HSL
+- **`Imp`** Pattern Analysis (spam assassin) module added
+- **`Imp`** LDAP testing on Diagnostics section
+- **`Bug`** Max Message Size can be increased
+- **`Bug`** Overall reliability and functionality
+
 ## 2.0.3
 Released on 2008-05-15
 - **`Imp`** Added Italian, Spanish and Korean language support
