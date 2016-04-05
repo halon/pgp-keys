@@ -2,6 +2,26 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r8
+Released on 2014-09-11
+- **`Sec`** Updated to FreeBSD 10.0-RELEASE-p8 which addresses new [OpenSSL](https://www.freebsd.org/security/advisories/FreeBSD-SA-14:18.openssl.asc) bugs
+- **`New`** Multiple "shadow" port support for mail listener, for better pool utilisation
+- **`New`** Added `SetHELO()` function and `$sourceip` to [pre-delivery script](http://wiki.halon.se/HSL_Mail_Queue)
+- **`Imp`** Global HSL variables are committed when calling a second function
+- **`Imp`** New chart for swap operations, as complement to swap usage chart
+- **`Imp`** Updated Kaspersky anti-virus engine to 8.3
+- **`Imp`** Some search queries are maintained when browsing cluster nodes
+- **`Imp`** Many 64-bit fixes in preparation for upcoming 64-bit release
+- **`Imp`** Display Kaspersky virus base version in log on startup
+- **`Bug`** Rate limit page support any valid UTF8 as namespace and entry
+- **`Imp`** Overall improvements throughout the system
+- **`Bug`** Fixes NTP client regression
+- **`Bug`** Fixes VMware guest info regression
+- **`Bug`** Link aggregation fixes; omitted from cluster, and brings up all ports
+- **`Bug`** Fixed cluster system update page's node link
+- **`Bug`** Fixed cluster configuration override page with multiple fields per key
+- **`Dep`** Forbids ambiguous HSL concatenation of numbers
+
 ## 3.2-r7
 Released on 2014-08-20
 - **`New`** Implemented a [pre-delivery (queue)](http://wiki.halon.se/HSL_Mail_Queue) script for dynamic transport behaviour
