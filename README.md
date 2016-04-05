@@ -2,6 +2,21 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.4.1
+Released on 2009-11-06
+- **`Bug`** Better handling of questionable SMTP responses.
+- **`Imp`** Russian and German in VSP's Getting Started.
+- **`Imp`** Spam Assassin size limited raised to 500KiB.
+- **`Imp`** Charset detection for Korean and other Asian languages.
+- **`Bug`** Scripting error for Anti-Virus block in Content Flow.
+- **`Bug`** Web Administration bug in Gettings Started for IE6/7.
+- **`Imp`** Flow blocks in IP Policy log their results.
+- **`Bug`** Japanese may now be default language in Quarantine.
+- **`Imp`** Statistic's performance is improvements.
+- **`Imp`** HSL does not resolve \$var to the value of $var.
+- **`Imp`** HSL function eval() implemented.
+- **`Imp`** Overall improvements in functionality and reliability.
+
 ## 2.1.4
 Released on 2009-10-21
 - **`Warning`** Storage disk must be at least 2GB for all units and configurations
