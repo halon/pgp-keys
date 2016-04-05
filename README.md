@@ -2,6 +2,34 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4
+Released on 2015-09-23
+- **`New`** Based on [FreeBSD 10.2](https://www.freebsd.org/releases/10.2R/relnotes.html)
+- **`New`** [SetTLS](http://docs.halon.se/hsl/predelivery.html#SetTLS) function to the pre-delivery context
+- **`New`** [pie chart function](http://wiki.halon.se/Reporting#Functions) `q()` to graph queue/quarantine searches
+- **`New`** Ability to disable services (such as. SNMP, FTP and SSH)
+- **`New`** RCPT flow block for DNSBL and IP reputation
+- **`Imp`** Zoomable graphs
+- **`Imp`** Save graph layouts per user
+- **`Imp`** Pie chart supports custom refresh intervals
+- **`Imp`** Updated components
+ - [CYREN](http://wiki.halon.io/CYREN) IP reputation (ctipd) and RPD (ctasd) engines
+ - [Postfix 3](http://www.postfix.org/announcements.html), PostgreSQL 9.3.9 and ClamAV 0.98.7
+- **`Imp`** Scripting page may easily run scripts from the (virtual text) file store
+- **`Imp`** Optionally turn on `totalhits` in SOAP API
+- **`Imp`** Switch between HTML and plain view in message preview
+- **`Imp`** The AUTH rate limit flow block defer rather than reject when exceeded
+- **`Imp`** Replaced `rpcmplexd` with an async web admin implementation
+- **`Imp`** Overall performance, stability, elegance, design and usability improved
+- **`Dep`** Updated OpenSSL requires DH key size of more than 512
+- **`Dep`** Graphs now include dots . in their names (previously replaced with a dash -)
+- **`Dep`** [SOAP API](http://wiki.halon.se/SOAP) changes
+ - mailQueue's totalHits renamed to totalhits (lowercase)
+ - Replaced loginFullname() and loginRemoteHost() with login() return object
+ - Removed loginCheckPermission()
+- **`Enduser`** If you're using `display-stats` (graphs) you should update
+- **`Enduser`** Toggle preview on HTML/text message part is now supported
+
 ## 3.3-r6
 Released on 2015-06-04
 - **`New`** Added an "update" function to the [cache](http://docs.halon.se/hsl/structures.html#cache) that can pick expired (but valid) items
