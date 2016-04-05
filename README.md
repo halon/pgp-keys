@@ -2,6 +2,15 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.5.2
+Released on 2011-02-10
+- **`New`** Prioritized queues (per mail transports)
+- **`New`** IO statistics tool in Web Admin (iostat)
+- **`Imp`** Updated 3rd-party components (clamav)
+- **`Imp`** Overall reliability and performance improved
+- **`Bug`** BATV format bug
+- **`Bug`** Deliver to A/AAAA records did not load balance properly
+
 ## 2.2.5.1
 Released on 2011-01-24
 - **`New`** VMware Zimbra integration in quarantine
