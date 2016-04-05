@@ -2,6 +2,25 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.5
+Released on 2010-03-01
+- **`New`** Clustering of multiple SPG/VSP units
+- **`New`** Graphical Console (replacing the CLI)
+- **`New`** mail() function in HSL
+- **`New`** GuessAttachmentType() in HSL
+- **`Imp`** 3rd-party components updated
+- **`Imp`** Quarantine reset password, does not send a new password, instead allows it to be changed
+- **`Imp`** Overall improvements in functionality and reliability
+- **`Imp`** HSL cache [] is not LRU per default (least recently used)
+- **`Bug`** Domains were not disabled properly (nor alias domains)
+- **`Bug`** IP Policy response were not always received
+- **`Bug`** GetAttachmentName() were not decoded properly
+- **`Bug`** Self-genrated messages had the wrong Content-Disposition
+- **`Bug`** Unable to bind in queueprocessor (when custom source-ip was used)
+- **`Bug`** Domain reports could take very long time to complete
+- **`Bug`** Statistics could be collected for recipient instead of sender
+- **`Bug`** Disk, CPU and Memory usage where 24 hours off in bar-indicator
+
 ## 2.1.4.4
 Released on 2010-01-14
 - **`Bug`** Issue with domains without MX records resolved
