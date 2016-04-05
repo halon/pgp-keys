@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p6
+Released on 2013-08-09
+- **`Bug`** Initial vApp configuration imported multiple times
+- **`Bug`** XML warning on non-VMware system's interface page
+
 ## 3.0-p5
 Released on 2013-08-07
 - **`New`** Network setup guide in OVF (VMware vCenter)
