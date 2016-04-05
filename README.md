@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.1.4.4
+Released on 2010-01-14
+- **`Bug`** Issue with domains without MX records resolved
+- **`Bug`** Internet Explorer 8 can now view message logs
+- **`Bug`** Exporting users can now handle invalid UTF-8 chars
+
 ## 2.1.4.3
 Released on 2010-01-07
 - **`Imp`** Automatically format and use available disk (Xen and Hardware)
