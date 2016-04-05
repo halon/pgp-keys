@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.1-p1
+Released on 2013-10-10
+- **`Imp`** Improved Bayesian performance using SDBM database
+- **`Imp`** Cluster overview page shows new software versions
+- **`Bug`** Regression causing issues for users with ATA write cache enabled
+
 ## 3.1
 Released on 2013-10-09
 - **`New`** Based on FreeBSD 9.2
