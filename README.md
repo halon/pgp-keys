@@ -2,6 +2,23 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r3
+Released on 2014-04-08
+- **`Sec`** Patched OpenSSL ["heartbleed"](http://heartbleed.com) vulnerability (CVE-2014-0160)
+- **`Dep`** Deprecated BATV functions in favor of [HSL implementation](http://wiki.halon.se/BATV#Implementation)
+- **`New`** Introduced [array slicing](http://wiki.halon.se/HSL_variables_and_data_types#Slicing) to HSL
+- **`Imp`** HSL's [DeliverWithDKIM()](http://wiki.halon.se/HSL_Mail_Content#DeliverWithDKIM) function can load private key from variable, such as [http()](http://wiki.halon.se/HSL_core_functions#http) request
+- **`Imp`** New HSL variable $tlsstarted in AUTH and [RCPT flow](http://wiki.halon.se/HSL_Mail_Recipient)
+- **`Imp`** New HSL variables $messageid and $queueid in [transport flow](http://wiki.halon.se/HSL_Mail_Transport#Pre-defined_variables)
+- **`Imp`** Message queue IDs (exposed as $queueid or via SOAP API) upgraded to 64-bit integer
+- **`Imp`** Improved [http()](http://wiki.halon.se/HSL_core_functions#http)'s POST data serialisation and added "response_headers" option
+- **`Imp`** Added a [gethostname()](http://wiki.halon.se/HSL_core_functions#gethostname) function to HSL
+- **`Imp`** Many performance optimisations in HSL
+- **`Bug`** Fixed Firefox quirk with forms resetting when going back on page
+- **`Bug`** HSL's dnstxt() concatenate multiple strings with space
+- **`Bug`** Clustered line charts now merge new legends from secondary results
+- **`Bug`** Display error message if unable to clear cluster's HSL cache
+
 ## 3.2-r2
 Released on 2014-03-10
 - **`New`** Extended the [HSL scripting](http://wiki.halon.se/HSL) language
