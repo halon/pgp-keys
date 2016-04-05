@@ -2,6 +2,28 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.1
+Released on 2010-06-14
+- **`Imp`** Show PKI information (X.509, private and public key)
+- **`Imp`** Require passwords to be typed twice
+- **`Imp`** Better TLS information in SMTP logs
+- **`Imp`** DNSSEC and DNS cache made private in cluster
+- **`Imp`** RPDAV icon changed to be distinguished from RPD
+- **`Imp`** Show full AV, AS, LDAP and boot logs
+- **`Imp`** Sort cluster nodes by name on Cluster > Overview
+- **`Imp`** Support TLS/SSL for LDAP servers (Quarantine and HSL)
+- **`Imp`** SMTP listener/transport support "internal-hostname" as hostname
+- **`Imp`** More restrictive read-only users (no ping, etc)
+- **`Imp`** Commands (ping, etc) in console are continuously updated
+- **`Imp`** More private keys (Send to Server, etc)
+- **`Imp`** 3rd-party components updated (ClamAV, etc)
+- **`Bug`** RPDAV could not set "delete" action
+- **`Bug`** View message button in outgoing queue fixed
+- **`Bug`** No script errors for action on empty message queues
+- **`Bug`** Graph X-axis could be a few seconds off in cluster
+- **`Bug`** Failed to save flows when custom functions were used
+- **`Bug`** Session timeout when saving services (SMTP, HTTP, etc)
+
 ## 2.2.0.1
 Released on 2010-05-19
 - **`Bug`** syslog needs to be restarted in order for hostname to be applied
