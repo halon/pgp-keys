@@ -2,6 +2,19 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4-r2
+Released on 2015-11-04
+- **`New`** [DANE](http://wiki.halon.io/DANE) support
+- **`Imp`** Added settings page for [CYREN](http://wiki.halon.io/CYREN)
+- **`Imp`** Added `extended_result` option to the [`dns*()`](http://docs.halon.se/hsl/functions.html#dns) functions
+- **`Imp`** Added `pretty_print` option to [`json_encode()`](http://docs.halon.se/hsl/functions.html#json_encode)
+- **`Imp`** Added `$receivedtime` to [pre](http://docs.halon.se/hsl/predelivery.html)- and [post](http://docs.halon.se/hsl/postdelivery.html)-delivery contexts
+- **`Imp`** [SOAP](http://wiki.halon.io/SOAP) `mailQueue*Bulk()` functions returns number of affected messages
+- **`Imp`** The default configuration now contains only one HTTPS web admin interface
+- **`Imp`** Overall performance, stability, elegance, design and usability improved
+- **`Bug`** Regression in `ScanRPD()` with `ctasd` for "valid-bulk"
+- **`Note`** If you see an error about <i>antispam_cyren_bulk</i>, it will disappear once all nodes in the cluster are updated
+
 ## 3.4-r1
 Released on 2015-10-19
 - **`New`** [Sophos](https://www.sophos.com) anti-virus (`savdid`) engine
