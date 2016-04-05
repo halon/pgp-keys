@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.6.3
+Released on 2012-09-07
+- **`Bug`** Regression in `backend`'s SOAP server
+
 ## 2.3.6.2
 Released on 2012-09-04
 - **`New`** Deliver to an MX of a hostname using lookup-mx:hostname
