@@ -2,6 +2,17 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.4-r1
+Released on 2015-10-19
+- **`New`** [Sophos](https://www.sophos.com) anti-virus (`savdid`) engine
+- **`New`** Spam classification [report](https://report.halon.se) buttons on email tracking page
+- **`Imp`** Added [`explode()`](http://docs.halon.se/hsl/functions.html#explode) limit argument
+- **`Imp`** Key size option when creating private keys on PKI page
+- **`Imp`** Overall performance, stability, elegance, design and usability improved
+- **`Bug`** Updated CYREN `ctasd` settings to better cope with connection errors
+- **`Bug`** Updated Net-SNMP to fix memory leak in `snmpd`
+- **`Note`** If you see an error about <i>system_error_notify</i>, it will disappear once all nodes in the cluster are updated
+
 ## 3.4
 Released on 2015-09-23
 - **`New`** Based on [FreeBSD 10.2](https://www.freebsd.org/releases/10.2R/relnotes.html)
