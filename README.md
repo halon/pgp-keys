@@ -2,6 +2,21 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-r6
+Released on 2014-06-10
+- **`Sec`** Fix [OpenSSL CVE-2014-0195](http://www.freebsd.org/security/advisories/FreeBSD-SA-14:14.openssl.asc), 2014-0221, 2014-0224 and 2014-3470
+- **`New`** [DiscardMailDataChanges()](http://wiki.halon.se/HSL_DATA_context#DiscardMailDataChanges) function, allowing different data changes for different CopyMail()s
+- **`New`** Support for [variadic function](http://wiki.halon.se/HSL_control_structures#Variadic_functions) syntax in HSL
+- **`New`** Added [spread operator](http://wiki.halon.se/HSL_control_structures#Argument_unpacking) (argument unpacking) to HSL
+- **`Imp`** Added executable file (by file name, even in ZIP and other archives) blocking to antivirus block
+- **`Imp`** Performance improvements in [ScanDLP](http://wiki.halon.se/HSL_Mail_Content#ScanDLP) for efficient file extension scanning
+- **`Imp`** Encode headers as quoted-printable instead of Base64 for readability
+- **`Imp`** View ScanRPDAV (VOD) results in web admin's message tracking
+- **`Imp`** Improved virtual text file editor, with [HSL code](http://wiki.halon.se/HSL) support (great for [includes](http://wiki.halon.se/HSL_control_structures#include))
+- **`Imp`** Removed deprecated browser-specific CSS3 options (Mozilla, Opera)
+- **`Imp`** Enable auto-scroll on keypress in web terminal
+- **`Imp`** Many minor improvements
+
 ## 3.2-r5
 Released on 2014-05-23
 - **`New`** Added [SetDelayedDeliver()](http://wiki.halon.se/HSL_Mail_Content#SetDelayedDeliver) function to [HSL](http://wiki.halon.se/HSL) for extra queueing time before delivery
