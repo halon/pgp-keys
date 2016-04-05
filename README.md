@@ -2,6 +2,15 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.4.1
+Released on 2012-05-08
+- **`New`** Added `tcpdump` to CLI's Network > Diagnostic Tools (console/SSH)
+- **`Imp`** Commtouch reference IDs in web administration
+- **`Imp`** HSL's `ScanRPD()` can return reference ID
+- **`Imp`** Added server= and transport= to the Tracking's [search filters](http://wiki.halon.se/SP/Search_filter)
+- **`Imp`** HSL [`pcre_match`](http://wiki.halon.se/SP/HSL_core_functions#pcre_match.28.24pattern.2C_.24input.29) improved, empty capture groups, etc.
+- **`Bug`** Web administration spelling
+
 ## 2.3.4
 Released on 2012-03-22
 - **`New`** Mail tracking supports [boolean search filters](http://wiki.halon.se/SP/Search_filter)
