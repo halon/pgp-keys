@@ -2,6 +2,19 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.1-p3
+Released on 2013-11-21
+- **`New`** [Clustered](http://www.halon.se/blogs/centralised-and-cluster-synchronised-rate-limiting/) `rated` process for improved [rate limiting](http://wiki.halon.se/Rate_limiting)
+- **`New`** [GetAddressList()](http://wiki.halon.se/HSL_DATA_context#GetAddressList) function in DATA flow
+- **`New`** [is_subdomain()](http://wiki.halon.se/HSL_core_functions#is_subdomain) HSL function
+- **`Imp`** Support sub-domains i black/whitelists (.example.com)
+- **`Imp`** Search for transports on tracking page
+- **`Imp`** Web admin terminals now work in background tabs
+- **`Imp`** IPv6 cluster support
+- **`Imp`** Always give a authentication failure reason in `mailpolicyd`
+- **`Bug`** Catch exception in video console for systems without serial number
+- **`Bug`** Do not create sessions for unauthorized web admin clients
+
 ## 3.1-p2
 Released on 2013-10-29
 - **`Imp`** Improved mail queue/quarantine delivery performance
