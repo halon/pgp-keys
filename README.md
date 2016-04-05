@@ -2,6 +2,13 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.6.3
+Released on 2011-05-11
+- **`Imp`** Web Administration improvements (translations, statistics)
+- **`Imp`** HSL functions floor() and ceil() added
+- **`Bug`** Fixed incorrect return type from round()
+- **`Bug`** Kaspersky anti-virus regression issue solved
+
 ## 2.2.6.2
 Released on 2011-05-05
 - **`Imp`** Updated 3rd-party components (Commtouch, Kaspersky, etc.)
