@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.6.1
+Released on 2011-04-06
+- **`Bug`** Mitigating HSL data type issue
+
 ## 2.2.6
 Released on 2011-03-31
 - **`New`** IPv6 support in IP Policy Flows (added $family variable)
