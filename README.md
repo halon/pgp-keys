@@ -2,6 +2,25 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3-r2
+Released on 2015-04-16
+- **`New`** [dovecot_lookup_auth()](http://wiki.halon.se/HSL_core_functions#dovecot_lookup_auth) to authenticate using Dovecot's [authentication protocol](http://wiki.dovecot.org/Authentication%20Protocol)
+- **`New`** [Done()](http://wiki.halon.se/HSL_DATA_context#Done) makes it easier to do [advanced routing](http://wiki.halon.se/LMTP)
+- **`New`** [pcre_quote()](http://wiki.halon.se/HSL_core_functions#pcre_quote) makes it possible to use regex on user input
+- **`New`** Preview on PKI page
+- **`New`** Review &amp; save in plain-text editor
+- **`Imp`** [http()](http://wiki.halon.se/HSL_core_functions#pcre_quote) function may skip SSL/TLS verification with ssl_verify_peer = false
+- **`Imp`** Performance improvements in HSL's file handling
+- **`Imp`** Updated third-party libraries
+- **`Imp`** Easier to use CSV editor in web admin
+- **`Imp`** Add support for keep-alive and gzip/deflate encoding in SOAP API
+- **`Imp`** Support for QLogic NetXtreme II (bcm) network adapters
+- **`Imp`** Fixed bug in "release duplicate" regarding delta files
+- **`Imp`** Fixed bug with creating a cluster over HTTPS
+- **`Dep`** [ScanSPF()](http://wiki.halon.se/Deprecation#ScanSPF) in favor of spf()
+- **`Dep`** [ScanSARules()](http://wiki.halon.se/Deprecation#ScanSARules) in favor of ScanSA(["rules"=>true])
+- **`Dep`** Quarantine profile's [trigger URL](http://wiki.halon.se/Deprecation#Trigger_URL)
+
 ## 3.3-r1
 Released on 2015-03-02
 - **`New`** VHD image runs on Microsoft Azure
