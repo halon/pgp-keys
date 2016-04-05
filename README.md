@@ -2,6 +2,16 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.3-r5
+Released on 2015-05-11
+- **`New`** Validate HSL scripts when saving a text file (File store)
+- **`New`** Added a <code>Defer()</code> function to the [AUTH](http://docs.halon.se/hsl/auth.html#Defer) flow
+- **`Imp`** Automatically detect and support all network interfaces supported by FreeBSD
+- **`Bug`** The [backend](http://wiki.halon.se/Backend) could crash when using LDAP in the [API (auth)](http://docs.halon.se/hsl/api.html) script
+- **`Bug`** Regression in web admin causing some requests to fail due conservative settings
+- **`Bug`** Adding new cluster nodes could fail if remote systems were unsorted (by id)
+- **`Dep`** [SOAP](http://wiki.halon.se/SOAP) function `configValidateArgument` replaced with `hslCheckScript`
+
 ## 3.3-r4
 Released on 2015-04-27
 - **`Imp`** <code>return</code> statement in HSL without a value
