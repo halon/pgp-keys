@@ -2,6 +2,16 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.0-p3
+Released on 2013-07-05
+- **`Imp`** Search filters are now case-insensitive for from/to/ip
+- **`Imp`** Blacklist module in RCPT TO flow
+- **`Imp`** Dragging/selecting an interval in a graph opens tracking
+- **`Imp`** Various improvements to the DLP engine
+- **`Imp`** Filter commandRun and fileRead arguments in authentication script
+- **`Imp`** Compare IP addresses with in_network() in white/blacklists blocks
+- **`Imp`** Discard mailqueue's pre-fetched work queue when deleting messages
+
 ## 3.0-p2
 Released on 2013-06-25
 - **`New`** [Complete overhaul](https://halon.io/blog/sneak-peek-of-the-email-gateway-sp-version-3-0/) of the product
