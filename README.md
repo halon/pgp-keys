@@ -2,6 +2,28 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.0.6
+Released on 2008-11-12
+- **`Imp`** Send Domain Reports from Web Admin
+- **`Bug`** Domain Statistics reported correctly (lowercase)
+- **`Bug`** Overall Web Admin reliability
+- **`Imp`** LDAP debugging
+- **`Imp`** Mail throughput performance vastly improved
+- **`Imp`** SPF Query Tool in Web Admin
+- **`Imp`** in_network() now supports IP-ranges in HSL
+- **`Imp`** Block() may send reason for blocking in HSL
+- **`Imp`** dnsptr() to lookup PTR (ipv4 and ipv6) in HSL
+- **`Imp`** 5 s timeout for dns() request by default in HSL
+- **`Imp`** in_file() function (eg. black/white-lists) in HSL
+- **`Imp`** First comment in a Flow Script shown as title
+- **`Imp`** Customize generated e-mail
+- **`Imp`** Multiple LDAP servers on incoming listerners
+- **`Imp`** Default contact changed to "Postmaster"
+- **`Imp`** Multidimensional arrays in HSL
+- **`Bug`** Overall reliability and functionality
+- **`Imp`** Quarantine translated to Swedish and customizable
+- **`Imp`** Better default mail gateway Process Flow
+
 ## 2.0.5
 Released on 2008-08-21
 - **`Imp`** Improved quarantine with reports
