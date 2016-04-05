@@ -2,6 +2,14 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.3.5
+Released on 2012-06-08
+- **`New`** French translations
+- **`Imp`** Pattern analysis' (SA's) score values are reported in Tracking/History
+- **`Imp`** HSL's [`ScanSARules()`](http://wiki.halon.se/SP/HSL_Mail_Content#ScanSARules.28.24options.29) can return score values
+- **`Imp`** HSL's [`Quarantine()`](http://wiki.halon.se/SP/HSL_Mail_Content#Quarantine.28.24quarantinepolicy.2C_.24recipient.2C_.24transportid.2C_.24options.29) has new reject and final action options
+- **`Bug`** Issue with HSL's `Quarantine()` $recipient resolved
+
 ## 2.3.4.1
 Released on 2012-05-08
 - **`New`** Added `tcpdump` to CLI's Network > Diagnostic Tools (console/SSH)
