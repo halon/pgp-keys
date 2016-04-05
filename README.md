@@ -2,6 +2,27 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.4
+Released on 2010-11-25
+- **`Imp`** Performance optimizations on message delivery
+- **`Imp`** Double-click on messages to display text log
+- **`Imp`** Version history information button on update section
+- **`Imp`** Option to enable ATA write-cache
+- **`Imp`** Non-blocking Kaspersky anti-virus database update
+- **`Imp`** Getting Started allows example.org and another domain
+- **`Imp`** Display newly added quarantine branding
+- **`Imp`** GlobalView is logged as ctipd instead of [ctipd]
+- **`Imp`** Unified authentication scheme
+- **`Imp`** Updated 3rd-party components
+- **`Imp`** Database errors are logged
+- **`Bug`** Memory usage was erroneously calculated
+- **`Bug`** Value rounding in reporting charts
+- **`Bug`** Forbid domains ending with a dot
+- **`Bug`** Flow selection race-condition for first message resolved
+- **`Bug`** Memory leak in mailscand resolved
+- **`Bug`** Spelling corrected in web administration
+- **`Bug`** Overall reliability and performance improved
+
 ## 2.2.3
 Released on 2010-10-25
 - **`New`** Storage disk migration section
