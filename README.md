@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.2-p1
+Released on 2014-02-12
+- **`Bug`** Xen PVHVM network driver "xn" was not detected properly
+- **`Bug`** The command API could return empty results under extremely rare circumstances
+- **`Bug`** The web admin's hardware page didn't list "ada" devices
+
 ## 3.2
 Released on 2014-02-10
 - **`New`** Hyper-V para-virtualization; gigabit network, VLANs, SCSI disks, etc
