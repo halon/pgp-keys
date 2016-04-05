@@ -2,6 +2,37 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 2.2.3
+Released on 2010-10-25
+- **`New`** Storage disk migration section
+- **`New`** Unique self-signed certificate during install
+- **`New`** New DirectDeliver() function to deliver inline
+- **`New`** RPC log for SOAP API calls
+- **`New`** Puny-codes for domains and in calculator
+- **`Imp`** Much improved logging with session tracking
+- **`Imp`** Graphical fixes for iPhone/iPad
+- **`Imp`** Cluster administration performance improved
+- **`Imp`** Updated 3rd-party components
+- **`Imp`** User count for license in mailscand
+- **`Imp`** Option to skip Getting Started
+- **`Imp`** Russian language in quarantine
+- **`Imp`** Overall graphical improvements
+- **`Imp`** Improvements in flow presentation
+- **`Imp`** Forbid non-ascii e-mail addresses
+- **`Imp`** HSL function get_defined_functions()
+- **`Imp`** TLS settings in smtp_lookup_rcpt/auth
+- **`Imp`** Updated statistics to BIGINT
+- **`Bug`** ClamAV could be started twice
+- **`Bug`** LDAP search cached non-existent users for 24 hours
+- **`Bug`** SNMP could fail to get ippolicyd statistics
+- **`Bug`** Inventory keys denied for read-only users
+- **`Bug`** ippolicyd could report statistics inaccurately
+- **`Bug`** DNS failures (NXDOMAIN and NODATA) results in immediate bounce
+- **`Bug`** Overall performance and stability improved
+- **`Note`** It's recommended to empty your browser cache before signing on to your updated appliance
+- **`Note`** It's not possible to downgrade to 2.2.2.2 or below (due to database upgrades)
+- **`Note`** The log format is heavily changed, if you rely on machine parsed logging, be aware
+
 ## 2.2.2.2
 Released on 2010-09-02
 - **`Imp`** DNSSEC trusts newly signed root
