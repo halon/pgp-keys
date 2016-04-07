@@ -2,9 +2,6 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
-
-The 3.5 is a major update of our mail platform. It introduces new ways of interacting with the HSL with a new improved scripting IDE.
-
 ## 3.5
 Unreleased
 - **`New`** New HSL scripting editor
