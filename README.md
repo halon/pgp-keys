@@ -8,9 +8,10 @@ Unreleased
 - **`New`** Added MIME.[send()](http://docs.halon.se/hsl/functions.html#MIME.send) to builtin MIME object
 - **`New`** Added MIME.[getBody()](http://docs.halon.se/hsl/functions.html#MIME.getBody) to builtin MIME object
 - **`New`** Added MIME.[toString()](http://docs.halon.se/hsl/functions.html#MIME.toString) to builtin MIME object
-- **`New`** Added `??` (null coalescing operator) to HSL
-- **`New`** Added `include_once` to HSL
-- **`New`** Added `object` and `this` to HSL
+- **`New`** Added [`??`](http://docs.halon.se/hsl/structures.html#null-coalescing-operator) (null coalescing operator) to HSL
+- **`New`** Added [`include_once`](http://docs.halon.se/hsl/structures.html#include-once) to HSL
+- **`New`** Added [`object`](http://docs.halon.se/hsl/structures.html#object) and [`this`](http://docs.halon.se/hsl/structures.html#this) to HSL
+- **`New`** Added [destructuring assignment](http://docs.halon.se/hsl/operators.html#destructuring-assignment) to HSL
 - **`Imp`** Based on [FreeBSD 10.3](https://www.freebsd.org/releases/10.3R/announce.html)
 - **`Imp`** Disabled SSLv3 on inbound SMTP
 - **`Imp`** Added support for `sourceip` as a `netaddr:X` in `smtp_lookup_rcpt()` and `smtp_lookup_auth()`
