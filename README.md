@@ -25,7 +25,7 @@ Unreleased
 - **`Bug`** Fix problem with IE11 and placeholders in flows
 - **`Dep`** Undocumented `CopyMail()` and `DirectDeliver()` in favour of `Deliver()` arguments
 - **`Dep`** Deprecated [GuessAttachmentType()](http://wiki.halon.se/Deprecation#GuessAttachmentType)
-- **`Dep`** Removed [template support](http://wiki.halon.se/Deprecation#Templates) from the function
+- **`Dep`** Removed [template support](http://wiki.halon.se/Deprecation#Templates) from the `mail()` function
 - **`Dep`** Removed the [trigger URL](http://wiki.halon.se/Deprecation#Trigger_URL) configuration key from the quarantine
 - **`Dep`** Removed the [Blacklist()](http://wiki.halon.se/Deprecation#Blacklist) function
 - **`Dep`** Removed the [ScanBWList()](http://wiki.halon.se/Deprecation#ScanBWList) function
