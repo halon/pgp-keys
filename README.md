@@ -23,7 +23,7 @@ Unreleased
 - **`Bug`** Fix problem with where the flow wasn't reloaded if a include file was changed
 - **`Bug`** Fix problem with `mail()` where `transportid` wasn't used
 - **`Bug`** Fix problem with IE11 and placeholders in flows
-- **`Dep`** Undocumented `CopyMail()` and `DirectDeliver()` in favour of deliver arguments
+- **`Dep`** Undocumented `CopyMail()` and `DirectDeliver()` in favour of `Deliver()` arguments
 - **`Dep`** Deprecated [GuessAttachmentType()](http://wiki.halon.se/Deprecation#GuessAttachmentType)
 - **`Dep`** Removed [template support](http://wiki.halon.se/Deprecation#Templates) from the function
 - **`Dep`** Removed the [trigger URL](http://wiki.halon.se/Deprecation#Trigger_URL) configuration key from the quarantine
