@@ -14,7 +14,6 @@ Unreleased
 - **`Imp`** Based on [FreeBSD 10.3](https://www.freebsd.org/releases/10.3R/announce.html)
 - **`Imp`** Disabled SSLv3 on inbound SMTP
 - **`Imp`** Added support for `sourceip` as a `netaddr:X` in `smtp_lookup_rcpt()` and `smtp_lookup_auth()`
-- **`Imp`** Updated ctasd and lofts o
 - **`Imp`** Updated components
  - [CYREN](http://wiki.halon.io/CYREN) RPD (ctasd) engine
  - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
