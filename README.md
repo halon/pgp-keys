@@ -2,6 +2,41 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+
+The 3.5 is a major update of our mail platform. It introduces new ways of interacting with the HSL with a new improved scripting IDE.
+
+## 3.5
+Unreleased
+- **`New`** New HSL scripting editor
+- **`New`** Added MIME.[send()](http://docs.halon.se/hsl/functions.html#MIME.send) to builtin MIME object
+- **`New`** Added MIME.[getBody()](http://docs.halon.se/hsl/functions.html#MIME.getBody) to builtin MIME object
+- **`New`** Added MIME.[toString()](http://docs.halon.se/hsl/functions.html#MIME.toString) to builtin MIME object
+- **`New`** Added `??` (null coalescing operator) to HSL
+- **`New`** Added `include_once` to HSL
+- **`New`** Added `object` and `this` to HSL
+- **`Imp`** Based on [FreeBSD 10.3](https://www.freebsd.org/releases/10.3R/announce.html)
+- **`Imp`** Disabled SSLv3 on inbound SMTP
+- **`Imp`** Added support for `sourceip` as a `netaddr:X` in `smtp_lookup_rcpt()` and `smtp_lookup_auth()`
+- **`Imp`** Updated ctasd and lofts o
+- **`Imp`** Updated components
+ - [CYREN](http://wiki.halon.io/CYREN) RPD (ctasd) engine
+ - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+- **`Imp`** `Deliver()` and `Quarantine()` now supports an option array
+- **`Bug`** Fix problem with partial updated Sophos databases
+- **`Bug`** Fix problem with where the flow wasn't reloaded if a include file was changed
+- **`Bug`** Fix problem with `mail()` where `transportid` wasn't used
+- **`Bug`** Fix problem with IE11 and placeholders in flows
+- **`Dep`** Undocumented `CopyMail()` and `DirectDeliver()` in favour of deliver arguments
+- **`Dep`** Deprecated [GuessAttachmentType()](http://wiki.halon.se/Deprecation#GuessAttachmentType)
+- **`Dep`** Removed [template support](http://wiki.halon.se/Deprecation#Templates) from the function
+- **`Dep`** Removed the [trigger URL](http://wiki.halon.se/Deprecation#Trigger_URL) configuration key from the quarantine
+- **`Dep`** Removed the [Blacklist()](http://wiki.halon.se/Deprecation#Blacklist) function
+- **`Dep`** Removed the [ScanBWList()](http://wiki.halon.se/Deprecation#ScanBWList) function
+- **`Dep`** Removed the [ScanSPF()](http://wiki.halon.se/Deprecation#ScanSPF) function
+- **`Dep`** Removed the <tt>deliver_type</tt> and <tt>deliver_args</tt> arguments from [DeliverWithDKIM()](http://wiki.halon.se/Deprecation#DeliverWithDKIM.27s_deliver_arguments)
+- **`Dep`** Removed support for <tt>switch</tt> with [variable assignment](http://wiki.halon.se/Deprecation#Switch_with_variable)
+- **`Dep`** Removed support for <tt>function</tt> without [argument list](http://wiki.halon.se/Deprecation#Functions_without_argument_list)
+
 ## 3.4-r4p2
 Released on 2016-03-02
 - **`Sec`** Addresses the [DROWN](https://openssl.org/news/secadv/20160301.txt) vulnerability (CVE-2016-0800)
