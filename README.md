@@ -4,7 +4,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 3.5
 Unreleased
-- **`New`** New HSL scripting editor
+- **`New`** New [HSL scripting editor](http://wiki.halon.se/HSL_editor)
 - **`New`** Added MIME.[send()](http://docs.halon.se/hsl/functions.html#MIME.send) to builtin MIME object
 - **`New`** Added MIME.[getBody()](http://docs.halon.se/hsl/functions.html#MIME.getBody) to builtin MIME object
 - **`New`** Added MIME.[toString()](http://docs.halon.se/hsl/functions.html#MIME.toString) to builtin MIME object
