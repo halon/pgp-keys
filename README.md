@@ -12,6 +12,7 @@ Unreleased
 - **`New`** Added [`include_once`](http://docs.halon.se/hsl/structures.html#include-once) to HSL
 - **`New`** Added [`object`](http://docs.halon.se/hsl/structures.html#object) and [`this`](http://docs.halon.se/hsl/structures.html#this) to HSL
 - **`New`** Added [destructuring assignment](http://docs.halon.se/hsl/operators.html#destructuring-assignment) to HSL
+- **`New`** Added support for [HAProxy](http://www.haproxy.org)'s proxy protocol
 - **`Imp`** Based on [FreeBSD 10.3](https://www.freebsd.org/releases/10.3R/announce.html)
 - **`Imp`** Disabled SSLv3 on inbound SMTP
 - **`Imp`** Added support for `sourceip` as a `netaddr:X` in `smtp_lookup_rcpt()` and `smtp_lookup_auth()`
