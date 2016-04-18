@@ -1,4 +1,4 @@
-New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image or virtual machine template. Existing systems are updated by simply pressing the automatic update button on the system's update page.
+New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image or virtual machine template. Existing systems can be [updated](http://wiki.halon.se/Software_update) by (for example) simply pressing web admin's update button.
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
