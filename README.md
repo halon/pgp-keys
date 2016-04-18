@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5
-Unreleased
+Released on 2016-04-18
 - **`New`** New [HSL scripting editor](http://wiki.halon.se/HSL_editor)
 - **`New`** Added MIME.[send()](http://docs.halon.se/hsl/functions.html#MIME.send) to builtin MIME object
 - **`New`** Added MIME.[getBody()](http://docs.halon.se/hsl/functions.html#MIME.getBody) to builtin MIME object
