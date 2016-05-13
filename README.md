@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r1
+Unreleased
+- **`New`** Added SOAP function mailQueueUpdateBulk to set various fields (`quarantine`, `transport`, etc.)
+- **`Bug`** Fix problem when clearing empty rate entries
+- **`Note`** Replaced gSOAP with a REST/JSON API and a PHP SOAP proxy for compatibility
+
 ## 3.5
 Released on 2016-04-18
 - **`New`** New [HSL scripting editor](http://wiki.halon.se/HSL_editor)
