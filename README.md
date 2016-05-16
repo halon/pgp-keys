@@ -5,8 +5,8 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 ## 3.5-r1
 Unreleased
 - **`New`** Added SOAP function mailQueueUpdateBulk to set various fields (`quarantine`, `transport`, etc.)
-- **`New`** Added an option array to MIME.[get](http://docs.halon.se/hsl/data.html#MIME.getHeader)/[set](http://docs.halon.se/hsl/data.html#MIME.setHeader)/[delHeader()](http://docs.halon.se/hsl/data.html#MIME.delHeader) to address a specific header by index
 - **`New`** Added MIME.[getHeaderNames()](http://docs.halon.se/hsl/data.html#MIME.getHeaderNames) to the DATA MIME object
+- **`Imp`** Added an option array to MIME.[get](http://docs.halon.se/hsl/data.html#MIME.getHeader)/[set](http://docs.halon.se/hsl/data.html#MIME.setHeader)/[delHeader()](http://docs.halon.se/hsl/data.html#MIME.delHeader) to address a specific header by index
 - **`Bug`** Fix problem when clearing empty rate entries
 - **`Note`** Replaced gSOAP with a REST/JSON API and a PHP SOAP proxy for compatibility
 
