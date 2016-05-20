@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r1
-Unreleased
+Released on 2016-05-20
 - **`New`** Added SOAP function mailQueueUpdateBulk to set various fields (`quarantine`, `transport`, etc.)
 - **`New`** Added MIME.[getHeaderNames()](http://docs.halon.se/hsl/data.html#MIME.getHeaderNames) to the DATA MIME object
 - **`Imp`** Added an option array to MIME.[get](http://docs.halon.se/hsl/data.html#MIME.getHeader)/[set](http://docs.halon.se/hsl/data.html#MIME.setHeader)/[delHeader()](http://docs.halon.se/hsl/data.html#MIME.delHeader) to address a specific header by index
