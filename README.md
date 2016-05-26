@@ -2,6 +2,15 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r2
+Unreleased
+- **`Imp`** Switch to nginx+php-fpm instead of apache+mod_php
+- **`Bug`** SOAP getTime() had the wrong default UTC mode
+- **`Bug`** SOAP interface didn't handle 401 (Unauthorized) errors correctly
+- **`Bug`** Configuration changes could prevent system from properly reloading
+- **`Bug`** clusterd didn't work with pipes (|) in configuration values
+- **`Bug`** Cluster overrides couldn't be added
+
 ## 3.5-r1
 Released on 2016-05-20
 - **`New`** Added SOAP function mailQueueUpdateBulk to set various fields (`quarantine`, `transport`, etc.)
