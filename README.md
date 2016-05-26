@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r2
-Unreleased
+Released on 2016-05-26
 - **`Imp`** Switch to nginx+php-fpm instead of apache+mod_php
 - **`Bug`** SOAP getTime() had the wrong default UTC mode
 - **`Bug`** SOAP interface didn't handle 401 (Unauthorized) errors correctly
