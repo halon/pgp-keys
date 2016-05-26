@@ -4,12 +4,13 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 3.5-r2
 Released on 2016-05-26
-- **`Imp`** Switch to nginx+php-fpm instead of apache+mod_php
-- **`Bug`** SOAP getTime() had the wrong default UTC mode
-- **`Bug`** SOAP interface didn't handle 401 (Unauthorized) errors correctly
-- **`Bug`** Configuration changes could prevent system from properly reloading
-- **`Bug`** clusterd didn't work with pipes (|) in configuration values
-- **`Bug`** Cluster overrides couldn't be added
+- **`Imp`** Switch to nginx and php-fpm instead of Apache 2.4 and mod_php
+- **`Bug`** Fixed issue with reloading some configurations
+- **`Bug`** Fixed regression in the new SOAP proxy which was introduced in 3.5-r1
+ - getTime() had the wrong default UTC mode
+ - It didn't handle 401 (Unauthorized) errors correctly
+ - Cluster sync (clusterd) didn't work with pipes in configuration values
+ - Cluster overrides couldn't be added
 
 ## 3.5-r1
 Released on 2016-05-20
