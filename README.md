@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r3
+Unreleased
+- **`Imp`** Added a CSV editor to the HSL editor
+- **`Imp`** Added a revision based diff utility to the HSL editor
+
 ## 3.5-r2
 Released on 2016-05-26
 - **`Imp`** Switch to nginx and php-fpm instead of Apache 2.4 and mod_php
