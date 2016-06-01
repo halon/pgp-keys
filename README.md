@@ -6,6 +6,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 Unreleased
 - **`Imp`** Added a CSV editor to the HSL editor
 - **`Imp`** Added a revision based diff utility to the HSL editor
+- **`Imp`** Updated from PHP 5.6 to PHP 7.0
 
 ## 3.5-r2
 Released on 2016-05-26
