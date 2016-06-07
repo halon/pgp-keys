@@ -7,6 +7,7 @@ Unreleased
 - **`Imp`** Added a CSV editor to the HSL editor
 - **`Imp`** Added a revision based diff utility to the HSL editor
 - **`Imp`** Updated from PHP 5.6 to PHP 7.0
+- **`Imp`** SOAP function configRevisionLog now supports paging.
 - **`Bug`** Always send a WWW-Authenicate header on 401 errors (causing issues with some SOAP clients)
 
 ## 3.5-r2
