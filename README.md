@@ -63,6 +63,7 @@ Released on 2016-04-18
 - **`Dep`** Removed the <tt>deliver_type</tt> and <tt>deliver_args</tt> arguments from [DeliverWithDKIM()](http://wiki.halon.se/Deprecation#DeliverWithDKIM.27s_deliver_arguments)
 - **`Dep`** Removed support for <tt>switch</tt> with [variable assignment](http://wiki.halon.se/Deprecation#Switch_with_variable)
 - **`Dep`** Removed support for <tt>function</tt> without [argument list](http://wiki.halon.se/Deprecation#Functions_without_argument_list)
+- **`Dep`** HSL returns None (instead of an empty string) when dereferencing a non-existing elements in arrays
 
 ## 3.4-r4p2
 Released on 2016-03-02
