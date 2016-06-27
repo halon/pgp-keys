@@ -11,6 +11,7 @@ Unreleased
 - **`Imp`** SOAP function configRevisionLog now supports paging.
 - **`Imp`** Added retry functionality to background [http()](http://docs.halon.se/hsl/functions.html#http) requests
 - **`Imp`** HSL now supports keyed assignments when destructing arrays
+- **`Imp`** Added extended_result option to the [http()](http://docs.halon.se/hsl/functions.html#http) function
 - **`Bug`** Failed [http()](http://docs.halon.se/hsl/functions.html#http) requests always returns None on errors
 - **`Bug`** Always send a WWW-Authenicate header on 401 errors (causing issues with some SOAP clients)
 - **`Bug`** Increase timeout to prevent "504 Gateway Time-out" errors from nginx
