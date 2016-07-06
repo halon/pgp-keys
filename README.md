@@ -15,6 +15,8 @@ Unreleased
 - **`Bug`** Failed [http()](http://docs.halon.se/hsl/functions.html#http) requests always returns None on errors
 - **`Bug`** Always send a WWW-Authenicate header on 401 errors (causing issues with some SOAP clients)
 - **`Bug`** Increase timeout to prevent "504 Gateway Time-out" errors from nginx
+- **`Bug`** Fileviewer in WebUI couldn't show files larger than 2 GiB
+- **`Bug`** Fixed a rare crash when working with the WebUI
 - **`Dep`** mail_transport key parameter sasluser and saslpass renamed to saslusername and saslpassword
 - **`Dep`** mail_server key parameter sasl_tls renamed to sasltls
 - **`Dep`** Removed the [GuessAttachmentType()](http://wiki.halon.se/Deprecation#GuessAttachmentType) function
