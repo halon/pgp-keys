@@ -11,7 +11,7 @@ Unreleased
 - **`Imp`** Added paging to the SOAP function `configRevisionLog`
 - **`Imp`** Added retry functionality to background [http()](http://docs.halon.se/hsl/functions.html#http) requests
 - **`Imp`** Added `extended_result` option to the [http()](http://docs.halon.se/hsl/functions.html#http) function
-- **`Imp`** HSL now supports keyed assignments when destructing arrays
+- **`Imp`** HSL now supports [keyed assignments](http://docs.halon.se/hsl/operators.html#destructuring-assignment) when destructing arrays
 - **`Bug`** Failed [http()](http://docs.halon.se/hsl/functions.html#http) requests always returns `None` on errors
 - **`Bug`** Always send an authentication header on "401" errors (fixes issue with some SOAP clients)
 - **`Bug`** Web admin interface fixes
