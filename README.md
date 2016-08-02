@@ -4,21 +4,22 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 3.5-r3
 Unreleased
-- **`Imp`** Added a CSV editor to the HSL editor
-- **`Imp`** Added a revision based diff utility to the HSL editor
-- **`Imp`** Switched to Monaco (MS VC code) from Ace and enabled autocompletion
+- **`New`** Added an interface for editing CSV files to the script editor
+- **`New`** Added a revision-based diff utility to the script editor
+- **`Imp`** Switched to Monaco (MS VC code) and enabled autocompletion
 - **`Imp`** Updated from PHP 5.6 to PHP 7.0
-- **`Imp`** SOAP function configRevisionLog now supports paging.
+- **`Imp`** Added paging to the SOAP function `configRevisionLog`
 - **`Imp`** Added retry functionality to background [http()](http://docs.halon.se/hsl/functions.html#http) requests
+- **`Imp`** Added `extended_result` option to the [http()](http://docs.halon.se/hsl/functions.html#http) function
 - **`Imp`** HSL now supports keyed assignments when destructing arrays
-- **`Imp`** Added extended_result option to the [http()](http://docs.halon.se/hsl/functions.html#http) function
 - **`Bug`** Failed [http()](http://docs.halon.se/hsl/functions.html#http) requests always returns None on errors
-- **`Bug`** Always send a WWW-Authenicate header on 401 errors (causing issues with some SOAP clients)
-- **`Bug`** Increase timeout to prevent "504 Gateway Time-out" errors from nginx
-- **`Bug`** Fileviewer in WebUI couldn't show files larger than 2 GiB
-- **`Bug`** Fixed a rare crash when working with the WebUI
-- **`Dep`** mail_transport key parameter sasluser and saslpass renamed to saslusername and saslpassword
-- **`Dep`** mail_server key parameter sasl_tls renamed to sasltls
+- **`Bug`** Always send an authentication header on "401" errors (fixes issues with some SOAP clients)
+- **`Bug`** Web admin interfaces fixes
+ - Increase timeout to prevent "504" timeout errors
+ - File viewer couldn't show files larger than 2 GiB
+ - Fixed a rare crash which chould occur with certain setups
+- **`Dep`** Config key `mail_transport`'s parameter sasluser/pass renamed to saslusername/password
+- **`Dep`** Config key `mail_server`'s parameter sasl_tls renamed to sasltls
 - **`Dep`** Removed the [GuessAttachmentType()](http://wiki.halon.se/Deprecation#GuessAttachmentType) function
 
 ## 3.5-r2
