@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r3
-Unreleased
+Released on 2016-08-03
 - **`New`** Added an interface for editing CSV files to the script editor
 - **`New`** Added a revision-based diff utility to the script editor
 - **`Imp`** Switched to Monaco (MS VC code) and enabled autocompletion
