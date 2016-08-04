@@ -7,11 +7,16 @@ Released on 2016-08-03
 - **`New`** Added an interface for editing CSV files to the script editor
 - **`New`** Added a revision-based diff utility to the script editor
 - **`Imp`** Switched to Monaco (MS VC code) and enabled autocompletion
-- **`Imp`** Updated from PHP 5.6 to PHP 7.0
 - **`Imp`** Added paging to the SOAP function `configRevisionLog`
 - **`Imp`** Added retry functionality to background [http()](http://docs.halon.se/hsl/functions.html#http) requests
 - **`Imp`** Added `extended_result` option to the [http()](http://docs.halon.se/hsl/functions.html#http) function
 - **`Imp`** HSL now supports [keyed assignments](http://docs.halon.se/hsl/operators.html#destructuring-assignment) when destructing arrays
+- **`Imp`** Updated system packages to the latest quarterly; such as
+ - FreeBSD 10.3-RELEASE-p6
+ - PHP 7.0.9
+ - ClamAV 0.99.2
+ - PostgreSQL 9.3.13
+ - nginx 1.10.1
 - **`Bug`** Failed [http()](http://docs.halon.se/hsl/functions.html#http) requests always returns `None` on errors
 - **`Bug`** Always send an authentication header on "401" errors (fixes issue with some SOAP clients)
 - **`Bug`** Web admin interface fixes
