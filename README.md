@@ -29,7 +29,7 @@ Released on 2016-08-03
 
 ## 3.5-r2
 Released on 2016-05-26
-- **`Imp`** Switch to nginx and php-fpm instead of Apache 2.4 and mod_php
+- **`Imp`** Switch to nginx and php-fpm (from Apache 2.4 and mod_php)
 - **`Bug`** Fixed issue with reloading some configurations
 - **`Bug`** Fixed regression in the new SOAP proxy which was introduced in 3.5-r1
  - getTime() had the wrong default UTC mode
@@ -42,8 +42,8 @@ Released on 2016-05-20
 - **`New`** Added SOAP function mailQueueUpdateBulk to set various fields (`quarantine`, `transport`, etc.)
 - **`New`** Added MIME.[getHeaderNames()](http://docs.halon.se/hsl/data.html#MIME.getHeaderNames) to the DATA MIME object
 - **`Imp`** Added an option array to MIME.[get](http://docs.halon.se/hsl/data.html#MIME.getHeader)/[set](http://docs.halon.se/hsl/data.html#MIME.setHeader)/[delHeader()](http://docs.halon.se/hsl/data.html#MIME.delHeader) to address a specific header by index
+- **`Imp`** Replaced gSOAP with a REST/JSON API and a PHP SOAP proxy for compatibility
 - **`Bug`** Fix problem when clearing empty rate entries
-- **`Note`** Replaced gSOAP with a REST/JSON API and a PHP SOAP proxy for compatibility
 
 ## 3.5
 Released on 2016-04-18
@@ -57,7 +57,7 @@ Released on 2016-04-18
 - **`New`** Added [destructuring assignment](http://docs.halon.se/hsl/operators.html#destructuring-assignment) to HSL
 - **`New`** Added support for [HAProxy](http://www.haproxy.org)'s proxy protocol
 - **`Imp`** Based on [FreeBSD 10.3](https://www.freebsd.org/releases/10.3R/announce.html)
-- **`Imp`** Disabled SSLv3 on inbound SMTP
+- **`Imp`** Disabled SSLv3 for inbound SMTP connections
 - **`Imp`** Added support for `sourceip` as a `netaddr:X` in `smtp_lookup_rcpt()` and `smtp_lookup_auth()`
 - **`Imp`** Updated components
  - [CYREN](http://wiki.halon.io/CYREN) RPD (ctasd) engine
@@ -138,9 +138,8 @@ Released on 2015-11-04
 - **`Imp`** Added `$receivedtime` to [pre](http://docs.halon.se/hsl/predelivery.html)- and [post](http://docs.halon.se/hsl/postdelivery.html)-delivery contexts
 - **`Imp`** [SOAP](http://wiki.halon.io/SOAP) `mailQueue*Bulk()` functions returns number of affected messages
 - **`Imp`** The default configuration now contains only one HTTPS web admin interface
-- **`Imp`** Overall performance, stability, elegance, design and usability improved
+- **`Imp`** Many small changes improving performance, stability, elegance, design and usability
 - **`Bug`** Regression in `ScanRPD()` with `ctasd` for "valid-bulk"
-- **`Note`** If you see an error about <i>antispam_cyren_bulk</i>, it will disappear once all nodes in the cluster are updated
 
 ## 3.4-r1
 Released on 2015-10-19
@@ -148,10 +147,9 @@ Released on 2015-10-19
 - **`New`** Spam classification [report](https://report.halon.se) buttons on email tracking page
 - **`Imp`** Added [`explode()`](http://docs.halon.se/hsl/functions.html#explode) limit argument
 - **`Imp`** Key size option when creating private keys on PKI page
-- **`Imp`** Overall performance, stability, elegance, design and usability improved
+- **`Imp`** Many small changes improving performance, stability, elegance, design and usability
 - **`Bug`** Updated CYREN `ctasd` settings to better cope with connection errors
 - **`Bug`** Updated Net-SNMP to fix memory leak in `snmpd`
-- **`Note`** If you see an error about <i>system_error_notify</i>, it will disappear once all nodes in the cluster are updated
 
 ## 3.4
 Released on 2015-09-23
@@ -173,13 +171,14 @@ Released on 2015-09-23
 - **`Imp`** Replaced `rpcmplexd` with an async web admin implementation
 - **`Imp`** Overall performance, stability, elegance, design and usability improved
 - **`Dep`** Updated OpenSSL requires DH key size of more than 512
-- **`Dep`** Graphs now include dots . in their names (previously replaced with a dash -)
+- **`Dep`** Graphs now include "dots" in their names (previously replaced with a dash)
 - **`Dep`** [SOAP API](http://wiki.halon.se/SOAP) changes
  - mailQueue's totalHits renamed to totalhits (lowercase)
  - Replaced loginFullname() and loginRemoteHost() with login() return object
  - Removed loginCheckPermission()
-- **`Enduser`** If you're using `display-stats` (graphs) you should update
-- **`Enduser`** Toggle preview on HTML/text message part is now supported
+- **`Dep`** End user interface considerations
+ - If you're using `display-stats` (graphs) you need to update the end user
+ - Toggle preview on HTML/text message part is now supported
 
 ## 3.3-r6
 Released on 2015-06-04
@@ -196,7 +195,7 @@ Released on 2015-06-04
 
 ## 3.3-r5
 Released on 2015-05-11
-- **`New`** Validate HSL scripts when saving a text file (File store)
+- **`New`** Validate HSL scripts when saving a text file (in file store)
 - **`New`** Added a <code>Defer()</code> function to the [AUTH](http://docs.halon.se/hsl/auth.html#Defer) flow
 - **`Imp`** Automatically detect and support all network interfaces supported by FreeBSD
 - **`Bug`** The [backend](http://wiki.halon.se/Backend) could crash when using LDAP in the [API (auth)](http://docs.halon.se/hsl/api.html) script
@@ -324,7 +323,7 @@ Released on 2014-10-01
 - **`Imp`** Faster connect() timeout in smtp_lookup_rcpt()
 - **`Imp`** Lower connect() timeout to 30s (like Postfix)
 - **`Bug`** Problem when searching rates in web user interface
-- **`Note`** Undefined values in HSL was branched as true (not false)
+- **`Dep`** Undefined values in HSL was branched as true (not false)
 
 ## 3.2-r8
 Released on 2014-09-11
@@ -449,7 +448,7 @@ Released on 2014-03-10
 - **`Imp`** SASL username can be viewed on tracking page
 - **`Imp`** DSN messages now include original header "Undeliverable: This was the original header"
 - **`Imp`** Support for Broadcom's [bge](http://www.freebsd.org/cgi/man.cgi?query=bge) NICs
-- **`Bug`** Web UI fixes
+- **`Bug`** Web admin interface fixes
  - Netcat (nc) command with custom port was not correctly documented
  - Active HTTPS sessions may not be degraded to HTTP
  - The authentication script test sandbox could produce the wrong output
@@ -495,8 +494,8 @@ Released on 2014-02-10
 - **`Bug`** Fixed issue with pre-boot command line shutdown
 - **`Dep`** Deprecated the second argument to HSL's `round()` function
 - **`Dep`** Deprecated the DATA flow's `$result` and `$directprocessing` predefined variables
-- **`Note`** New (S)ATA storage disks are identified as "ada" instead of "ad"
-- **`Note`** At least one DNS server is necessary; unbound is not configured to traverse from the DNS root
+- **`Dep`** New (S)ATA storage disks are identified as "ada" instead of "ad"
+- **`Dep`** At least one DNS server is necessary; unbound is not configured to traverse from the DNS root
 
 ## 3.1-r4p1
 Released on 2014-01-16
@@ -570,11 +569,10 @@ Released on 2013-09-09
 - **`Imp`** Optimized history/mail API (database API)
 - **`Imp`** Optimized message logs extractions (from 4 minutes to ~0 seconds)
 - **`Imp`** Improved charset detection (ICU)
-- **`Imp`** Updated ACE editor
-- **`Imp`** Updated Kaspersky anti-virus engine
 - **`Imp`** Improved escape sequence in VMware terminal (detach keyboard)
 - **`Imp`** [Search](http://wiki.halon.se/Search_filter) for scores and RPD ID in tracking
 - **`Imp`** Improved SPF caching
+- **`Imp`** Updated Ace editor and Kaspersky anti-virus engine
 - **`Bug`** IE9 had problems with search on tracking page
 - **`Bug`** Searchlog didn't always find message logs (if incomplete log)
 - **`Bug`** 7-zip couldn't open downloaded tar (message) archives
@@ -897,9 +895,9 @@ Released on 2011-01-24
 - **`Bug`** Heartbeat probe for Spam Assassin to resolve locks
 - **`Bug`** Fixed missing SSL chain for certificates
 - **`Bug`** Fixed multiple pages bug in Activity section of Web Admin.
-- **`Note`** Configuration key config_user renamed to to system_user
-- **`Note`** Signed in account used to browse cluster in Web Admin.
-- **`Note`** Admin. accounts must use @local for quarantine sign-in
+- **`Dep`** Configuration key config_user renamed to to system_user
+- **`Dep`** Signed in account used to browse cluster in web admin
+- **`Dep`** Admin accounts must use @local for quarantine sign-in
 
 ## 2.2.4
 Released on 2010-11-25
@@ -917,7 +915,7 @@ Released on 2010-11-25
 - **`Bug`** Memory usage was erroneously calculated
 - **`Bug`** Value rounding in reporting charts
 - **`Bug`** Forbid domains ending with a dot
-- **`Bug`** Flow selection race-condition for first message resolved
+- **`Bug`** Flow selection race condition for first message resolved
 - **`Bug`** Memory leak in mailscand resolved
 - **`Bug`** Spelling corrected in web administration
 - **`Bug`** Overall reliability and performance improved
@@ -949,9 +947,8 @@ Released on 2010-10-25
 - **`Bug`** ippolicyd could report statistics inaccurately
 - **`Bug`** DNS failures (NXDOMAIN and NODATA) results in immediate bounce
 - **`Bug`** Overall performance and stability improved
-- **`Note`** It's recommended to empty your browser cache before signing on to your updated appliance
-- **`Note`** It's not possible to downgrade to 2.2.2.2 or below (due to database upgrades)
-- **`Note`** The log format is heavily changed, if you rely on machine parsed logging, be aware
+- **`Dep`** It's recommended to empty your browser cache before signing on to your updated system
+- **`Dep`** The log format is heavily changed; be aware if you rely on machine parsed logging
 
 ## 2.2.2.2
 Released on 2010-09-02
@@ -1223,7 +1220,7 @@ Released on 2009-05-18
 - **`New`** Added "null" transport (discards messages)
 - **`Imp`** VMware ESXi users need to resize the disk during install
 - **`Imp`** Added "Per Domain" for the SMTP Recipient Flow lookup module
-- **`Bug`** Trace configuration revisions changes by administrator user.
+- **`Bug`** Trace configuration revisions changes by administrator user
 - **`Imp`** Recipient Flows are per-domain instead of per-incoming.
 - **`Imp`** Improved queue/history management responsiveness
 - **`Imp`** Performance optimizations
@@ -1295,11 +1292,11 @@ Released on 2009-01-16
 - **`Bug`** Quarantine handles quoted-printable
 - **`Bug`** Quarantine reports handles quoted-printable
 - **`Imp`** Warn users when Quarantine getting full
-- **`Imp`** Scripting Testing Tool
+- **`Imp`** Script testing tool
 - **`Imp`** Searching logs indicates when showing realtime
 - **`Imp`** Custom icons for script blocks in Web Admin
 - **`Imp`** Improved anti-virus detection
-- **`Imp`** SOAP Interface improvements
+- **`Imp`** SOAP interface improvements
 - **`Imp`** Better Default Flows
 - **`Bug`** Resolved back-to-default-config bug
 
