@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r4
+Unreleased
+- **`Bug`** Rate usage in WebUI graphs was broken 
+- **`Bug`** Metadata didn't show up on the tracking page in WebUI
+
 ## 3.5-r3
 Released on 2016-08-03
 - **`New`** Added an interface for editing CSV files to the script editor
