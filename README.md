@@ -4,6 +4,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 3.5-r4
 Unreleased
+- **`Imp`** Added support for matching closing brackets in script editor
 - **`Imp`** Variable highlighting in strings in the script editor
 - **`Bug`** Rate usage in WebUI graphs was broken 
 - **`Bug`** Metadata didn't show up on the tracking page in WebUI
