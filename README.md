@@ -8,6 +8,7 @@ Unreleased
 - **`Imp`** Variable highlighting in strings in the script editor
 - **`Bug`** Rate usage in WebUI graphs was broken 
 - **`Bug`** Metadata didn't show up on the tracking page in WebUI
+- **`Bug`** Improve detection of password protected ZIP files
 
 ## 3.5-r3
 Released on 2016-08-03
