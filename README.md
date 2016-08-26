@@ -9,6 +9,7 @@ Unreleased
 - **`Bug`** Rate usage in WebUI graphs was broken 
 - **`Bug`** Metadata didn't show up on the tracking page in WebUI
 - **`Bug`** Improve detection of password protected ZIP files
+- **`Bug`** Fix delivery to numeric MX with DANE
 
 ## 3.5-r3
 Released on 2016-08-03
