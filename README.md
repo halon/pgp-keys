@@ -4,11 +4,16 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 3.5-r4
 Released on 2016-08-29
-- **`Imp`** Added support for matching closing brackets in script editor
-- **`Imp`** Variable highlighting in strings in the script editor
-- **`Bug`** Rate usage in WebUI graphs was broken 
-- **`Bug`** Metadata didn't show up on the tracking page in WebUI
-- **`Bug`** Improve detection of password protected ZIP files
+- **`Imp`** Improvements in the [script editor](http://wiki.halon.se/HSL_editor)
+ - Added support for matching closing brackets
+ - Variable highlighting in strings
+- **`Imp`** Updated system packages
+ - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.34.5
+ - FreeBSD 10.3-RELEASE-p7
+- **`Imp`** Improve detection of password protected ZIP files
+- **`Bug`** Fixes in REST API and [SOAP](http://wiki.halon.se/SOAP) proxy
+ - hslRate() regression with affected rate pie charts
+ - mailQueue() regression with affected email tracking metadata display
 - **`Bug`** Fix delivery to numeric MX with DANE
 
 ## 3.5-r3
