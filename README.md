@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r4
-Unreleased
+Released on 2016-08-29
 - **`Imp`** Added support for matching closing brackets in script editor
 - **`Imp`** Variable highlighting in strings in the script editor
 - **`Bug`** Rate usage in WebUI graphs was broken 
