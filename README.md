@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r5
+Unreleased
+- **`New`** [ident_lookup()](http://docs.halon.se/hsl/functions.html#ident_lookup) function to lookup users over the ident protocol
+- **`New`** `$senderport` in IP, RCPT TO and DATA context
+
 ## 3.5-r4
 Released on 2016-08-29
 - **`Imp`** Improvements in the [script editor](http://wiki.halon.se/HSL_editor)
