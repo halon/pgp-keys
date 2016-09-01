@@ -13,7 +13,7 @@ Released on 2016-08-29
  - Added support for matching closing brackets
  - Variable highlighting in strings
 - **`Imp`** Updated system packages
- - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.34.5
+ - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.35.5
  - FreeBSD 10.3-RELEASE-p7
 - **`Imp`** Improve detection of password protected ZIP files
 - **`Bug`** Fixes in REST API and [SOAP](http://wiki.halon.se/SOAP) proxy
