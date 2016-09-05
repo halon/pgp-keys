@@ -6,6 +6,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 Unreleased
 - **`New`** [ident_lookup()](http://docs.halon.se/hsl/functions.html#ident_lookup) function to lookup users over the ident protocol
 - **`New`** `$senderport` in IP, RCPT TO and DATA context
+- **`Imp`** Postfix is not longer the default MTA
 
 ## 3.5-r4
 Released on 2016-08-29
