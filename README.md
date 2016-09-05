@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r5
-Unreleased
+Released on 2016-09-05
 - **`New`** [ident_lookup()](http://docs.halon.se/hsl/functions.html#ident_lookup) function to lookup users over the ident protocol
 - **`New`** `$senderport` in IP, RCPT TO and DATA context
 - **`Imp`** Postfix is not longer the default MTA
