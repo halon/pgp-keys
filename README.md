@@ -2,6 +2,14 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r5p1
+Released on 2016-09-08
+- **`Imp`** Enabled TCP_NODELAY on SMTP client socket
+- **`Imp`** More user friendly errors in mailQueueRetry, mailQueueDelete and mailQueueBounce API
+- **`Imp`** Updated to htmlpurifier 4.8.0
+- **`Bug`** Properly reload scripts with deleted include files when re-added
+- **`Bug`** Fixed regressions with XCLIENT, implicit TLS and IP flow statistics
+
 ## 3.5-r5
 Released on 2016-09-05
 - **`New`** [ident_lookup()](http://docs.halon.se/hsl/functions.html#ident_lookup) function to lookup users over the ident protocol
