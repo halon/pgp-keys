@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+
+## 3.5-r5p2
+Released on 2016-09-23
+- **`Sec`** Updated to FreeBSD 10.3-RELEASE-p8 that fixes OpenSSL [CVE-2016-6304 and others](https://www.freebsd.org/security/advisories/FreeBSD-SA-16:26.openssl.asc)
+- **`Imp`** Setting for and changes in `smtpd`'s log verbosity
+
 ## 3.5-r5p1
 Released on 2016-09-08
 - **`Imp`** Enabled TCP_NODELAY on SMTP client socket
