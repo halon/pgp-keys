@@ -2,6 +2,9 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r5p3
+Released on 2016-09-27
+- **`Bug`** Updated to FreeBSD 10.3-RELEASE-p9 that fixes an [OpenSSL regression](https://www.freebsd.org/security/advisories/FreeBSD-SA-16:26.openssl.asc)
 
 ## 3.5-r5p2
 Released on 2016-09-23
