@@ -5,6 +5,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 ## 3.5-r5p4
 Unreleased
 - **`Imp`** Updated to FreeBSD 10.3-RELEASE-p11
+- **`Imp`** Updated 3d-party modules (ports, ctipd, ctasd)
 - **`Bug`** HELO/EHLO hostname was not set for invalid domain names
 - **`Bug`** Recipient limit was decreased compared to previous releases
 - **`Bug`** License users export in Web UI could fail
