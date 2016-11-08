@@ -8,7 +8,7 @@ Unreleased
 - **`Imp`** Updated 3d-party modules (ports, ctipd, ctasd)
 - **`Bug`** HELO/EHLO hostname was not set for invalid domain names
 - **`Bug`** Recipient limit was decreased compared to previous releases
-- **`Bug`** License users export in Web UI could fail
+- **`Bug`** License users export could fail
 
 ## 3.5-r5p3
 Released on 2016-09-27
