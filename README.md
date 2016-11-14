@@ -7,7 +7,7 @@ Released on 2016-11-09
 - **`Imp`** Updated system packages
  - FreeBSD 10.3-RELEASE-p11
  - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
- - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.36.1 and ctasd 5.0.88
+ - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.36.1 and ctasd 5.0.88.1
 - **`Bug`** HELO/EHLO hostname was not set for invalid domain names
 - **`Bug`** Recipient limit was decreased compared to previous releases
 - **`Bug`** License users export could fail
