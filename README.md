@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r5p5
+Unreleased
+- **`Bug`** Fix issue with dnsCacheFlush
+
 ## 3.5-r5p4
 Released on 2016-11-09
 - **`Imp`** Updated system packages
