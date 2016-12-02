@@ -6,6 +6,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 Unreleased
 - **`Bug`** Fix issue with dnsCacheFlush
 - **`Bug`** SASL always failed in smtpd after an unsupported method was issued
+- **`Bug`** Shutdown SSL connections more gracefully in smtpd
 
 ## 3.5-r5p4
 Released on 2016-11-09
