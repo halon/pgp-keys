@@ -7,6 +7,7 @@ Unreleased
 - **`Bug`** Fix issue with dnsCacheFlush
 - **`Bug`** SASL always failed in smtpd after an unsupported method was issued
 - **`Bug`** Shutdown SSL connections more gracefully in smtpd
+- **`Bug`** Bug with HSL code check and barriers
 
 ## 3.5-r5p4
 Released on 2016-11-09
