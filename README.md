@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r5p5
-Unreleased
+Released on 2016-12-07
 - **`Bug`** Fix issue with dnsCacheFlush
 - **`Bug`** SASL always failed in smtpd after an unsupported method was issued
 - **`Bug`** Shutdown SSL connections more gracefully in smtpd
