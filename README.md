@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 3.5-r6
+Unreleased
+- **`Imp`** Added support for interfaces as gateway (route)
+
 ## 3.5-r5p5
 Released on 2016-12-07
 - **`Bug`** Fix issue with dnsCacheFlush
