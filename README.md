@@ -5,6 +5,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 ## 3.5-r5p6
 Unreleased
 - **`Imp`** Added support for interfaces as gateway (route)
+- **`Bug`** Fix issue with smtpd and certain load balancers
 
 ## 3.5-r5p5
 Released on 2016-12-07
