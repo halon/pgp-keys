@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 3.5-r5p6
-Unreleased
+Released on 2017-01-10
 - **`Imp`** Added support for interfaces as gateway (route)
 - **`Bug`** Fix issue with smtpd and certain load balancers
 
