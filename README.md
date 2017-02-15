@@ -2,6 +2,42 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 4.0
+Unreleased
+- **`New`** Live staging; running a parallell SMTP config version for some connections, based on conditions 
+- **`New`** Redesigned [web admin](http://demo.halon.se) with checkout/commit and diff with expressive configuration syntax
+- **`New`** SMTP server scripting features
+  - Pre-defined connection `$context` variable, shared between all SMTP scripts
+  - [MAIL FROM](http://docs.halon.se/hsl-dev/mailfrom.html) script
+  - [`SetSender/Recipient()`](http://docs.halon.se/hsl-dev/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
+  - [`Accept()`](http://docs.halon.se/hsl-dev/connect.html#Accept), `Reject()` and `Defer()` in connect script
+  - The SMTP scripts exposes all available variables (as they become available)
+- **`New`** [Scripting](http://docs.halon.se/hsl/) features
+  - [`object []`](http://docs.halon.se/hsl-dev/structures.html#object) statement and `$this` variable 
+  - [`Socket()`](http://docs.halon.se/hsl-dev/functions.html#Socket) class
+  - Resource value type
+  - [`while`](http://docs.halon.se/hsl-dev/structures.html#while) loops
+  - [`http()`](http://docs.halon.se/hsl-dev/functions.html#http) `sourceip` argument
+- **`Imp`** Configuration format
+  * Allow config keys to contain a-z, eg. `include "file:api"`
+  * New file key types to differentiate plain text from scripts
+  * New SMTP listener settings for TLS, HAproxy and concurrency
+- **`Imp`** [SOAP](http://wiki.halon.se/SOAP) API
+  - `configKeysImport` atomic commit with "expected head" `id` field
+  - `configKeysCheck` to verify non-running configuration
+  - `mailQueueInTransit` information about mailqueued's delivery attempts
+- **`Imp`** Updated system packages
+ - FreeBSD 11.0-RELEASE-p2
+ - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+ - [CYREN](http://wiki.halon.se/CYREN) ctasd 5.1.0.1 and ctipd 4.0.37.1
+- **`Imp`** Anti-spam/virus database information command
+- **`Imp`** Being a major release, it features a large numbers of fixes and improvements
+- **`Dep`** Script [include](http://docs.halon.se/hsl/structures.html#include) from /cfg partition
+- **`Dep`** Firewall script's Block() ignore response
+- **`Dep`** DATA script's WrapMessage()
+- **`Dep`** Removed rate limits from acl_flow (moved to SMTP listener)
+- **`Dep`** Renamed some config keys, such as acl_flow and mail_flow
+
 ## 3.5-r5p6
 Released on 2017-01-10
 - **`Imp`** Added support for interfaces as gateway (route)
