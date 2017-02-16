@@ -11,6 +11,7 @@ Unreleased
   - [MAIL FROM](http://docs.halon.se/hsl-dev/mailfrom.html) script
   - [`SetSender/Recipient()`](http://docs.halon.se/hsl-dev/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
   - [`Accept()`](http://docs.halon.se/hsl-dev/connect.html#Accept), `Reject()` and `Defer()` in connect script
+  - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
   - The SMTP scripts exposes all available variables (as they become available)
 - **`New`** [Scripting](http://docs.halon.se/hsl/) features
   - [`object []`](http://docs.halon.se/hsl-dev/structures.html#object) statement and `$this` variable 
