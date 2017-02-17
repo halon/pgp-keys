@@ -10,6 +10,7 @@ Unreleased
   - Pre-defined connection `$context` variable, shared between all SMTP scripts
   - [MAIL FROM](http://docs.halon.se/hsl-dev/mailfrom.html) script
   - [`SetSender/Recipient()`](http://docs.halon.se/hsl-dev/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
+  - Added [`SetSenderIP/SetSenderHELO()`](http://docs.halon.se/hsl-dev/data.html#SetSenderIP) to DATA scripts
   - [`Accept()`](http://docs.halon.se/hsl-dev/connect.html#Accept), `Reject()` and `Defer()` in connect script
   - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
   - The SMTP scripts exposes all available variables (as they become available)
