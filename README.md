@@ -20,7 +20,7 @@ Unreleased
   - Resource value type
   - [`while`](http://docs.halon.se/hsl-dev/structures.html#while) loops
   - [`http()`](http://docs.halon.se/hsl-dev/functions.html#http) `sourceip` argument
-  - [bitwise](http://docs.halon.se/hsl-dev/operators.html#bitwise) operators
+  - [Bitwise](http://docs.halon.se/hsl-dev/operators.html#bitwise) operators
 - **`Imp`** Configuration format
   * Allow config keys to contain a-z, eg. `include "file:api"`
   * New file key types to differentiate plain text from scripts
