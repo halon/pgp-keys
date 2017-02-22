@@ -25,6 +25,7 @@ Unreleased
   * Allow config keys to contain a-z, eg. `include "file:api"`
   * New file key types to differentiate plain text from scripts
   * New SMTP listener settings for TLS, HAproxy and concurrency
+  * Allow mounting of storage disk/partition by UFS label
 - **`Imp`** [SOAP](http://wiki.halon.se/SOAP) API
   - `configKeysImport` atomic commit with "expected head" `id` field
   - `configKeysCheck` to verify non-running configuration
@@ -35,6 +36,7 @@ Unreleased
  - [CYREN](http://wiki.halon.se/CYREN) ctasd 5.1.0.1 and ctipd 4.0.37.1
 - **`Imp`** Anti-spam/virus database information command
 - **`Imp`** Being a major release, it features a large numbers of fixes and improvements
+- **`Dep`** Changed LSI RAID driver from `mfi` to `mrsas`, will affect users mounting `mfiX` by device name
 - **`Dep`** Script [include](http://docs.halon.se/hsl/structures.html#include) from /cfg partition
 - **`Dep`** Firewall script's Block() ignore response
 - **`Dep`** DATA script's WrapMessage()
