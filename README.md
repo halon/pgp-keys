@@ -31,7 +31,7 @@ Unreleased
   - `configKeysCheck` to verify non-running configuration
   - `mailQueueInTransit` information about mailqueued's delivery attempts
 - **`Imp`** Updated system packages
- - FreeBSD 11.0-RELEASE-p2
+ - FreeBSD 11.0-RELEASE-p8
  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
  - [CYREN](http://wiki.halon.se/CYREN) ctasd 5.1.0.1 and ctipd 4.0.37.1
 - **`Imp`** Anti-spam/virus database information command
