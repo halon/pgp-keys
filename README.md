@@ -6,6 +6,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 Unreleased
 - **`New`** Live staging; running a parallell SMTP config version for some connections, based on conditions 
 - **`New`** Redesigned [web admin](http://demo.halon.se) with checkout/commit and diff with expressive configuration syntax
+- **`New`** [SMTPUTF8](https://en.wikipedia.org/wiki/Extended_SMTP#SMTPUTF8) support
 - **`New`** SMTP server scripting features
   - Pre-defined connection `$context` variable, shared between all SMTP scripts
   - [MAIL FROM](http://docs.halon.se/hsl-dev/mailfrom.html) script
