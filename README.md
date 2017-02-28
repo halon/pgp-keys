@@ -42,6 +42,7 @@ Unreleased
 - **`Dep`** Firewall script's Block() ignore response
 - **`Dep`** DATA script's WrapMessage()
 - **`Dep`** Removed rate limits from acl_flow (moved to SMTP listener)
+- **`Dep`** Some config keys, such as system_user, service_ssh_*, ntp and syslog are no longer synched between hosts 
 - **`Dep`** Renamed some config keys, such as acl_flow and mail_flow
 
 ## 3.5-r5p6
