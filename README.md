@@ -15,9 +15,11 @@ Unreleased
   - [`Accept()`](http://docs.halon.se/hsl-dev/connect.html#Accept), `Reject()` and `Defer()` in connect script
   - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
   - The SMTP scripts exposes all available variables (as they become available)
+  - [`GetMailFile()`](http://docs.halon.se/hsl-dev/data.html#GetMailFile) in DATA, pre- and postdelivery scripts.
 - **`New`** [Scripting](http://docs.halon.se/hsl/) features
   - [`object []`](http://docs.halon.se/hsl-dev/structures.html#object) statement and `$this` variable 
   - [`Socket()`](http://docs.halon.se/hsl-dev/functions.html#Socket) class
+  - [`File()`](http://docs.halon.se/hsl-dev/functions.html#File) class
   - Resource value type
   - [`while`](http://docs.halon.se/hsl-dev/structures.html#while) loops
   - [`http()`](http://docs.halon.se/hsl-dev/functions.html#http) `sourceip` argument
