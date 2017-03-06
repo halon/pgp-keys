@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 4.0
-Unreleased
+Released on 2017-03-06
 - **`New`** Live staging; running a parallell SMTP config version for some connections, based on conditions 
 - **`New`** Redesigned [web admin](http://demo.halon.se) with checkout/commit and diff with expressive configuration syntax
 - **`New`** [SMTPUTF8](https://en.wikipedia.org/wiki/Extended_SMTP#SMTPUTF8) support
