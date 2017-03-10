@@ -9,7 +9,7 @@ Unreleased
 - **`Bug`** consoleui couldn't add new IP's if all were removed
 - **`Bug`** Comment field on smtp servers appeared in two places
 - **`Bug`** Minor redesigned of the revisions page to mark special revisions
-- **`Bug`** info` field on tracking page
+- **`Bug`** info field on tracking page
 - **`Bug`** HSL function strftime was incorrectly returning in local time
 - **`Bug`** NTP servers page didn't work with multiple servers
 
