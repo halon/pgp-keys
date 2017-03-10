@@ -2,6 +2,17 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 4.0p1
+Unreleased
+- **`Imp`** htmlpurifier updated to 4.9.1
+- **`Bug`** Some disks weren't selectable on the disk page
+- **`Bug`** consoleui couldn't add new IP's if all were removed
+- **`Bug`** Comment field on smtp servers appeared in two places
+- **`Bug`** Minor redesigned of the revisions page to mark special revisions
+- **`Bug`** info` field on tracking page
+- **`Bug`** HSL function strftime was incorrectly returning in local time
+- **`Bug`** NTP servers page didn't work with multiple servers
+
 ## 4.0
 Released on 2017-03-06
 - **`New`** Live staging; running a parallell SMTP config version for some connections, based on conditions 
