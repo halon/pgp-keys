@@ -4,7 +4,7 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 4.0p1
 Unreleased
-- **`Imp`** htmlpurifier updated to 4.9.1
+- **`Imp`** htmlpurifier updated to 4.9.2
 - **`Bug`** Some disks weren't selectable on the disk page
 - **`Bug`** consoleui couldn't add new IP's if all were removed
 - **`Bug`** Comment field on smtp servers appeared in two places
