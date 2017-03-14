@@ -13,6 +13,7 @@ Unreleased
 - **`Bug`** info field on tracking page
 - **`Bug`** HSL function strftime was incorrectly returning in local time
 - **`Bug`** NTP servers page didn't work with multiple servers
+- **`Bug`** Script errors on Simple flow page caused a template engine error
 
 ## 4.0
 Released on 2017-03-06
