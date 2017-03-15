@@ -14,6 +14,7 @@ Unreleased
 - **`Bug`** HSL function strftime was incorrectly returning in local time
 - **`Bug`** NTP servers page didn't work with multiple servers
 - **`Bug`** Script errors on Simple flow page caused a template engine error
+- **`Bug`** Clearing critical log always cleared the local log
 
 ## 4.0
 Released on 2017-03-06
