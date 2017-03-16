@@ -4,17 +4,18 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 
 ## 4.0p1
 Unreleased
-- **`Imp`** htmlpurifier updated to 4.9.2
-- **`Imp`** Fix bookmark issue (404) for /public/ and /cluster/overview/ URLs
-- **`Bug`** Some disks weren't selectable on the disk page
+- **`Bug`** Web administration fixes
+  - Updated htmlpurifier to 4.9.2
+  - NTP field on Date and time page didn't work with multiple servers
+  - Some disks weren't selectable on the Disks page
+  - Script errors in Simple flow editor page caused template engine error
+  - Clearing critical log always cleared the local log
+  - Re-added info field to the History and queue page
+  - Comment field on SMTP servers appeared in two places
+  - Minor redesign of the Configuration revisions page to mark special revisions
+  - Added redirects for old web admin URLs for bookmarks
+- **`Bug`** HSL function `strftime` was incorrectly returning in local time
 - **`Bug`** consoleui couldn't add new IP's if all were removed
-- **`Bug`** Comment field on smtp servers appeared in two places
-- **`Bug`** Minor redesigned of the revisions page to mark special revisions
-- **`Bug`** info field on tracking page
-- **`Bug`** HSL function strftime was incorrectly returning in local time
-- **`Bug`** NTP servers page didn't work with multiple servers
-- **`Bug`** Script errors on Simple flow page caused a template engine error
-- **`Bug`** Clearing critical log always cleared the local log
 
 ## 4.0
 Released on 2017-03-06
