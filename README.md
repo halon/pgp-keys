@@ -11,10 +11,11 @@ Unreleased
   - Script errors in Simple flow editor page caused template engine error
   - Clearing critical log always cleared the local log
   - Added poll delay on Dashboard page's CPU to show usage more accurately  
-  - Don't show queue information for quarantine on History and queue page
-  - Re-added info field to the History and queue page
-  - Re-added active queue/quarantine selector to the History and queue page
-  - Comment field on SMTP servers appeared in two places
+  - History and queue page
+    - Don't show queue information for quarantine
+    - Re-added info field in listing
+    - Re-added active queue/quarantine selector
+    - Comment field on SMTP servers appeared in two places
   - Minor redesign of the Configuration revisions page to mark special revisions
   - Hide cluster synchronisation on Users page if there's only one host
   - Added redirects for old web admin URLs for bookmarks
