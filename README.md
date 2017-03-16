@@ -5,20 +5,20 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 ## 4.0-p1
 Unreleased
 - **`Bug`** Web administration fixes
- - Updated htmlpurifier to 4.9.2
- - NTP field on Date and time page didn't work with multiple servers
- - Some disks weren't selectable on the Disks page
- - Script errors in Simple flow editor page caused template engine error
- - Clearing critical log always cleared the local log
- - Added poll delay on Dashboard page's CPU to show usage more accurately  
- - History and queue page
-  - Don't show queue information for quarantine
-  - Re-added info field in listing
-  - Re-added active queue/quarantine selector
-  - Comment field on SMTP servers appeared in two places
- - Minor redesign of the Configuration revisions page to mark special revisions
- - Hide cluster synchronisation on Users page if there's only one host
- - Added redirects for old web admin URLs for bookmarks
+  - Updated htmlpurifier to 4.9.2
+  - NTP field on Date and time page didn't work with multiple servers
+  - Some disks weren't selectable on the Disks page
+  - Script errors in Simple flow editor page caused template engine error
+  - Clearing critical log always cleared the local log
+  - Added poll delay on Dashboard page's CPU to show usage more accurately  
+  - History and queue page
+    - Don't show queue information for quarantine
+    - Re-added info field in listing
+    - Re-added active queue/quarantine selector
+    - Comment field on SMTP servers appeared in two places
+  - Minor redesign of the Configuration revisions page to mark special revisions
+  - Hide cluster synchronisation on Users page if there's only one host
+  - Added redirects for old web admin URLs for bookmarks
 - **`Bug`** HSL function `strftime` was incorrectly returning in local time
 - **`Bug`** consoleui couldn't add new IP's if all were removed
 
@@ -28,35 +28,35 @@ Released on 2017-03-06
 - **`New`** Redesigned [web admin](http://demo.halon.se) with checkout/commit and diff with expressive configuration syntax
 - **`New`** [SMTPUTF8](https://en.wikipedia.org/wiki/Extended_SMTP#SMTPUTF8) support
 - **`New`** SMTP server scripting features
- - Pre-defined connection `$context` variable, shared between all SMTP scripts
- - [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html) script
- - [`SetSender/Recipient()`](http://docs.halon.se/hsl/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
- - Added [`SetSenderIP/SetSenderHELO()`](http://docs.halon.se/hsl/data.html#SetSenderIP) to DATA scripts
- - [`Accept()`](http://docs.halon.se/hsl/connect.html#Accept), `Reject()` and `Defer()` in connect script
- - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
- - The SMTP scripts exposes all available variables (as they become available)
- - [`GetMailFile()`](http://docs.halon.se/hsl/data.html#GetMailFile) in DATA, pre- and postdelivery scripts.
+  - Pre-defined connection `$context` variable, shared between all SMTP scripts
+  - [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html) script
+  - [`SetSender/Recipient()`](http://docs.halon.se/hsl/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
+  - Added [`SetSenderIP/SetSenderHELO()`](http://docs.halon.se/hsl/data.html#SetSenderIP) to DATA scripts
+  - [`Accept()`](http://docs.halon.se/hsl/connect.html#Accept), `Reject()` and `Defer()` in connect script
+  - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
+  - The SMTP scripts exposes all available variables (as they become available)
+  - [`GetMailFile()`](http://docs.halon.se/hsl/data.html#GetMailFile) in DATA, pre- and postdelivery scripts.
 - **`New`** [Scripting](http://docs.halon.se/hsl/) features
- - [`object []`](http://docs.halon.se/hsl/structures.html#object) statement and `$this` variable 
- - [`Socket()`](http://docs.halon.se/hsl/functions.html#Socket) class
- - [`File()`](http://docs.halon.se/hsl/functions.html#File) class
- - Resource value type
- - [`while`](http://docs.halon.se/hsl/structures.html#while) loops
- - [`http()`](http://docs.halon.se/hsl/functions.html#http) `sourceip` argument
- - [Bitwise](http://docs.halon.se/hsl/operators.html#bitwise) operators
+  - [`object []`](http://docs.halon.se/hsl/structures.html#object) statement and `$this` variable 
+  - [`Socket()`](http://docs.halon.se/hsl/functions.html#Socket) class
+  - [`File()`](http://docs.halon.se/hsl/functions.html#File) class
+  - Resource value type
+  - [`while`](http://docs.halon.se/hsl/structures.html#while) loops
+  - [`http()`](http://docs.halon.se/hsl/functions.html#http) `sourceip` argument
+  - [Bitwise](http://docs.halon.se/hsl/operators.html#bitwise) operators
 - **`Imp`** Configuration format
- - Allow config keys to contain a-z, eg. `include "file:api"`
- - New file key types to differentiate plain text from scripts
- - New SMTP listener settings for TLS, HAproxy and concurrency
- - Allow mounting of storage disk/partition by UFS label
+  - Allow config keys to contain a-z, eg. `include "file:api"`
+  - New file key types to differentiate plain text from scripts
+  - New SMTP listener settings for TLS, HAproxy and concurrency
+  - Allow mounting of storage disk/partition by UFS label
 - **`Imp`** [SOAP](http://wiki.halon.se/SOAP) API
- - `configKeysImport` atomic commit with "expected head" `id` field
- - `configKeysCheck` to verify non-running configuration
- - `mailQueueInTransit` information about mailqueued's delivery attempts
+  - `configKeysImport` atomic commit with "expected head" `id` field
+  - `configKeysCheck` to verify non-running configuration
+  - `mailQueueInTransit` information about mailqueued's delivery attempts
 - **`Imp`** Updated system packages
- - FreeBSD 11.0-RELEASE-p8
- - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
- - [CYREN](http://wiki.halon.se/CYREN) ctasd 5.1.0.1 and ctipd 4.0.37.1
+  - FreeBSD 11.0-RELEASE-p8
+  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - [CYREN](http://wiki.halon.se/CYREN) ctasd 5.1.0.1 and ctipd 4.0.37.1
 - **`Imp`** Anti-spam/virus database information command
 - **`Imp`** Being a major release, it features a large numbers of fixes and improvements
 - **`Dep`** Changed LSI RAID driver from `mfi` to `mrsas`, will affect users mounting `mfiX` by device name
@@ -83,9 +83,9 @@ Released on 2016-12-07
 ## 3.5-r5p4
 Released on 2016-11-09
 - **`Imp`** Updated system packages
- - FreeBSD 10.3-RELEASE-p11
- - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
- - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.36.1 and ctasd 5.0.88.1
+  - FreeBSD 10.3-RELEASE-p11
+  - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.36.1 and ctasd 5.0.88.1
 - **`Bug`** HELO/EHLO hostname was not set for invalid domain names
 - **`Bug`** Recipient limit was decreased compared to previous releases
 - **`Bug`** License users export could fail
@@ -116,15 +116,15 @@ Released on 2016-09-05
 ## 3.5-r4
 Released on 2016-08-29
 - **`Imp`** Improvements in the [script editor](http://wiki.halon.se/HSL_editor)
- - Added support for matching closing brackets
- - Variable highlighting in strings
+  - Added support for matching closing brackets
+  - Variable highlighting in strings
 - **`Imp`** Updated system packages
- - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.35.5
- - FreeBSD 10.3-RELEASE-p7
+  - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.0.35.5
+  - FreeBSD 10.3-RELEASE-p7
 - **`Imp`** Improve detection of password protected ZIP files
 - **`Bug`** Fixes in REST API and [SOAP](http://wiki.halon.se/SOAP) proxy
- - hslRate() regression with affected rate pie charts
- - mailQueue() regression with affected email tracking metadata display
+  - hslRate() regression with affected rate pie charts
+  - mailQueue() regression with affected email tracking metadata display
 - **`Bug`** Fix delivery to numeric MX with DANE
 
 ## 3.5-r3
@@ -137,17 +137,17 @@ Released on 2016-08-03
 - **`Imp`** Added `extended_result` option to the [http()](http://docs.halon.se/hsl/functions.html#http) function
 - **`Imp`** HSL now supports [keyed assignments](http://docs.halon.se/hsl/operators.html#destructuring-assignment) when destructing arrays
 - **`Imp`** Updated system packages to the latest quarterly; such as
- - FreeBSD 10.3-RELEASE-p6
- - PHP 7.0.9
- - ClamAV 0.99.2
- - PostgreSQL 9.3.13
- - nginx 1.10.1
+  - FreeBSD 10.3-RELEASE-p6
+  - PHP 7.0.9
+  - ClamAV 0.99.2
+  - PostgreSQL 9.3.13
+  - nginx 1.10.1
 - **`Bug`** Failed [http()](http://docs.halon.se/hsl/functions.html#http) requests always returns `None` on errors
 - **`Bug`** Always send an authentication header on "401" errors (fixes issue with some SOAP clients)
 - **`Bug`** Web admin interface fixes
- - Increase timeout to prevent "504" timeout errors
- - File viewer couldn't show files larger than 2 GiB
- - Fixed a rare crash which chould occur with certain setups
+  - Increase timeout to prevent "504" timeout errors
+  - File viewer couldn't show files larger than 2 GiB
+  - Fixed a rare crash which chould occur with certain setups
 - **`Dep`** Config key `mail_transport`'s parameter sasluser/pass renamed to saslusername/password
 - **`Dep`** Config key `mail_server`'s parameter sasl_tls renamed to sasltls
 - **`Dep`** Removed the [GuessAttachmentType()](http://wiki.halon.se/Deprecation#GuessAttachmentType) function
@@ -157,10 +157,10 @@ Released on 2016-05-26
 - **`Imp`** Switch to nginx and php-fpm (from Apache 2.4 and mod_php)
 - **`Bug`** Fixed issue with reloading some configurations
 - **`Bug`** Fixed regression in the new SOAP proxy which was introduced in 3.5-r1
- - getTime() had the wrong default UTC mode
- - It didn't handle 401 (Unauthorized) errors correctly
- - Cluster sync (clusterd) didn't work with pipes in configuration values
- - Cluster overrides couldn't be added
+  - getTime() had the wrong default UTC mode
+  - It didn't handle 401 (Unauthorized) errors correctly
+  - Cluster sync (clusterd) didn't work with pipes in configuration values
+  - Cluster overrides couldn't be added
 
 ## 3.5-r1
 Released on 2016-05-20
@@ -185,8 +185,8 @@ Released on 2016-04-18
 - **`Imp`** Disabled SSLv3 for inbound SMTP connections
 - **`Imp`** Added support for `sourceip` as a `netaddr:X` in `smtp_lookup_rcpt()` and `smtp_lookup_auth()`
 - **`Imp`** Updated components
- - [CYREN](http://wiki.halon.io/CYREN) RPD (ctasd) engine
- - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - [CYREN](http://wiki.halon.io/CYREN) RPD (ctasd) engine
+  - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
 - **`Imp`** `Deliver()` and `Quarantine()` now supports an option array
 - **`Bug`** Fix problem with partial updated Sophos databases
 - **`Bug`** Fix problem with where the flow wasn't reloaded if a include file was changed
@@ -225,9 +225,9 @@ Released on 2016-02-16
 - **`Imp`** Added [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context `$tlsprotocol`, `$tlscipher` and `$tlskeysize` variables
 - **`Imp`** Clear [HSL rate()](http://docs.halon.se/hsl/functions.html#rate)s based on a query (namespace and/or entry) over [SOAP](http://wiki.halon.se/SOAP) or web admin
 - **`Imp`** Updated components
- - [CYREN](http://wiki.halon.io/CYREN) IP reputation (ctipd) and RPD (ctasd) engines
- - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
- - FreeBSD [10.2-RELEASE-p9](https://www.freebsd.org/security/advisories/FreeBSD-SA-16:11.openssl.asc) fixing CVE-2015-3197 (SSLv2 disabled by default)
+  - [CYREN](http://wiki.halon.io/CYREN) IP reputation (ctipd) and RPD (ctasd) engines
+  - FreeBSD 10 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - FreeBSD [10.2-RELEASE-p9](https://www.freebsd.org/security/advisories/FreeBSD-SA-16:11.openssl.asc) fixing CVE-2015-3197 (SSLv2 disabled by default)
 - **`Dep`** Removed the `system_default_quarantine` configuration key
 - **`Dep`** Removed the `GetMailTransport()` function
 - **`Dep`** Removed the [DeliverAsSpam()](http://wiki.halon.se/Deprecation#DeliverAsSpam) function
@@ -287,8 +287,8 @@ Released on 2015-09-23
 - **`Imp`** Save graph layouts per user
 - **`Imp`** Pie chart supports custom refresh intervals
 - **`Imp`** Updated components
- - [CYREN](http://wiki.halon.io/CYREN) IP reputation (ctipd) and RPD (ctasd) engines
- - [Postfix 3](http://www.postfix.org/announcements.html), PostgreSQL 9.3.9 and ClamAV 0.98.7
+  - [CYREN](http://wiki.halon.io/CYREN) IP reputation (ctipd) and RPD (ctasd) engines
+  - [Postfix 3](http://www.postfix.org/announcements.html), PostgreSQL 9.3.9 and ClamAV 0.98.7
 - **`Imp`** Scripting page may easily run scripts from the (virtual text) file store
 - **`Imp`** Optionally turn on `totalhits` in SOAP API
 - **`Imp`** Switch between HTML and plain view in message preview
@@ -298,12 +298,12 @@ Released on 2015-09-23
 - **`Dep`** Updated OpenSSL requires DH key size of more than 512
 - **`Dep`** Graphs now include "dots" in their names (previously replaced with a dash)
 - **`Dep`** [SOAP API](http://wiki.halon.se/SOAP) changes
- - mailQueue's totalHits renamed to totalhits (lowercase)
- - Replaced loginFullname() and loginRemoteHost() with login() return object
- - Removed loginCheckPermission()
+  - mailQueue's totalHits renamed to totalhits (lowercase)
+  - Replaced loginFullname() and loginRemoteHost() with login() return object
+  - Removed loginCheckPermission()
 - **`Dep`** End user interface considerations
- - If you're using `display-stats` (graphs) you need to update the end user
- - Toggle preview on HTML/text message part is now supported
+  - If you're using `display-stats` (graphs) you need to update the end user
+  - Toggle preview on HTML/text message part is now supported
 
 ## 3.3-r6
 Released on 2015-06-04
@@ -375,27 +375,27 @@ Released on 2015-03-02
 Released on 2015-02-16
 - **`New`** Updated to [FreeBSD 10.1](https://www.freebsd.org/releases/10.1R/announce.html)
 - **`New`** Added [transparent proxy](http://wiki.halon.se/Proxy) features
- - The `system_nonlocal_source` setting enables [`SetSourceIP()`](http://wiki.halon.se/HSL_Mail_Queue#SetSourceIP) to spoof source IPs
- - XCLIENT support for [external proxies](http://wiki.halon.se/Proxy#Fully_transparent_mode)
+  - The `system_nonlocal_source` setting enables [`SetSourceIP()`](http://wiki.halon.se/HSL_Mail_Queue#SetSourceIP) to spoof source IPs
+  - XCLIENT support for [external proxies](http://wiki.halon.se/Proxy#Fully_transparent_mode)
 - **`New`** Added new features to the scripting language (HSL)
- - [`SetMetaData()`](http://wiki.halon.se/HSL_DATA_context#SetMetaData) and [`GetMetaData()`](http://wiki.halon.se/HSL_Mail_Queue#GetMetaData) to pass data between DATA and queue scripts
- - [`syslog()`](http://wiki.halon.se/HSL_core_functions#syslog) function
- - [`unset()`](http://wiki.halon.se/HSL_core_functions#unset) statement
- - `SetRecipient()` in pre-delivery script
- - `$senderhelo` in pre-delivery script
- - `$transfertime` in post-delivery script
- - `$saslusername` in queue (pre- and post-delivery) script
- - [Raw strings](http://wiki.halon.se/HSL_variables_and_data_types#Raw_strings), like ''raw string''
- - Allow `globalview()` and `dnsbl()` to be executed from `hsh`
+  - [`SetMetaData()`](http://wiki.halon.se/HSL_DATA_context#SetMetaData) and [`GetMetaData()`](http://wiki.halon.se/HSL_Mail_Queue#GetMetaData) to pass data between DATA and queue scripts
+  - [`syslog()`](http://wiki.halon.se/HSL_core_functions#syslog) function
+  - [`unset()`](http://wiki.halon.se/HSL_core_functions#unset) statement
+  - `SetRecipient()` in pre-delivery script
+  - `$senderhelo` in pre-delivery script
+  - `$transfertime` in post-delivery script
+  - `$saslusername` in queue (pre- and post-delivery) script
+  - [Raw strings](http://wiki.halon.se/HSL_variables_and_data_types#Raw_strings), like ''raw string''
+  - Allow `globalview()` and `dnsbl()` to be executed from `hsh`
 - **`New`** Extended [search filters](http://wiki.halon.se/Search_filter) (HQL) syntax
- - `metadata.field=` corresponding to `SetMetaData()`
- - `size=` (message body)
- - `helo=` (HELO/EHLO hostname)
+  - `metadata.field=` corresponding to `SetMetaData()`
+  - `size=` (message body)
+  - `helo=` (HELO/EHLO hostname)
 - **`Imp`** Web admin interface
- - Refreshed with many improvements (in layout and functionality)
- - The icons and images are vectorized (to support retina/HiDPI displays)
- - Button to reset (RRD) graphs
- - Custom score popup for Internet Explorer (which allows spam scores and refid to be copied)
+  - Refreshed with many improvements (in layout and functionality)
+  - The icons and images are vectorized (to support retina/HiDPI displays)
+  - Button to reset (RRD) graphs
+  - Custom score popup for Internet Explorer (which allows spam scores and refid to be copied)
 - **`Imp`** Added "msgsize" and "msghelo" to [SOAP](http://wiki.halon.se/SOAP) API
 - **`Imp`** SMTP balancing uses uniform distribution of traffic
 - **`Imp`** Support for QLogic 10Gb (bxe) network adapters
@@ -558,26 +558,26 @@ Released on 2014-04-08
 ## 3.2-r2
 Released on 2014-03-10
 - **`New`** Extended the [HSL scripting](http://wiki.halon.se/HSL) language
- - [GetMailQueueMetric()](http://wiki.halon.se/HSL_DATA_context#GetMailQueueMetric) to implement usage quotas in queues
- - [json_decode()](http://wiki.halon.se/HSL_core_functions#json_decode), is_string() and is_number() for making API calls, etc
- - [http()](http://wiki.halon.se/HSL_core_functions#http) function now supports custom request method and headers
- - %= and **= operators
- - Switch statements validates that a switch is directly followed by a case or default label
+  - [GetMailQueueMetric()](http://wiki.halon.se/HSL_DATA_context#GetMailQueueMetric) to implement usage quotas in queues
+  - [json_decode()](http://wiki.halon.se/HSL_core_functions#json_decode), is_string() and is_number() for making API calls, etc
+  - [http()](http://wiki.halon.se/HSL_core_functions#http) function now supports custom request method and headers
+  - %= and \*\*= operators
+  - Switch statements validates that a switch is directly followed by a case or default label
 - **`Imp`** Updated [SOAP API](http://wiki.halon.se/SOAP)
- - configKeys() now takes "key" (filter) argument which is also exported in $soapargs[]
- - configKeySet() allows partial updates (not all parameters needs to be specified)
- - hslRate() and hslRateClear() exports "ns" and "entry" to $soapargs[]
- - hslRate() and statList() now implements pagination and backend-side search/filtering
- - mailQueue() and mailHistory() includes msgsasl for username and msgts0 for GMT timestamp
- - mailQueue() and mailHistory() supports filtering on sasl=
+  - configKeys() now takes "key" (filter) argument which is also exported in $soapargs[]
+  - configKeySet() allows partial updates (not all parameters needs to be specified)
+  - hslRate() and hslRateClear() exports "ns" and "entry" to $soapargs[]
+  - hslRate() and statList() now implements pagination and backend-side search/filtering
+  - mailQueue() and mailHistory() includes msgsasl for username and msgts0 for GMT timestamp
+  - mailQueue() and mailHistory() supports filtering on sasl=
 - **`Imp`** SASL username can be viewed on tracking page
 - **`Imp`** DSN messages now include original header "Undeliverable: This was the original header"
 - **`Imp`** Support for Broadcom's [bge](http://www.freebsd.org/cgi/man.cgi?query=bge) NICs
 - **`Bug`** Web admin interface fixes
- - Netcat (nc) command with custom port was not correctly documented
- - Active HTTPS sessions may not be degraded to HTTP
- - The authentication script test sandbox could produce the wrong output
- - Some quarantine retention policies were kept for too long, affected users need to reselect their intended policy
+  - Netcat (nc) command with custom port was not correctly documented
+  - Active HTTPS sessions may not be degraded to HTTP
+  - The authentication script test sandbox could produce the wrong output
+  - Some quarantine retention policies were kept for too long, affected users need to reselect their intended policy
 
 ## 3.2-p1
 Released on 2014-02-12
@@ -601,10 +601,10 @@ Released on 2014-02-10
 - **`Imp`** Automatically grow storage disk when resized in hypervisor
 - **`Imp`** Overall throughput increased by careful profiling
 - **`Imp`** Large number of HSL scripting language optimisations, such as
- - R-value optimisations
- - Made `str_replace()` significantly faster
- - Optimised [augmented assignments](http://wiki.halon.se/HSL_operators#Augmented_assignment_operators)
- - Pre-compiled [regular expressions](http://wiki.halon.se/HSL_variables_and_data_types#Regular_expressions)
+  - R-value optimisations
+  - Made `str_replace()` significantly faster
+  - Optimised [augmented assignments](http://wiki.halon.se/HSL_operators#Augmented_assignment_operators)
+  - Pre-compiled [regular expressions](http://wiki.halon.se/HSL_variables_and_data_types#Regular_expressions)
 - **`Imp`** More concise and helpful logging throughout the system
 - **`Imp`** Increased swap partition size to 2 GB
 - **`Imp`** Updated all 3rd-party components
@@ -783,17 +783,17 @@ Released on 2012-10-09
 - **`Imp`** Reboot/shutdown is significantly faster
 - **`Bug`** Missing {FOOTER} replacement in WrapMessage
 - **`Dep`** The following SOAP API's has been removed:
- - System_Reboot_Hard
- - System_Shutdown_Hard
- - System_Online_Status
- - Management_SetStorageRecover
- - Management_StorageRecoverStatus
- - Management_SetStorageMigrate
- - Mail_Domain_Report
- - Config_Diff
- - System_GetKey("system_config_revision")
- - System_Command_Run_XXX (replaced with by System_Command_Run)
- - Management_GetArguments' filter parameter
+  - System_Reboot_Hard
+  - System_Shutdown_Hard
+  - System_Online_Status
+  - Management_SetStorageRecover
+  - Management_StorageRecoverStatus
+  - Management_SetStorageMigrate
+  - Mail_Domain_Report
+  - Config_Diff
+  - System_GetKey("system_config_revision")
+  - System_Command_Run_XXX (replaced with by System_Command_Run)
+  - Management_GetArguments' filter parameter
 
 ## 2.3.6.3
 Released on 2012-09-07
