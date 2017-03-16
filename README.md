@@ -2,7 +2,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
-## 4.0p1
+## 4.0-p1
 Unreleased
 - **`Bug`** Web administration fixes
   - Updated htmlpurifier to 4.9.2
