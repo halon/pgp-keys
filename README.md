@@ -64,7 +64,7 @@ Released on 2017-03-06
 - **`Dep`** Firewall script's Block() ignore response
 - **`Dep`** DATA script's WrapMessage()
 - **`Dep`** Removed rate limits from acl_flow (moved to SMTP listener)
-- **`Dep`** Some config keys, such as system_user, service_ssh_*, ntp and syslog are no longer synched between hosts 
+- **`Dep`** Some config keys, such as system_user, service_ssh_\*, ntp and syslog are no longer synched between hosts 
 - **`Dep`** Renamed some config keys, such as acl_flow and mail_flow
 
 ## 3.5-r5p6
@@ -405,7 +405,7 @@ Released on 2015-02-16
 - **`Dep`** Built-in `batv_*()` is removed, use the [HSL implementation ](http://wik.halon.se/BATV)
 - **`Dep`** Renamed "gmt0" to "utc" in SOAP API
 - **`Dep`** `$recipientdomains` and `$recipients` in DATA context are now read-only
-- **`Dep`** [`http()`](http://wiki.halon.se/HSL_core_functions#http) return empty results on non 2** responses
+- **`Dep`** [`http()`](http://wiki.halon.se/HSL_core_functions#http) return empty results on non 2\*\* responses
 - **`Dep`** `GetAddressList()` returns empty list on parse errors instead of throwing an exception
 - **`Dep`** Web admin's flow block "Add header" appends a new header instead of using `SetHeader()`
 - **`Dep`** `GetID()` is now removed, was deprecated in 3.0
