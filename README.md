@@ -15,7 +15,7 @@ Unreleased
     - Don't show queue information for quarantine
     - Re-added info field in listing
     - Re-added active queue/quarantine selector
-    - Comment field on SMTP servers appeared in two places
+  - Comment field on SMTP servers appeared in two places
   - Minor redesign of the Configuration revisions page to mark special revisions
   - Hide cluster synchronisation on Users page if there's only one host
   - Added redirects for old web admin URLs for bookmarks
