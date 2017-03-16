@@ -5,20 +5,20 @@ There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom)
 ## 4.0-p1
 Unreleased
 - **`Bug`** Web administration fixes
-  - Updated htmlpurifier to 4.9.2
-  - NTP field on Date and time page didn't work with multiple servers
-  - Some disks weren't selectable on the Disks page
-  - Script errors in Simple flow editor page caused template engine error
-  - Clearing critical log always cleared the local log
-  - Added poll delay on Dashboard page's CPU to show usage more accurately  
-  - History and queue page
-    - Don't show queue information for quarantine
-    - Re-added info field in listing
-    - Re-added active queue/quarantine selector
-    - Comment field on SMTP servers appeared in two places
-  - Minor redesign of the Configuration revisions page to mark special revisions
-  - Hide cluster synchronisation on Users page if there's only one host
-  - Added redirects for old web admin URLs for bookmarks
+ - Updated htmlpurifier to 4.9.2
+ - NTP field on Date and time page didn't work with multiple servers
+ - Some disks weren't selectable on the Disks page
+ - Script errors in Simple flow editor page caused template engine error
+ - Clearing critical log always cleared the local log
+ - Added poll delay on Dashboard page's CPU to show usage more accurately  
+ - History and queue page
+  - Don't show queue information for quarantine
+  - Re-added info field in listing
+  - Re-added active queue/quarantine selector
+  - Comment field on SMTP servers appeared in two places
+ - Minor redesign of the Configuration revisions page to mark special revisions
+ - Hide cluster synchronisation on Users page if there's only one host
+ - Added redirects for old web admin URLs for bookmarks
 - **`Bug`** HSL function `strftime` was incorrectly returning in local time
 - **`Bug`** consoleui couldn't add new IP's if all were removed
 
@@ -28,31 +28,31 @@ Released on 2017-03-06
 - **`New`** Redesigned [web admin](http://demo.halon.se) with checkout/commit and diff with expressive configuration syntax
 - **`New`** [SMTPUTF8](https://en.wikipedia.org/wiki/Extended_SMTP#SMTPUTF8) support
 - **`New`** SMTP server scripting features
-  - Pre-defined connection `$context` variable, shared between all SMTP scripts
-  - [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html) script
-  - [`SetSender/Recipient()`](http://docs.halon.se/hsl/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
-  - Added [`SetSenderIP/SetSenderHELO()`](http://docs.halon.se/hsl/data.html#SetSenderIP) to DATA scripts
-  - [`Accept()`](http://docs.halon.se/hsl/connect.html#Accept), `Reject()` and `Defer()` in connect script
-  - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
-  - The SMTP scripts exposes all available variables (as they become available)
-  - [`GetMailFile()`](http://docs.halon.se/hsl/data.html#GetMailFile) in DATA, pre- and postdelivery scripts.
+ - Pre-defined connection `$context` variable, shared between all SMTP scripts
+ - [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html) script
+ - [`SetSender/Recipient()`](http://docs.halon.se/hsl/mailfrom.html#SetSender) in MAIL FROM and RCPT TO scripts
+ - Added [`SetSenderIP/SetSenderHELO()`](http://docs.halon.se/hsl/data.html#SetSenderIP) to DATA scripts
+ - [`Accept()`](http://docs.halon.se/hsl/connect.html#Accept), `Reject()` and `Defer()` in connect script
+ - Disconnect flag to all `Reject`/`Defer` and `Deliver` functions
+ - The SMTP scripts exposes all available variables (as they become available)
+ - [`GetMailFile()`](http://docs.halon.se/hsl/data.html#GetMailFile) in DATA, pre- and postdelivery scripts.
 - **`New`** [Scripting](http://docs.halon.se/hsl/) features
-  - [`object []`](http://docs.halon.se/hsl/structures.html#object) statement and `$this` variable 
-  - [`Socket()`](http://docs.halon.se/hsl/functions.html#Socket) class
-  - [`File()`](http://docs.halon.se/hsl/functions.html#File) class
-  - Resource value type
-  - [`while`](http://docs.halon.se/hsl/structures.html#while) loops
-  - [`http()`](http://docs.halon.se/hsl/functions.html#http) `sourceip` argument
-  - [Bitwise](http://docs.halon.se/hsl/operators.html#bitwise) operators
+ - [`object []`](http://docs.halon.se/hsl/structures.html#object) statement and `$this` variable 
+ - [`Socket()`](http://docs.halon.se/hsl/functions.html#Socket) class
+ - [`File()`](http://docs.halon.se/hsl/functions.html#File) class
+ - Resource value type
+ - [`while`](http://docs.halon.se/hsl/structures.html#while) loops
+ - [`http()`](http://docs.halon.se/hsl/functions.html#http) `sourceip` argument
+ - [Bitwise](http://docs.halon.se/hsl/operators.html#bitwise) operators
 - **`Imp`** Configuration format
-  * Allow config keys to contain a-z, eg. `include "file:api"`
-  * New file key types to differentiate plain text from scripts
-  * New SMTP listener settings for TLS, HAproxy and concurrency
-  * Allow mounting of storage disk/partition by UFS label
+ - Allow config keys to contain a-z, eg. `include "file:api"`
+ - New file key types to differentiate plain text from scripts
+ - New SMTP listener settings for TLS, HAproxy and concurrency
+ - Allow mounting of storage disk/partition by UFS label
 - **`Imp`** [SOAP](http://wiki.halon.se/SOAP) API
-  - `configKeysImport` atomic commit with "expected head" `id` field
-  - `configKeysCheck` to verify non-running configuration
-  - `mailQueueInTransit` information about mailqueued's delivery attempts
+ - `configKeysImport` atomic commit with "expected head" `id` field
+ - `configKeysCheck` to verify non-running configuration
+ - `mailQueueInTransit` information about mailqueued's delivery attempts
 - **`Imp`** Updated system packages
  - FreeBSD 11.0-RELEASE-p8
  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
