@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 4.0-p1
-Unreleased
+Released on 2017-03-16
 - **`Bug`** Web administration fixes
   - Updated htmlpurifier to 4.9.2
   - NTP field on Date and time page didn't work with multiple servers
