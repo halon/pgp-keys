@@ -66,6 +66,7 @@ Released on 2017-03-06
 - **`Dep`** Removed rate limits from acl_flow (moved to SMTP listener)
 - **`Dep`** Some config keys, such as system_user, service_ssh_\*, ntp and syslog are no longer synched between hosts 
 - **`Dep`** Renamed some config keys, such as acl_flow and mail_flow
+- **`Dep`** When upgrading an existing host, a swap disk needs to be added (2-8 GiB) or RAM increased to at least 3 GiB (preferable before the update) since swap files no longer works in FreeBSD 11.0
 
 ## 3.5-r5p6
 Released on 2017-01-10
