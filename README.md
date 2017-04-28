@@ -2,6 +2,46 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 4.1
+Unreleased
+- **`New`** Live staging in pre/post-delivery (queue)
+- **`New`** Purge cached items from API (and web admin)
+- **`New`** Script language features
+  - Modules with `import` keyword
+  - Added `get`/`setBody()` to DATA script's MIME class
+  - Added `tls_default_ca` and `tls_verify_host` options to `SetTLS()` and `smtp_lookup_*`
+  - Added the `none` keyword
+  - Added `strptime()` and `ord()` functions
+  - Reworked code validation to support more advanced coding patterns
+  - Loosen up syntax with `()` and `->`
+  - Nested named functions are now function scoped
+  - Added explicit warning about Unicode whitespace
+  - More dead-code eliminations
+- **`Imp`** Script editor improvements
+  - Return to cursor position on commit
+  - Supports folders via a dot `.` ID hierarchy convention and renaming IDs
+  - Auto-complete context-specific function names
+  - Many improvements to CSV editor (shows position, fixed headers, etc)
+  - Search options for regular expressions and case sensitiveness
+  - Running code in sandbox uses local checkout, and has a host selector
+- **`Imp`** Web administration improvements
+  - Generate X.509, DKIM and DANE on PKI page
+  - Cluster delete on statistic legends
+  - Re-added quick access to RPD and SA results in tracking
+  - Quick access to revision page diffs by URL hash
+  - Delete domain and domain aliases on SMTP server delete
+  - Defer color now shown as purple
+  - Fixed regressions with IE/Edge, DLP page, revision page timezone, duplicate domains, etc
+- **`Imp`** Updated system packages
+  - FreeBSD 11.0-RELEASE-p10
+  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - [CYREN](http://wiki.halon.se/CYREN) ctipd 4.1.0.1
+  - Sophos 3.2.7.368
+- **`Imp`** Make searchlog use time hint for RSET message id
+- **`Bug`** Closure over function scope caused memory leak
+- **`Dep`** Removed `dovecot_lookup_auth()` and `ident_lookup()`, [new implementations](https://github.com/halon/hsl-examples/tree/master/protocols/) using `Socket()`
+- **`Dep`** Doesn't explicitly set `$error` in RCPT TO script any more 
+
 ## 4.0-p1
 Released on 2017-03-16
 - **`Bug`** Web administration fixes
