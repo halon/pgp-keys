@@ -7,7 +7,7 @@ Unreleased
 - **`New`** Live staging in pre/post-delivery (queue)
 - **`New`** Purge cached items from API (and web admin)
 - **`New`** Script language features
-  - Modules with `import` keyword
+  - Modules with [`import`](http://docs.halon.se/hsl/structures.html#import) keyword
   - Added `get`/`setBody()` to DATA script's MIME class
   - Added `tls_default_ca` and `tls_verify_host` options to `SetTLS()` and `smtp_lookup_*`
   - Added the `none` keyword
