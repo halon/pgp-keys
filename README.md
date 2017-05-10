@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 4.1
-Unreleased
+Released on 2017-05-10
 - **`New`** Live staging in pre/post-delivery (queue)
 - **`New`** Purge cached items from API (and web admin)
 - **`New`** Script language features
