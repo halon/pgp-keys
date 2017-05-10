@@ -15,7 +15,8 @@ Unreleased
   - Reworked code validation to support more advanced coding patterns
   - Loosen up syntax with `()` and `->`
   - Nested named functions are now function scoped
-  - Added explicit warning about Unicode whitespace
+  - Supports referencing files without `file:` prefix
+  - Added explicit warning about Unicode whitespace
   - More dead-code eliminations
 - **`Imp`** Script editor improvements
   - Return to cursor position on commit
@@ -24,14 +25,16 @@ Unreleased
   - Many improvements to CSV editor (shows position, fixed headers, etc)
   - Search options for regular expressions and case sensitiveness
   - Running code in sandbox uses local checkout, and has a host selector
+  - New save indicator, "save all" button and keyboard shortcut
 - **`Imp`** Web administration improvements
   - Generate X.509, DKIM and DANE on PKI page
+  - Support changing ID of listner, flows and scripts, etc
   - Cluster delete on statistic legends
   - Re-added quick access to RPD and SA results in tracking
   - Quick access to revision page diffs by URL hash
   - Delete domain and domain aliases on SMTP server delete
   - Defer color now shown as purple
-  - Fixed regressions with IE/Edge, DLP page, revision page timezone, duplicate domains, etc
+  - Fixed regressions with IE/Edge, DLP page, revision page timezone, stats, duplicate domains, etc
 - **`Imp`** Updated system packages
   - FreeBSD 11.0-RELEASE-p10
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
