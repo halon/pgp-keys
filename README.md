@@ -15,8 +15,8 @@ Unreleased
   - Reworked code validation to support more advanced coding patterns
   - Loosen up syntax with `()` and `->`
   - Nested named functions are now function scoped
-  - Supports referencing files without `file:` prefix
-  - Added explicit warning about Unicode whitespace
+  - Supports referencing files without `file:` prefix
+  - Added explicit warning about Unicode whitespace
   - More dead-code eliminations
 - **`Imp`** Script editor improvements
   - Return to cursor position on commit
