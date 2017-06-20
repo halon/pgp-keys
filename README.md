@@ -27,7 +27,7 @@ Unreleased
   - HTML Purifier 4.9.3
 - **`Imp`** Aquire serial number and license without Internet via `licenseImport` API call
 - **`Imp`** smtpd now has a less aggressive default timeout
-- **`Bug`** `$x["x"];` did not throw error (non-existing variable)
+- **`Bug`** `$x["x"]` did not throw error (non-existing variable)
 - **`Bug`** Corrected default HELO message in `smtp_lookup_*` function
 - **`Bug`** DLP engine reported a recursion error (instead of generic errors) on bad archives
 - **`Bug`** CYREN ctasd did not restart after license expiration
