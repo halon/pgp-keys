@@ -2,6 +2,36 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 4.2
+Unreleased
+- **`New`** Script language features
+  - Classes added with [`class`](http://docs.halon.se/hsl/structures.html#class) keyword
+  - Added `is_object()` function
+  - Added static function `Socket::AF()` to Socket class
+  - Added `tls_verify_name` option to `SetTLS()` and `smtp_lookup_*`
+  - Added `max_file_size` option to `http()`
+  - `ScanDLP()` function accepts rules as argument
+- **`New`** DLP engine now support file hashes of SHA-256 and SHA-512
+- **`Imp`** Script editor improvements
+  - Sorting folders before files
+  - Fixed header alignment of empty CSV files
+- **`Imp`** Web administration improvements
+  - Show popover on ellipsis in email tracking
+  - Fixed return to scroll position in on all pages
+  - Simple flow editor styles are now flat
+  - Simple flow editor comment is no longer a required field
+  - Bulk update queued and quarantined messages
+- **`Imp`** Updated system packages
+  - CYREN ctasd 5.1.1.1 and ctipd 4.1.1.1
+  - Sophos 3.2.7.368.1
+  - HTML Purifier 4.9.3
+- **`Imp`** Aquire serial number and license without Internet via `licenseImport` API call
+- **`Imp`** smtpd now has a less aggressive default timeout
+- **`Bug`** `$x["x"];` did not throw error (non-existing variable)
+- **`Bug`** Corrected default HELO message in `smtp_lookup_*` function
+- **`Bug`** DLP engine reported a recursion error (instead of generic errors) on bad archives
+- **`Bug`** CYREN ctasd did not restart after license expiration
+
 ## 4.1
 Released on 2017-05-10
 - **`New`** Live staging in pre/post-delivery (queue)
