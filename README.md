@@ -11,7 +11,7 @@ Unreleased
   - Added `tls_verify_name` option to `SetTLS()` and `smtp_lookup_*`
   - Added `max_file_size` option to `http()`
   - `ScanDLP()` function accepts rules as argument
-- **`New`** DLP engine now support file hashes of SHA-256 and SHA-512
+- **`New`** DLP engine now support file hashes of SHA2-256 and SHA2-512
 - **`Imp`** Script editor improvements
   - Sorting folders before files
   - Fixed header alignment of empty CSV files
