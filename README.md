@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 4.2
-Unreleased
+2017-06-22
 - **`New`** Script language features
   - Classes added with [`class`](http://docs.halon.se/hsl/structures.html#class) keyword
   - Added `is_object()` function
