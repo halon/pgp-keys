@@ -2,6 +2,24 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
+## 4.3
+Unreleased
+- **`New`** Script language features
+  - Added [`private`](http://docs.halon.se/hsl/structures.html#private) keyword to classes
+  - Added [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket) class
+  - Added [`sha2()`](http://docs.halon.se/hsl/functions.html#sha2) and `hmac_sha2()` functions
+  - Added `$sourceip` variable to post-delivery script
+- **`Imp`** Web administration improvements
+  - Redesigned toolbar on many pages
+  - Spinning icon when running a script in code editor
+- **`Imp`** Updated system packages
+  - FreeBSD [11.1](https://www.freebsd.org/releases/11.1R/announce.html)-RELEASE-p0 with clang/LLVM 4.0.0
+  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:11:x86:64/quarterly/) packages
+  - Sophos 3.2.7.369.2
+- **`Imp`** Detect Amazon Web Services' EC2
+- **`Bug`** Failed to properly differentiate SASL failures in `smtp_lookup_auth()`
+- **`Dep`** The `object` cast operator
+
 ## 4.2
 2017-06-22
 - **`New`** Script language features
@@ -127,7 +145,7 @@ Released on 2017-03-06
   - `configKeysCheck` to verify non-running configuration
   - `mailQueueInTransit` information about mailqueued's delivery attempts
 - **`Imp`** Updated system packages
-  - FreeBSD 11.0-RELEASE-p8
+  - FreeBSD 11.1-RELEASE-p0
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
   - [CYREN](http://wiki.halon.se/CYREN) ctasd 5.1.0.1 and ctipd 4.0.37.1
 - **`Imp`** Anti-spam/virus database information command
