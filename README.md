@@ -18,6 +18,7 @@ Unreleased
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:11:x86:64/quarterly/) packages
   - Sophos 3.2.7.369.2
 - **`Imp`** Detect Amazon Web Services' EC2
+- **`Imp`** Overall improvements and code modernization
 - **`Bug`** Failed to properly differentiate SASL failures in `smtp_lookup_auth()`
 - **`Dep`** The `object` cast operator
 
