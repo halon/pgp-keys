@@ -8,6 +8,7 @@ Unreleased
   - Added [`private`](http://docs.halon.se/hsl/structures.html#private) keyword to classes
   - Added [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket) class
   - Added [`sha2()`](http://docs.halon.se/hsl/functions.html#sha2) and `hmac_sha2()` functions
+  - Added [`pack()`](http://docs.halon.se/hsl/functions.html#pack) and `unpack()` functions
   - Added `$sourceip` variable to [post-delivery](http://docs.halon.se/hsl/postdelivery.html) script
 - **`Imp`** Added status and NDR code options to [`Reject()`](http://docs.halon.se/hsl/data.html#data.Reject), `Defer()`, `Deliver()`, etc.
 - **`Imp`** Web administration improvements
