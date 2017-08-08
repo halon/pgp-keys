@@ -24,7 +24,7 @@ Unreleased
 - **`Dep`** The `object` cast operator
 
 ## 4.2
-2017-06-22
+Released on 2017-06-22
 - **`New`** Script language features
   - Classes added with [`class`](http://docs.halon.se/hsl/structures.html#class) keyword
   - Added `is_object()` function
