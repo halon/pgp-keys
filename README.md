@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
 
 ## 4.3
-Unreleased
+Released on 2017-08-08
 - **`New`** Script language features
   - Added [`private`](http://docs.halon.se/hsl/structures.html#private) keyword to classes
   - Added [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket) class
