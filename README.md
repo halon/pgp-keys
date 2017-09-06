@@ -1,6 +1,10 @@
 New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image or virtual machine template. Existing systems can be [updated](http://wiki.halon.se/Software_update) by (for example) simply pressing web admin's update button.
 
-There is an [RSS feed](https://github.com/halonsecurity/changelog/releases.atom) available.
+There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 4.3-p1
+Released on 2017-09-06
+- **`Bug`** TLS certificate regression caused by change in OpenLDAP 2.4.45 (ITS#8529)
 
 ## 4.3
 Released on 2017-08-08
