@@ -6,7 +6,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Unreleased
 
 - **`Imp`** Script language features
-  - Added `nonlocal` to Socket's bind and `nonlocal_source` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `nonlocal` to [`Socket.bind()`](http://docs.halon.se/hsl/functions.html#Socket.bind) and `nonlocal_source` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_default_ca` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
   - Added new formats `eEvV` to [`pack()`](http://docs.halon.se/hsl/functions.html#pack)
   - Added new formats `eEvVax` to [`unpack()`](http://docs.halon.se/hsl/functions.html#unpack)
