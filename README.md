@@ -2,6 +2,65 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.4
+Unreleased
+
+- **`Imp`** Script language features
+  - Added `nonlocal` to Socket's bind and `nonlocal_source` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `tls_default_ca` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
+  - Added new formats `eEvV` to [`pack()`](http://docs.halon.se/hsl/functions.html#pack)
+  - Added new formats `eEvVax` to [`unpack()`](http://docs.halon.se/hsl/functions.html#unpack)
+  - Added offset argument to [`unpack()`](http://docs.halon.se/hsl/functions.html#unpack)
+  - Added flags to [`Socket.recv()`](http://docs.halon.se/hsl/functions.html#Socket.recv)
+  - Added support for [`private static`](http://docs.halon.se/hsl/structures.html#visibility) class variables and functions
+  - Fixed [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt) to properly return return `-1` on 400 errors
+  - Fixed [`file()`](http://docs.halon.se/hsl/functions.html#file) to support lines longer than 65k characters.
+  - MIME class and [`mail()`](http://docs.halon.se/hsl/functions.html#mail) uses quoted-printable by default
+  - MIME class and [`mail()`](http://docs.halon.se/hsl/functions.html#mail) now fail on empty recipients
+  - Warnings when compiling code with unsupported operators on literals
+  - Lot's of memory optimisations in script engine
+- **`Imp`** Connect flow changes
+  - [`SetSenderIP()`](http://docs.halon.se/hsl/connect.html#SetSenderIP) was added, which can be used to change $senderip
+- **`Imp`** DATA flow changes
+  - [`MIME.setBody()`](http://docs.halon.se/hsl/data.html#MIME.setBody) to keep quoted-printable and base64
+- **`Imp`** Pre-delivery script script
+  - [`SetSouceIP()`](http://docs.halon.se/hsl/predelivery.html#SetSouceIP) now accepts an address in each address family
+  - Added [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN) to change DSN settings
+  - Added `reset_retry` and `transportid` option to [`Reschedule()`](http://docs.halon.se/hsl/predelivery.html#Reschedule)
+  - Added `$context` variable which is passed on the post-delivery script
+- **`Imp`** Post-delivery script changes
+  - Always runs the delivery script (even for DELETE and BOUNCE)
+  - Added an `$action` variabel DELETE, BOUNCE, RETRY
+  - Added a [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN) to change DSN settings
+  - Added options to `Retry()` function
+- **`Imp`** Script editor improvements
+  - Added support for save using Ctrl/Cmd+s in CSV editor
+  - Warning if there are unsaved changes when starting live staging
+- **`Imp`** Web administration improvements
+  - Refreshed interface, for example search field and login session expiration in menu bar
+  - Fixed support for renamed HTTP certificates when starting clustering
+  - Show diff between hosts’ configuration when clustering
+  - Ability to cancel pending disk grow/format
+  - SHA-256 is used in new certificate generation
+  - Message preview retains header letter case
+- **`Imp`** Updated system packages
+  - FreeBSD 11.1-RELEASE-p2
+  - New [quarterly](http://pkg.freebsd.org/freebsd:11:x86:64/quarterly/) packages
+- **`Imp`** Ability to choose multiple addresses per SMTP listener
+- **`Imp`** Added a per-transport default bounce transport setting
+- **`Imp`** Added source metadata (_original_message/queue/action_id) to bounces 
+- **`Imp`** Reworked SMTP errors
+- **`Imp`** LDAP profiles are migrated to use standard URIs, which allows for failover
+- **`Imp`** Firewall script now uses per-application filtering instead of `ipfw` divert sockets
+- **`Bug`** The "Line too long” error is now sent after END-OF-MESSAGE
+- **`Bug`** Fixed a missing SSL timeout in the SMTP client
+- **`Bug`** Fixed a syslog issue by properly using a blocking socket
+- **`Bug`** Fixed regression with `system-storage-` graphs and `iostats` command for some storage disks
+- **`Dep`** Deprecated `Deliver` function in post-delivery script
+- **`Dep`** Renamed `GenerateDSN()` to `Bounce()` in post-delivery script
+- **`Dep`** Replaced `DeliverWithDKIM()` with `DKIMSign()` in simple flow compilations
+
+
 ## 4.3-p1
 Released on 2017-09-06
 - **`Bug`** TLS certificate regression caused by change in OpenLDAP 2.4.45 (ITS#8529)
