@@ -20,7 +20,7 @@ Unreleased
   - Warnings when compiling code with unsupported operators on literals
   - Lot's of memory optimisations in script engine
 - **`Imp`** Connect flow changes
-  - [`SetSenderIP()`](http://docs.halon.se/hsl/connect.html#SetSenderIP) was added, which can be used to change $senderip
+  - [`SetSenderIP()`](http://docs.halon.se/hsl/connect.html#SetSenderIP) was added, which can be used to change `$senderip`
 - **`Imp`** DATA flow changes
   - [`MIME.setBody()`](http://docs.halon.se/hsl/data.html#MIME.setBody) to keep quoted-printable and base64
 - **`Imp`** Pre-delivery script script
