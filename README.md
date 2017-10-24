@@ -15,8 +15,8 @@ Unreleased
   - Added support for [`private static`](http://docs.halon.se/hsl/structures.html#visibility) class variables and functions
   - Fixed [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt) to properly return return `-1` on 400 errors
   - Fixed [`file()`](http://docs.halon.se/hsl/functions.html#file) to support lines longer than 65k characters.
-  - MIME class and [`mail()`](http://docs.halon.se/hsl/functions.html#mail) uses quoted-printable by default
-  - MIME class and [`mail()`](http://docs.halon.se/hsl/functions.html#mail) now fail on empty recipients
+  - [MIME](http://docs.halon.se/hsl/functions.html#MIME) class and [`mail()`](http://docs.halon.se/hsl/functions.html#mail) uses quoted-printable by default
+  - [MIME](http://docs.halon.se/hsl/functions.html#MIME) class and [`mail()`](http://docs.halon.se/hsl/functions.html#mail) now fail on empty recipients
   - Warnings when compiling code with unsupported operators on literals
   - Lot's of memory optimisations in script engine
 - **`Imp`** Connect flow changes
