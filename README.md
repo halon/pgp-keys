@@ -27,12 +27,12 @@ Unreleased
   - [`SetSouceIP()`](http://docs.halon.se/hsl/predelivery.html#SetSouceIP) now accepts an address in each address family
   - Added [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN) to change DSN settings
   - Added `reset_retry` and `transportid` option to [`Reschedule()`](http://docs.halon.se/hsl/predelivery.html#Reschedule)
-  - Added `$context` variable which is passed on the post-delivery script
+  - Added [`$context`](http://docs.halon.se/hsl/predelivery.html#pre-defined-variables) variable which is passed on the post-delivery script
 - **`Imp`** Post-delivery script changes
   - Always runs the delivery script (even for DELETE and BOUNCE)
-  - Added an `$action` variabel DELETE, BOUNCE, RETRY
+  - Added an [`$action`](http://docs.halon.se/hsl/postdelivery.html#pre-defined-variables) variabel DELETE, BOUNCE, RETRY
   - Added a [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN) to change DSN settings
-  - Added options to `Retry()` function
+  - Added options to [`Retry()`](http://docs.halon.se/hsl/postdelivery.html#Retry) function
 - **`Imp`** Script editor improvements
   - Added support for save using Ctrl/Cmd+s in CSV editor
   - Warning if there are unsaved changes when starting live staging
@@ -58,7 +58,7 @@ Unreleased
 - **`Bug`** Fixed regression with `system-storage-` graphs and `iostats` command for some storage disks
 - **`Bug`** DSNs Arrival-Date wasn't properly set to the original message arrival date
 - **`Dep`** Deprecated `Deliver` function in post-delivery script
-- **`Dep`** Renamed `GenerateDSN()` to `Bounce()` in post-delivery script
+- **`Dep`** Renamed `GenerateDSN()` to [`Bounce()`](http://docs.halon.se/hsl/postdelivery.html#Bounce) in post-delivery script
 - **`Dep`** Replaced `DeliverWithDKIM()` with `DKIMSign()` in simple flow compilations
 
 ## 4.3-p1
