@@ -61,7 +61,6 @@ Unreleased
 - **`Dep`** Renamed `GenerateDSN()` to `Bounce()` in post-delivery script
 - **`Dep`** Replaced `DeliverWithDKIM()` with `DKIMSign()` in simple flow compilations
 
-
 ## 4.3-p1
 Released on 2017-09-06
 - **`Bug`** TLS certificate regression caused by change in OpenLDAP 2.4.45 (ITS#8529)
