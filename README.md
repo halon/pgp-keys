@@ -56,6 +56,7 @@ Unreleased
 - **`Bug`** Fixed a missing SSL timeout in the SMTP client
 - **`Bug`** Fixed a syslog issue by properly using a blocking socket
 - **`Bug`** Fixed regression with `system-storage-` graphs and `iostats` command for some storage disks
+- **`Bug`** DSNs Arrival-Date wasn't properly set to the original message arrival date
 - **`Dep`** Deprecated `Deliver` function in post-delivery script
 - **`Dep`** Renamed `GenerateDSN()` to `Bounce()` in post-delivery script
 - **`Dep`** Replaced `DeliverWithDKIM()` with `DKIMSign()` in simple flow compilations
