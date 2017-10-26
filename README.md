@@ -49,7 +49,7 @@ Released on 2017-10-26
   - New [quarterly](http://pkg.freebsd.org/freebsd:11:x86:64/quarterly/) packages
 - **`Imp`** Ability to choose multiple addresses per SMTP listener
 - **`Imp`** Added a per-transport default bounce transport setting
-- **`Imp`** Added source metadata (_original_message/queue/action_id) to bounces 
+- **`Imp`** Added source metadata (\_original_[message|queue|action]_id) to bounces 
 - **`Imp`** Reworked SMTP errors
 - **`Imp`** LDAP profiles are migrated to use standard URIs, which allows for failover
 - **`Imp`** Firewall script now uses per-application filtering instead of `ipfw` divert sockets
