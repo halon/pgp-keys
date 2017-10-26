@@ -25,7 +25,7 @@ Released on 2017-10-26
   - [`MIME.setBody()`](http://docs.halon.se/hsl/data.html#MIME.setBody) to keep quoted-printable and base64
 - **`Imp`** Pre-delivery script script
   - Added [`SetSenderParams()`](http://docs.halon.se/hsl/predelivery.html#SetSenderParams) and [`SetRecipientParams()`](http://docs.halon.se/hsl/predelivery.html#SetRecipientParams) to carry extra MAIL/RCPT parameters
-  - Added [`Bounce()`](http://docs.halon.se/hsl/predelivery.html#Bounce) function to bounce messages
+  - Added [`Bounce()`](http://docs.halon.se/hsl/predelivery.html#Bounce) to bounce messages
   - Added [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN) to change DSN settings
   - [`SetSouceIP()`](http://docs.halon.se/hsl/predelivery.html#SetSouceIP) now accepts an address in each address family
   - Added `reset_retry` and `transportid` option to [`Reschedule()`](http://docs.halon.se/hsl/predelivery.html#Reschedule)
