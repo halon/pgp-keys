@@ -24,8 +24,9 @@ Unreleased
 - **`Imp`** DATA flow changes
   - [`MIME.setBody()`](http://docs.halon.se/hsl/data.html#MIME.setBody) to keep quoted-printable and base64
 - **`Imp`** Pre-delivery script script
-  - [`SetSouceIP()`](http://docs.halon.se/hsl/predelivery.html#SetSouceIP) now accepts an address in each address family
+  - Added [`SetSenderParams()`](http://docs.halon.se/hsl/predelivery.html#SetSenderParams) and [`SetRecipientParams()`](http://docs.halon.se/hsl/predelivery.html#SetRecipientParams) to carry extra MAIL/RCPT parameters
   - Added [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN) to change DSN settings
+  - [`SetSouceIP()`](http://docs.halon.se/hsl/predelivery.html#SetSouceIP) now accepts an address in each address family
   - Added `reset_retry` and `transportid` option to [`Reschedule()`](http://docs.halon.se/hsl/predelivery.html#Reschedule)
   - Added [`$context`](http://docs.halon.se/hsl/predelivery.html#pre-defined-variables) variable which is passed on the post-delivery script
 - **`Imp`** Post-delivery script changes
