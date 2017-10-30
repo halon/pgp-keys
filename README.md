@@ -2,9 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.4-p1
+Released on 2017-10-30
+- **`Bug`** Fixes regression in file() function
+
 ## 4.4
 Released on 2017-10-26
-
 - **`Imp`** Script language features
   - Added `nonlocal` to [`Socket.bind()`](http://docs.halon.se/hsl/functions.html#Socket.bind) and `nonlocal_source` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_default_ca` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
