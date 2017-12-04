@@ -2,6 +2,13 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.4-p2
+Released on 2017-12-04
+- **`Bug`** Fixed regression with $errormsg in Post-delivery
+- **`Bug`** Fixed regression with Deliver() in Post-delivery
+- **`Bug`** Fixed bug when importing some specific named keys
+- **`Bug`** Fixed bug when typing in script blocks using the simple flow editor
+
 ## 4.4-p1
 Released on 2017-10-30
 - **`Bug`** Fixes regression in file() function
