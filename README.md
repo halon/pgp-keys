@@ -4,25 +4,25 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 4.5
 Unreleased
-- **`Imp`** Script langauge features
+- **`Imp`** Script language features
   - Added support for multiple escapes in [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
-  - Added support for signDKIM in [`MIME()`](http://docs.halon.se/hsl/functions.html#MIME)
-  - Added support for extended_result in [`spf()`](http://docs.halon.se/hsl/functions.html#spf)
-  - Added support for getpeercert() in [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
-  - Added support to set facility in [`syslog()`](http://docs.halon.se/hsl/functions.html#syslog)
+  - Added `signDKIM()` to [`MIME()`](http://docs.halon.se/hsl/functions.html#MIME)
+  - Added extended result to [`spf()`](http://docs.halon.se/hsl/functions.html#spf)
+  - Added `getpeercert()` to [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
+  - Added ability to set facility to [`syslog()`](http://docs.halon.se/hsl/functions.html#syslog)
   - Added new function [`dnsns()`](http://docs.halon.se/hsl/functions.html#dnsns)
-  - Added support for "tls_client_cert" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-  - Added support capture peer certificate "tls_capture_peer_cert" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-  - Added "on_rcptto", TLS information in extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added  `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
 - **`Imp`** Pre-delivery script script
-  - Added support for "tls_client_cert" in [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
-  - Added support to set "dkim" and "from" address in [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN)
-  - Added support capture peer certificate "tls_capture_peer_cert" in [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
+  - Added `tls_client_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
+  - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN)
+  - Added `tls_capture_peer_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
 - **`Imp`** Post-delivery script script
-  - Added support to set "dkim" and "from" address in [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
+  - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
   - Added new function [`GetTLS()`](http://docs.halon.se/hsl/postdelivery.html#GetTLS)
 - **`Imp`** Script editor improvements
-  - Improved HSL errors in editor (with line decorations)
+  - Improved script errors in editor (with line decorations)
 - **`Imp`** SMTP engine improvements
   - Added support for client certificate requests in smtpd server HELO (per IP)
   - Set server preference for TLS ciphers
@@ -32,9 +32,9 @@ Unreleased
 - **`Imp`** Web administration improvements
   - TBA
 - **`Imp`** API changes
-  - Added support for more fields in SOAP mailQueueUpdateBulk and also duplicate
+  - Added support for more fields in SOAP `mailQueueUpdateBulk` and also duplicate
 - **`Imp`** Improved Sophos antivirus detection by using CXmail
-- **`Imp`** Improved performance of libdkim++
+- **`Imp`** Improved performance of [libdkim++](https://github.com/halon/libdkimpp)
 - **`Imp`** Allow "." delimiter in all ID fields
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH And STARTTLS 
 - **`Bug`** Improved DSN parsing in (GetDNS and multiline headers)
