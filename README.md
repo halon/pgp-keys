@@ -11,20 +11,24 @@ Unreleased
   - Added `getpeercert()` to [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
   - Added ability to set facility to [`syslog()`](http://docs.halon.se/hsl/functions.html#syslog)
   - Added new function [`dnsns()`](http://docs.halon.se/hsl/functions.html#dnsns)
-  - Added  `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-- **`Imp`** Pre-delivery script script
+- **`Imp`** SMTP authentication script
+  - Added support for custom SASL mechanims using `$saslmechanism`, `$saslstate` and `$saslresponse` and the [`Reply()`](http://docs.halon.se/hsl/auth.html#Reply) function.
+  - Added to set `username` in the [`Accept()`](http://docs.halon.se/hsl/auth.html#Accept) function.
+- **`Imp`** Pre-delivery script
   - Added `tls_client_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
   - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN)
   - Added `tls_capture_peer_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
-- **`Imp`** Post-delivery script script
+- **`Imp`** Post-delivery script
   - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
   - Added new function [`GetTLS()`](http://docs.halon.se/hsl/postdelivery.html#GetTLS)
 - **`Imp`** Script editor improvements
   - Improved script errors in editor (with line decorations)
 - **`Imp`** SMTP engine improvements
   - Added support for client certificate requests in smtpd server HELO (per IP)
+  - Added support for custom SASL methods
   - Set server preference for TLS ciphers
   - Explicitly handle NULL MX (rfc7505)
   - Removed line length limiting (8K SMTP, 256K (headerline), 512K header total)
