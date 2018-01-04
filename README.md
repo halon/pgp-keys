@@ -12,6 +12,7 @@ Unreleased
   - Added ability to set facility to [`syslog()`](http://docs.halon.se/hsl/functions.html#syslog)
   - Added new function [`dnsns()`](http://docs.halon.se/hsl/functions.html#dnsns)
   - Added `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `tls_verify_peer` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search) and [`ldap_bind()`](http://docs.halon.se/hsl/functions.html#ldap_bind)
   - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
 - **`Imp`** SMTP authentication script
