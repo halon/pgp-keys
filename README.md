@@ -44,7 +44,8 @@ Unreleased
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH And STARTTLS 
 - **`Bug`** Improved DSN parsing in (GetDNS and multiline headers)
 - **`Bug`** Bug with behaviour on Quarantine reject => false followed by Quarantine reject => true
-- **`Dep`** Renamed "error_code" to "extended_result" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+- **`Dep`** Aliased "error_code" to "extended_result" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+- **`Dep`** Aliased all "ssl_" options to "tls_" in [`http()`](http://docs.halon.se/hsl/functions.html#http)
 - **`Dep`** Removed object [] syntax (in favour of class syntax)
 - **`Dep`** Default action is now Block on script errors in Firewall script
 - **`Dep`** Make $connection and $transaction read-only in smtpd's context
