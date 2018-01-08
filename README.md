@@ -41,7 +41,7 @@ Unreleased
 - **`Imp`** Improved Sophos antivirus detection by using CXmail
 - **`Imp`** Improved performance of [libdkim++](https://github.com/halon/libdkimpp)
 - **`Imp`** Allow "." delimiter in all ID fields
-- **`Bug`** Received header "with ...SMTP..." always adds E on AUTH And STARTTLS 
+- **`Bug`** Received header "with ...SMTP..." always adds E on AUTH and STARTTLS 
 - **`Bug`** Improved DSN parsing in (GetDNS and multiline headers)
 - **`Bug`** Bug with behaviour on Quarantine reject => false followed by Quarantine reject => true
 - **`Dep`** Aliased "error_code" to "extended_result" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
