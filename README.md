@@ -49,7 +49,7 @@ Unreleased
 - **`Dep`** Removed object [] syntax (in favour of class syntax)
 - **`Dep`** Default action is now Block on script errors in Firewall script
 - **`Dep`** Make $connection and $transaction read-only in smtpd's context
-- **`Dep`** $tlsprotocol, $tlschipher, $tlskeysize in RCPT TO context in favor of GetTLS()
+- **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in RCPT TO context in favor of GetTLS()
 
 ## 4.4-p2
 Released on 2017-12-04
