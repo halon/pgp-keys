@@ -6,13 +6,13 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Unreleased
 - **`Imp`** Script language features
   - Added support for multiple escapes in [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
-  - Added `signDKIM()` to [`MIME()`](http://docs.halon.se/hsl/functions.html#MIME)
+  - Added [`MIME.signDKIM()`](http://docs.halon.se/hsl/functions.html#MIME.signDKIM)
   - Added `extended_result` to [`spf()`](http://docs.halon.se/hsl/functions.html#spf)
-  - Added `getpeercert()` to [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
+  - Added [`TLSSocket.getpeercert()`](http://docs.halon.se/hsl/functions.html#TLSSocket.getpeercert)
   - Added ability to set facility to [`syslog()`](http://docs.halon.se/hsl/functions.html#syslog)
   - Added new function [`dnsns()`](http://docs.halon.se/hsl/functions.html#dnsns)
-  - Added `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_client_cert` to [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
+  - Added `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_verify_peer` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search) and [`ldap_bind()`](http://docs.halon.se/hsl/functions.html#ldap_bind)
@@ -34,7 +34,7 @@ Unreleased
   - Set server preference for TLS ciphers
   - Explicitly handle NULL MX (rfc7505)
   - Removed line length limiting (8K SMTP, 256K (headerline), 512K header total)
-  - Added GetTLS to AUTH, MAIL FROM, RCPT TO and DATA context (to include STARTTLS status, tlsrpt and peer_cert)
+  - Added GetTLS to [AUTH](http://docs.halon.se/hsl/auth.html#GetTLS), [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html#GetTLS), [RCPT TO](http://docs.halon.se/hsl/rcptto.html#GetTLS) and [DATA](http://docs.halon.se/hsl/data.html#GetTLS) context (to include STARTTLS status, tlsrpt and peer_cert)
 - **`Imp`** Web administration improvements
   - TBA
 - **`Imp`** API changes
@@ -43,14 +43,14 @@ Unreleased
 - **`Imp`** Improved performance of [libdkim++](https://github.com/halon/libdkimpp)
 - **`Imp`** Allow "." delimiter in all ID fields
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH and STARTTLS 
-- **`Bug`** Improved DSN parsing in (GetDNS and multiline headers)
-- **`Bug`** Bug with behaviour on Quarantine reject => false followed by Quarantine reject => true
+- **`Bug`** Improved DSN parsing in [`GetDSN()`](http://docs.halon.se/hsl/data.html#GetDSN) with multiline headers
+- **`Bug`** Bug with behaviour on [`Quarantine()`](http://docs.halon.se/hsl/data.html#Quarantine) reject => false followed by Quarantine reject => true
 - **`Dep`** Aliased "error_code" to "extended_result" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
 - **`Dep`** Aliased all "ssl_" options to "tls_" in [`http()`](http://docs.halon.se/hsl/functions.html#http)
 - **`Dep`** Removed object [] syntax (in favour of class syntax)
-- **`Dep`** Default action is now Block on script errors in Firewall script
+- **`Dep`** Default action is now Block on script errors in [Firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
 - **`Dep`** Make $connection and $transaction read-only in smtpd's context
-- **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in RCPT TO context in favor of GetTLS()
+- **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/rcptto.html#GetTLS)
 
 ## 4.4-p2
 Released on 2017-12-04
