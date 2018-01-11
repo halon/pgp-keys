@@ -16,6 +16,7 @@ Unreleased
   - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_verify_peer` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search) and [`ldap_bind()`](http://docs.halon.se/hsl/functions.html#ldap_bind)
+  - Added new functions [`inet_pton()`](http://docs.halon.se/hsl/functions.html#inet_pton) and [`inet_ntop()`](http://docs.halon.se/hsl/functions.html#inet_ntop)
 - **`Imp`** SMTP authentication script
   - Added custom SASL mechanims using `$saslmechanism`, `$saslstate` and `$saslresponse` and the [`Reply()`](http://docs.halon.se/hsl/auth.html#Reply) function.
   - Added ability to set `username` to [`Accept()`](http://docs.halon.se/hsl/auth.html#Accept).
