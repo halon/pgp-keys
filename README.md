@@ -14,6 +14,7 @@ Unreleased
   - Added `tls_client_cert` to [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
   - Added `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added `xclient` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt) to support XCLIENT
   - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
   - Added `tls_verify_peer` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search) and [`ldap_bind()`](http://docs.halon.se/hsl/functions.html#ldap_bind)
   - Added new functions [`inet_pton()`](http://docs.halon.se/hsl/functions.html#inet_pton) and [`inet_ntop()`](http://docs.halon.se/hsl/functions.html#inet_ntop)
@@ -24,6 +25,7 @@ Unreleased
   - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN)
   - Added `tls_client_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
   - Added `tls_capture_peer_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
+  - Added [`SetXCLIENT()`](http://docs.halon.se/hsl/predelivery.html#SetXCLIENT) function to support XCLIENT
 - **`Imp`** Post-delivery script
   - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
   - Added new function [`GetTLS()`](http://docs.halon.se/hsl/postdelivery.html#GetTLS)
