@@ -42,6 +42,7 @@ Unreleased
   - TBA
 - **`Imp`** API changes
   - Added support for more fields in SOAP `mailQueueUpdateBulk` and also duplicate
+  - Added support for `program` argument in SOAP `hslCacheClear`
 - **`Imp`** Improved Sophos antivirus detection by using CXmail
 - **`Imp`** Improved performance of [libdkim++](https://github.com/halon/libdkimpp)
 - **`Imp`** Allow "." delimiter in all ID fields
