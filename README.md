@@ -44,6 +44,7 @@ Unreleased
   - Added support for more fields in SOAP `mailQueueUpdateBulk` and also duplicate
   - Added support for `program` argument in SOAP `hslCacheClear`
 - **`Imp`** Improved Sophos antivirus detection by using CXmail
+- **`Imp`** DLP engine now support regular expression modifiers
 - **`Imp`** Improved performance of [libdkim++](https://github.com/halon/libdkimpp)
 - **`Imp`** Allow "." delimiter in all ID fields
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH and STARTTLS 
@@ -55,6 +56,7 @@ Unreleased
 - **`Dep`** Default action is now Block on script errors in [Firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
 - **`Dep`** Make $connection and $transaction read-only in smtpd's context
 - **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/rcptto.html#GetTLS)
+- **`Dep`** If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) with regular expresssion, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
 
 ## 4.4-p2
 Released on 2017-12-04
