@@ -4,41 +4,41 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 4.5
 Unreleased
-- **`Imp`** Script language features
-  - Added support for multiple escapes in [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
-  - Added [`MIME.signDKIM()`](http://docs.halon.se/hsl/functions.html#MIME.signDKIM)
-  - Added `extended_result` to [`spf()`](http://docs.halon.se/hsl/functions.html#spf)
-  - Added [`TLSSocket.getpeercert()`](http://docs.halon.se/hsl/functions.html#TLSSocket.getpeercert)
-  - Added ability to set facility to [`syslog()`](http://docs.halon.se/hsl/functions.html#syslog)
-  - Added new function [`dnsns()`](http://docs.halon.se/hsl/functions.html#dnsns)
+- **`New`** Script language features
+  - Added [`MIME.signDKIM()`](http://docs.halon.se/hsl/functions.html#MIME.signDKIM) function
+  - Added [`TLSSocket.getpeercert()`](http://docs.halon.se/hsl/functions.html#TLSSocket.getpeercert) function
+  - Added [`dnsns()`](http://docs.halon.se/hsl/functions.html#dnsns) function
+  - Added [`inet_pton()`](http://docs.halon.se/hsl/functions.html#inet_pton) and [`inet_ntop()`](http://docs.halon.se/hsl/functions.html#inet_ntop) functions
   - Added `tls_client_cert` to [`TLSSocket()`](http://docs.halon.se/hsl/functions.html#TLSSocket)
-  - Added `tls_client_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-  - Added `tls_capture_peer_cert` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-  - Added `xclient` to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt) to support XCLIENT
-  - Added `on_rcptto` and TLS to extended result in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+  - Added functionality to [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+    - Added `tls_client_cert` and `tls_capture_peer_cert` arguments for client certificates
+    - Added an `xclient` argument
+    - Added `on_rcptto` and TLS information to the `extended_result` array
   - Added `tls_verify_peer` to [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search) and [`ldap_bind()`](http://docs.halon.se/hsl/functions.html#ldap_bind)
-  - Added new functions [`inet_pton()`](http://docs.halon.se/hsl/functions.html#inet_pton) and [`inet_ntop()`](http://docs.halon.se/hsl/functions.html#inet_ntop)
-- **`Imp`** SMTP authentication script
-  - Added custom SASL mechanims using `$saslmechanism`, `$saslstate` and `$saslresponse` and the [`Reply()`](http://docs.halon.se/hsl/auth.html#Reply) function.
-  - Added ability to set `username` to [`Accept()`](http://docs.halon.se/hsl/auth.html#Accept).
-- **`Imp`** Pre-delivery script
+  - Added `extended_result` to [`spf()`](http://docs.halon.se/hsl/functions.html#spf)
+  - Support multiple escapes in [`ldap_search()`](http://docs.halon.se/hsl/functions.html#ldap_search)
+- **`New`** Added `GetTLS` to [AUTH](http://docs.halon.se/hsl/auth.html#GetTLS), [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html#GetTLS), [RCPT TO](http://docs.halon.se/hsl/rcptto.html#GetTLS) and [DATA](http://docs.halon.se/hsl/data.html#GetTLS) with STARTTLS info, `tlsrpt` and `peer_cert`
+- **`New`** AUTH script features
+  - Support custom SASL mechanims 
+    - Added `$saslmechanism`, `$saslstate` and `$saslresponse` variables
+    - Added [`Reply()`](http://docs.halon.se/hsl/auth.html#Reply) function
+  - Added ability to set `username` to [`Accept()`](http://docs.halon.se/hsl/auth.html#Accept)
+- **`New`** Pre-delivery script features
+  - Added [`SetXCLIENT()`](http://docs.halon.se/hsl/predelivery.html#SetXCLIENT) function
   - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/predelivery.html#SetDSN)
   - Added `tls_client_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
   - Added `tls_capture_peer_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
-  - Added [`SetXCLIENT()`](http://docs.halon.se/hsl/predelivery.html#SetXCLIENT) function to support XCLIENT
-- **`Imp`** Post-delivery script
-  - Added `dkim` and `from` to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
-  - Added new function [`GetTLS()`](http://docs.halon.se/hsl/postdelivery.html#GetTLS)
-- **`Imp`** Script editor improvements
-  - Improved script errors in editor (with line decorations)
-- **`Imp`** SMTP engine improvements
-  - Added support for client certificate requests in smtpd server HELO (per IP)
+- **`New`** Post-delivery script features
+  - Added [`GetTLS()`](http://docs.halon.se/hsl/postdelivery.html#GetTLS) function
+  - Added `dkim` and `from` arguemnts to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
+- **`Imp`** SMTP server improvements
+  - Added support for client certificate requests in server HELO (per IP)
   - Added support for custom SASL methods
   - Set server preference for TLS ciphers
   - Explicitly handle NULL MX (rfc7505)
   - Removed line length limiting (8K SMTP, 256K (headerline), 512K header total)
-  - Added GetTLS to [AUTH](http://docs.halon.se/hsl/auth.html#GetTLS), [MAIL FROM](http://docs.halon.se/hsl/mailfrom.html#GetTLS), [RCPT TO](http://docs.halon.se/hsl/rcptto.html#GetTLS) and [DATA](http://docs.halon.se/hsl/data.html#GetTLS) context (to include STARTTLS status, tlsrpt and peer_cert)
 - **`Imp`** Web administration improvements
+  - Improved script errors in editor (with line decorations)
   - TBA
 - **`Imp`** API changes
   - Added support for more fields in SOAP `mailQueueUpdateBulk` and also duplicate
@@ -54,7 +54,7 @@ Unreleased
 - **`Dep`** Aliased all "ssl_" options to "tls_" in [`http()`](http://docs.halon.se/hsl/functions.html#http)
 - **`Dep`** Removed object [] syntax (in favour of class syntax)
 - **`Dep`** Default action is now Block on script errors in [Firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
-- **`Dep`** Make $connection and $transaction read-only in smtpd's context
+- **`Dep`** Make $connection and $transaction read-only in `smtpd`'s context
 - **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/rcptto.html#GetTLS)
 - **`Dep`** If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) with regular expresssion, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
 
