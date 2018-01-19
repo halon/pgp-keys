@@ -50,11 +50,11 @@ Unreleased
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH and STARTTLS 
 - **`Bug`** Improved DSN parsing in [`GetDSN()`](http://docs.halon.se/hsl/data.html#GetDSN) with multiline headers
 - **`Bug`** Bug with behaviour on [`Quarantine()`](http://docs.halon.se/hsl/data.html#Quarantine) reject => false followed by Quarantine reject => true
-- **`Dep`** Aliased "error_code" to "extended_result" in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-- **`Dep`** Aliased all "ssl_" options to "tls_" in [`http()`](http://docs.halon.se/hsl/functions.html#http)
-- **`Dep`** Removed object [] syntax (in favour of class syntax)
-- **`Dep`** Default action is now Block on script errors in [Firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
-- **`Dep`** Make $connection and $transaction read-only in `smtpd`'s context
+- **`Dep`** Aliased `error_code` to `extended_result` in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
+- **`Dep`** Aliased all `ssl_` options to `tls_` in [`http()`](http://docs.halon.se/hsl/functions.html#http)
+- **`Dep`** Removed `object []` syntax (in favour of class syntax)
+- **`Dep`** Default action is now to block on script errors in [firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
+- **`Dep`** Made `$connection` and `$transaction` read-only in `smtpd`'s context
 - **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/rcptto.html#GetTLS)
 - **`Dep`** If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) with regular expresssion, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
 
