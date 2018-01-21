@@ -38,8 +38,13 @@ Unreleased
   - Explicitly handle NULL MX (rfc7505)
   - Removed line length limiting (8K SMTP, 256K (headerline), 512K header total)
 - **`Imp`** Web administration improvements
+  - Redesigned script mappings page
   - Improved script errors in editor (with line decorations)
-  - TBA
+  - Search in code editor directly from top search
+  - Faster loading in code editor
+  - Redesigned forms with more client side input validation
+  - Improved keyboard navigation
+  - And a lot of overall improvements
 - **`Imp`** API changes
   - Added support for more fields in SOAP `mailQueueUpdateBulk` and also duplicate
   - Added support for `program` argument in SOAP `hslCacheClear`
@@ -50,6 +55,7 @@ Unreleased
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH and STARTTLS 
 - **`Bug`** Improved DSN parsing in [`GetDSN()`](http://docs.halon.se/hsl/data.html#GetDSN) with multiline headers
 - **`Bug`** Bug with behaviour on [`Quarantine()`](http://docs.halon.se/hsl/data.html#Quarantine) reject => false followed by Quarantine reject => true
+- **`Bug`** Fix bug with DKIM delivery block in Web UI
 - **`Dep`** Aliased `error_code` to `extended_result` in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
 - **`Dep`** Aliased all `ssl_` options to `tls_` in [`http()`](http://docs.halon.se/hsl/functions.html#http)
 - **`Dep`** Removed `object []` syntax (in favour of class syntax)
