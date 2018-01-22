@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.5-p1
+Released on 2018-01-22
+- **`Reg`** Regression with AUTH LOGIN could cause `$saslpassword` to be incorrectly populated
+
 ## 4.5
 Released on 2018-01-22
 - **`New`** Script language features
