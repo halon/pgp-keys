@@ -30,7 +30,7 @@ Unreleased
   - Added `tls_capture_peer_cert` to [`SetTLS()`](http://docs.halon.se/hsl/predelivery.html#SetTLS)
 - **`New`** Post-delivery script features
   - Added [`GetTLS()`](http://docs.halon.se/hsl/postdelivery.html#GetTLS) function
-  - Added `dkim` and `from` arguemnts to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
+  - Added `dkim` and `from` arguments to [`SetDSN()`](http://docs.halon.se/hsl/postdelivery.html#SetDSN)
 - **`Imp`** SMTP server improvements
   - Added support for client certificate requests in server HELO (per IP)
   - Added support for custom SASL methods
@@ -49,7 +49,7 @@ Unreleased
   - Added support for more fields in SOAP `mailQueueUpdateBulk` and also duplicate
   - Added support for `program` argument in SOAP `hslCacheClear`
 - **`Imp`** Improved Sophos antivirus detection by using CXmail
-- **`Imp`** DLP engine now support regular expression modifiers
+- **`Imp`** DLP engine now supports regular expression modifiers
 - **`Imp`** Improved performance of [libdkim++](https://github.com/halon/libdkimpp)
 - **`Imp`** Allow "." delimiter in all ID fields
 - **`Bug`** Received header "with ...SMTP..." always adds E on AUTH and STARTTLS 
@@ -62,7 +62,7 @@ Unreleased
 - **`Dep`** Default action is now to block on script errors in [firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
 - **`Dep`** Made `$connection` and `$transaction` read-only in `smtpd`'s context
 - **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/rcptto.html#GetTLS)
-- **`Dep`** If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) with regular expresssion, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
+- **`Dep`** If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) with regular expresssions, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
 
 ## 4.4-p2
 Released on 2017-12-04
