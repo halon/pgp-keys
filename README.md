@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 4.5
-Unreleased
+Released on 2018-01-22
 - **`New`** Script language features
   - Added [`MIME.signDKIM()`](http://docs.halon.se/hsl/functions.html#MIME.signDKIM) function
   - Added [`TLSSocket.getpeercert()`](http://docs.halon.se/hsl/functions.html#TLSSocket.getpeercert) function
