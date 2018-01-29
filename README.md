@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 4.5-p2
-Released on 2018-01-XX
+Released on 2018-01-29
 - **`Bug`** Updated ClamAV to 0.99.3 (due to various CVE's)
 - **`Bug`** Regression in code editor where file comments could not be added
 
