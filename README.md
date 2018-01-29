@@ -5,6 +5,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 ## 4.5-p2
 Released on 2018-01-29
 - **`Bug`** Updated ClamAV to 0.99.3 (due to various CVE's)
+- **`Bug`** Regression in code editor where file comments could not be added
 
 ## 4.5-p1
 Released on 2018-01-22
