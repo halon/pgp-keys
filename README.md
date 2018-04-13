@@ -17,7 +17,7 @@ Unreleased
 - **`Imp`** Script language improvement
   - Support for non-synchronized (local) counters in [`rate()`](https://docs.halon.io/hsl/functions.html#core.rate)
   - Scripting language optimizations (memory, comparisons, branching and loops)
-  - Changed to libdouble's convert (from dtoa.c)
+  - Changed to libdouble-conversion from David M. Gay's dtoa
 - **`Imp`** SMTP server improvements
   - Asynchronous connection processing
   - Added millisecond precision to log files and remote syslog
