@@ -2,6 +2,50 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.6
+Unreleased
+- **`New`** Support for Cyren [outbound anti-spam](https://docs.halon.io/hsl/data.html#ScanRPD)
+- **`New`** Support for SNI in [`smtp_lookup_*()`](https://docs.halon.io/hsl/functions.html#core.smtp_lookup_rcpt), [`SetTLS()`](https://docs.halon.io/hsl/predelivery.html#SetTLS) and SMTP server
+- **`New`** Script language features
+  - [`for`](https://docs.halon.io/hsl/structures.html#for) loops
+  - [`static`](https://docs.halon.io/hsl/structures.html#static) class variables and functions
+  - Increase/decrease [operator](https://docs.halon.io/hsl/operators.html#arithmetic)
+- **`Imp`** SMTP server scripting improvement
+  - Added `extended_result` to [`ScanRPD()`](https://docs.halon.io/hsl/data.html#ScanRPD), ScanKAV, ScanCLAM, ScanDLP and ScanSA
+  - Default [DKIM](https://docs.halon.io/hsl/data.html#data.DKIMSign) canonicalization changed to relaxed
+  - Added [`GetMetaData()`](https://docs.halon.io/hsl/data.html#data.GetMetaData) to DATA context
+- **`Imp`** Script language improvement
+  - Support for non-synchronized (local) counters in [`rate()`](https://docs.halon.io/hsl/functions.html#core.rate)
+  - Scripting language optimizations (memory, comparisons, branching and loops)
+  - Changed to libdouble's convert (from dtoa.c)
+- **`Imp`** SMTP server improvements
+  - Asynchronous connection processing
+  - Added millisecond precision to log files and remote syslog
+  - Allow hyphen characters in metadata fields
+- **`Imp`** Script editor improvements
+  - Completion items for built-in variables
+  - Parameters, return type and description for completion items
+  - Hover provider for built-in functions and variables
+  - Added link provider for files
+  - Code folding, tabs and minimap
+- **`Imp`** Web administration improvements
+  - Halon script syntax highlight in plain-text configuration format
+  - Added checkbox to disable a SMTP listener on the SMTP listeners page
+- **`Imp`** Support for [`ena`](https://www.freebsd.org/cgi/man.cgi?query=ena) network driver
+- **`Imp`** Changed to DHCP in default configuration
+- **`Imp`** Updated system packages
+  - FreeBSD 11.1-RELEASE-p4
+  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - [Cyren](http://wiki.halon.se/CYREN) ctasd 5.1.6.4 and ctipd 4.1.3.4
+- **`Bug`** Fixed issue with [`http()`](https://docs.halon.io/hsl/functions.html#core.http) background requests connection errors
+- **`Bug`** The connect script was executed despite connections per IP limit
+- **`Bug`** The connect script replies didn't work with implicit TLS
+- **`Bug`** SMTP banner was sent despite connections per IP limit
+- **`Bug`** Fixed issue with client certificates
+- **`Bug`** Clearing chart data could cause it to be removed on another node
+- **`Bug`** Fixed issue with firewall script and passive FTP
+- **`Dep`** Deprecated the `ScanRPDAV()` function
+
 ## 4.5-p2
 Released on 2018-01-29
 - **`Bug`** Updated ClamAV to 0.99.3 (due to various CVE's)
