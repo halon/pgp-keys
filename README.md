@@ -8,7 +8,7 @@ Unreleased
 - **`New`** Support for SNI in [`smtp_lookup_*()`](https://docs.halon.io/hsl/functions.html#core.smtp_lookup_rcpt), [`SetTLS()`](https://docs.halon.io/hsl/predelivery.html#SetTLS) and SMTP server
 - **`New`** Script language features
   - [`for`](https://docs.halon.io/hsl/structures.html#for) loops
-  - [`static`](https://docs.halon.io/hsl/structures.html#static) class variables and functions
+  - [`static`](https://docs.halon.io/hsl/operators.html#static) self-referencing support using the scope resolution operator (::)
   - Increase/decrease [operator](https://docs.halon.io/hsl/operators.html#arithmetic)
 - **`Imp`** SMTP server scripting improvement
   - Added `extended_result` to [`ScanRPD()`](https://docs.halon.io/hsl/data.html#ScanRPD), ScanKAV, ScanCLAM, ScanDLP and ScanSA
