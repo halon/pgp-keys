@@ -16,6 +16,7 @@ Unreleased
   - Added [`GetMetaData()`](https://docs.halon.io/hsl/data.html#data.GetMetaData) to DATA context
 - **`Imp`** Script language improvement
   - Support for non-synchronized (local) counters in [`rate()`](https://docs.halon.io/hsl/functions.html#core.rate)
+  - Support for Unicode surrogate pairs in [`json_*()`](https://docs.halon.io/hsl/functions.html#core.json_encode) to support plane 1 SMP
   - Scripting language optimizations (memory, comparisons, branching and loops)
   - Changed to libdouble-conversion from David M. Gay's dtoa
 - **`Imp`** SMTP server improvements
