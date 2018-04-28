@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 4.6
-Unreleased
+Released on 2018-04-28
 - **`New`** Support for Cyren [outbound anti-spam](https://docs.halon.io/hsl/data.html#ScanRPD)
 - **`New`** Support for SNI in [`smtp_lookup_*()`](https://docs.halon.io/hsl/functions.html#core.smtp_lookup_rcpt), [`SetTLS()`](https://docs.halon.io/hsl/predelivery.html#SetTLS) and SMTP server
 - **`New`** Script language features
