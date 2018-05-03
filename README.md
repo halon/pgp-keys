@@ -6,6 +6,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Released on 2018-05-03
 - **`Bug`** Fixed regression in SMTP server affecting implicit TLS on port 465
 - **`Bug`** Fixed issue with FreeBSD 11.1-RELEASE-p8 (SA-18:03) affecting some CPUs
+- **`Bug`** Fixed [`TLSSocket.getpeercert()`](https://docs.halon.io/hsl/functions.html#TLSSocket.getpeercert) MD5 fingerprint option
 
 ## 4.6
 Released on 2018-04-28
