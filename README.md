@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.6-p1
+Released on 2018-05-03
+- **`Bug`** Fixed regression in SMTP server affecting implicit TLS on port 465
+- **`Bug`** Fixed issue with FreeBSD 11.1-RELEASE-p8 (SA-18:03) affecting some CPUs
+
 ## 4.6
 Released on 2018-04-28
 - **`New`** Support for Cyren [outbound anti-spam](https://docs.halon.io/hsl/data.html#ScanRPD)
