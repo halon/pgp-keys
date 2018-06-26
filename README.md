@@ -2,6 +2,42 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.7
+Unreleased
+- **`New`** SMTP server scripting features
+  - Live debugging with breakpoints via live staging
+  - [`HELO`](https://docs.halon.io/hsl/helo.html) phase script
+  - Support `arc` (Authenticated Received Chain) in [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
+  - Added `ed25519-sha256` (EdDSA) to [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
+  - [`ed25519_sign()`](https://docs.halon.io/hsl/functions.html) and `ed25519_verify()` functions
+  - [`rsa_sign()`](https://docs.halon.io/hsl/functions.html) and `rsa_verify()` functions
+  - Added `timeout` and `dns_function` options to [`DKIMSDID()`](https://docs.halon.io/hsl/data.html#DKIMSDID)
+  - `getHeaders()` function in the [`MIME`](https://docs.halon.io/hsl/data.html?highlight=getheader#MIME) class
+  - Added `field` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) returning entire line
+  - Added `encode` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) and `setHeader()`
+- **`New`** SMTP server features
+  - Support for multiple IPs and netmasks in live staging
+  - Require HELO option
+  - Support for PKCS#8 private keys
+- **`Imp`** Script language improvements
+  - Reworked [`DKIMVerify()`](https://docs.halon.io/hsl/data.html#DKIMVerify) function
+  - Added array slice assignments and `unset` slices
+  - Only return one result per domain in [`DKIMSDID()`](https://docs.halon.io/hsl/data.html#DKIMSDID)
+- **`Imp`** SMTP server improvements
+  - Change default TLS ciphers to `HIGH:MEDIUM`
+  - Updated Cyren outbound configuration
+- **`Imp`** Updated system packages
+  - FreeBSD 11.2-RELEASE-p0
+  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - Sophos 3.2.07.372.0
+- **`Bug`** Fix `rated` behaviour with IPv6, reloading and display on non-synchronised items
+- **`Bug`** Fix regression with DKIM overssigning
+- **`Bug`** Fix issue with DATA script scan functions caching and extended results
+- **`Bug`** Fix bug with negative indexes and append
+- **`Dep`** Switched to regular peer name checks in `SetTLS`
+- **`Dep`** DNS functions no longer support hostnames as resolver server option
+- **`Dep`** Renamed `rate()` option `local` to `sync`
+
 ## 4.6-p1
 Released on 2018-05-03
 - **`Bug`** Fixed regression in SMTP server affecting implicit TLS on port 465
