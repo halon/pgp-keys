@@ -12,6 +12,7 @@ Unreleased
   - [`ed25519_sign()`](https://docs.halon.io/hsl/functions.html) and `ed25519_verify()` functions
   - [`rsa_sign()`](https://docs.halon.io/hsl/functions.html) and `rsa_verify()` functions
   - Added `timeout` and `dns_function` options to [`DKIMSDID()`](https://docs.halon.io/hsl/data.html#DKIMSDID)
+  - Added `oversign_headers` option to [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
   - `getHeaders()` function in the [`MIME`](https://docs.halon.io/hsl/data.html?highlight=getheader#MIME) class
   - Added `field` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) returning entire line
   - Added `encode` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) and `setHeader()`
@@ -31,7 +32,6 @@ Unreleased
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
   - Sophos 3.2.07.372.0
 - **`Bug`** Fix `rated` behaviour with IPv6, reloading and display on non-synchronised items
-- **`Bug`** Fix regression with DKIM overssigning
 - **`Bug`** Fix issue with DATA script scan functions caching and extended results
 - **`Bug`** Fix bug with negative indexes and append
 - **`Dep`** Switched to regular peer name checks in `SetTLS`
