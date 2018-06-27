@@ -30,6 +30,7 @@ Unreleased
 - **`Imp`** Updated system packages
   - FreeBSD 11.2-RELEASE-p0
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+  - Unbound 1.7.0 which fixes one DNSSEC-related issue
   - Sophos 3.2.07.372.0
 - **`Bug`** Fix `rated` behaviour with IPv6, reloading and display on non-synchronised items
 - **`Bug`** Fix issue with DATA script scan functions caching and extended results
