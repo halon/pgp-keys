@@ -27,6 +27,13 @@ Unreleased
 - **`Imp`** SMTP server improvements
   - Change default TLS ciphers to `HIGH:MEDIUM`
   - Updated Cyren outbound configuration
+- **`Imp`** Web administration improvements
+  - Option to automatically restart live staging on changes
+  - Color picker for area and pie charts
+  - Stacked percentage mode for area charts
+  - HTTP redirect option, useful for HTTP-to-HTTPS
+  - Enabled HSTS and denies frame embedding (X-Frame-Options)
+  - Many other small improvements
 - **`Imp`** Updated system packages
   - FreeBSD 11.2-RELEASE-p0
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
@@ -35,6 +42,7 @@ Unreleased
 - **`Bug`** Fix `rated` behaviour with IPv6, reloading and display on non-synchronised items
 - **`Bug`** Fix issue with DATA script scan functions caching and extended results
 - **`Bug`** Fix bug with negative indexes and append
+- **`Bug`** Deleting statistic values on graph page for all hosts didn't work
 - **`Dep`** Switched to regular peer name checks in `SetTLS`
 - **`Dep`** DNS functions no longer support hostnames as resolver server option
 - **`Dep`** Renamed `rate()` option `local` to `sync`
