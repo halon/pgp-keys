@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 4.7
-Unreleased
+Released on 2018-07-09 
 - **`New`** SMTP server scripting features
   - Live debugging with breakpoints via live staging
   - [`HELO`](https://docs.halon.io/hsl/helo.html) phase script
