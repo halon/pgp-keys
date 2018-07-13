@@ -46,6 +46,8 @@ Released on 2018-07-09
 - **`Dep`** Switched to regular peer name checks in `SetTLS`
 - **`Dep`** DNS functions no longer support hostnames as resolver server option
 - **`Dep`** Renamed `rate()` option `local` to `sync`
+- **`Dep`** Removed [`DKIMADSP()`](https://wiki.halon.io/Deprecation#DKIMADSP)
+- **`Dep`** Removed [historic variables](https://wiki.halon.io/Deprecation#Historic_variables_in_connect_context) from connect script
 
 ## 4.6-p1
 Released on 2018-05-03
