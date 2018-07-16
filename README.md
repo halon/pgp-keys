@@ -15,7 +15,7 @@ Released on 2018-07-09
   - Added `oversign_headers` option to [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
   - `getHeaders()` function in the [`MIME`](https://docs.halon.io/hsl/data.html?highlight=getheader#MIME) class
   - Added `field` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) returning entire line
-  - Added `encode` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) and `setHeader()`
+  - Added `encode` option to [`MIME.addHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) and `setHeader()`
 - **`New`** SMTP server features
   - Support for multiple IPs and netmasks in live staging
   - Require HELO option
