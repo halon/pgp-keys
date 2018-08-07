@@ -2,6 +2,10 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.7-p1
+Released on 2018-08-07
+- **`Bug`** Updated kernel to FreeBSD 11.2-RELEASE-p1 (SA-18:08)
+
 ## 4.7
 Released on 2018-07-09 
 - **`New`** SMTP server scripting features
