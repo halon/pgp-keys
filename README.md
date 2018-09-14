@@ -2,6 +2,36 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.8
+Unreleased
+- **`New`** SMTP server scripting features
+  - Added [`SetHELO()`](https://docs.halon.io/hsl/archive/master/helo.html#SetHELO) to HELO script
+  - Added "changes" option to `GetMailFile()` to include message modifications
+  - Support for meta-data queries in `GetMailQueueMetric()`
+  - Preserve 7bit ASCII when the modifying messages with `MIME.setBody` if possible
+- **`Imp`** Script language improvements
+  - Added native [boolean type](https://docs.halon.io/hsl/archive/master/literals.html#boolean)
+  - Added [string repeat](https://docs.halon.io/hsl/archive/master/operators.html#repeat) and [array repeat](https://docs.halon.io/hsl/archive/master/operators.html#id5) repeat operator `*`
+  - Added [string format](https://docs.halon.io/hsl/archive/master/operators.html#format) operator `%`
+  - Added [strict comparison](https://docs.halon.io/hsl/archive/master/operators.html#comparison) operator `===`
+  - Added steps argument `::` to [slice operator](https://docs.halon.io/hsl/archive/master/operators.html#slicing)
+  - Added [`idna_encode()`](https://docs.halon.io/hsl/archive/master/functions.html#idna_encode) and `idna_decode()`
+  - Added [`aes_encrypt()`](https://docs.halon.io/hsl/archive/master/functions.html#aes_encrypt) and `aes_decrypt()`
+  - Added [`random_bytes()`](https://docs.halon.io/hsl/archive/master/functions.html#core.random_bytes)
+- **`Imp`** API improvements
+  - Added API call `mailQueueDownload` to download a message (original or with modifications)
+  - `hslCacheClear`, `hslRateClear` and `statClear` returns affected rows
+  - `mailQueueRetryBulk` supports "retryts" (timestamp) and "retrydelay" (offset)
+  - `configImport` support "revision" option for atomic imports
+- **`Imp`** Updated system packages
+  - FreeBSD 11.2-RELEASE-p3
+  - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
+- **`Bug`** Debug points were removed when clearing debug results
+- **`Bug`** The video console interface could not run programs (like ping)
+- **`Dep`** Replaced `radius_authen()`, [new implementation](https://github.com/halon/hsl-examples/tree/master/protocols/radius) using `Socket()`
+- **`Dep`** Removed `tacplus_authen()` and `tacplus_author()` (TACACS+)
+- **`Dep`** Removed `system_disk_cache` configuration key (ATA disk cache)
+
 ## 4.7-p1
 Released on 2018-08-07
 - **`Bug`** Updated kernel to FreeBSD 11.2-RELEASE-p1 (SA-18:08)
