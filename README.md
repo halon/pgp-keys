@@ -5,7 +5,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 ## 4.8
 Unreleased
 - **`New`** SMTP server scripting features
-  - Added [`SetHELO()`](https://docs.halon.io/hsl/archive/master/helo.html#SetHELO) to HELO script
+  - Added [`SetHELO()`](https://docs.halon.io/hsl/archive/master/helo.html#SetHELO), `$saslauthed` and `$saslusername` to HELO script
   - Added "changes" option to `GetMailFile()` to include message modifications
   - Support for meta-data queries in `GetMailQueueMetric()`
   - Preserve 7bit ASCII when the modifying messages with `MIME.setBody` if possible
