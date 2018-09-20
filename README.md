@@ -3,7 +3,7 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 4.8
-Unreleased
+Released on 2018-09-20
 - **`New`** SMTP server scripting features
   - Added [`SetHELO()`](https://docs.halon.io/hsl/archive/master/helo.html#SetHELO), `$saslauthed` and `$saslusername` to HELO script
   - Added "changes" option to `GetMailFile()` to include message modifications
