@@ -2,6 +2,12 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.8-p1
+Released on 2018-10-03
+- **`Bug`** Fix issue where `ldap_bind()` return error (-1) rather than failure (0) on a failed bind
+- **`Bug`** Patch libspf2 to completely deprecate the SPF record type in favor of TXT
+- **`Dep`** Show deprecation warning for transports without explicit bounce destination, and domain cluster overrides
+
 ## 4.8
 Released on 2018-09-20
 - **`New`** SMTP server scripting features
