@@ -2,6 +2,11 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 4.8-r1
+Released on 2018-11-01
+- **`Imp`** Added a [`crypt()`](https://docs.halon.io/hsl/functions.html#core.crypt) function
+- **`Imp`** Updated to Sophos 3.2.07.374.0
+
 ## 4.8-p1
 Released on 2018-10-03
 - **`Bug`** Fix issue where `ldap_bind()` return error (-1) rather than failure (0) on a failed bind
