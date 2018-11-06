@@ -4,7 +4,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 4.8-r1
 Released on 2018-11-01
-- **`Imp`** Added a [`crypt()`](https://docs.halon.io/hsl/functions.html#core.crypt) function
+- **`Imp`** Added a [`crypt()`](https://docs.halon.io/hsl/archive/4.8-stable/functions.html#core.crypt) function
 - **`Imp`** Updated to Sophos 3.2.07.374.0
 
 ## 4.8-p1
@@ -16,19 +16,19 @@ Released on 2018-10-03
 ## 4.8
 Released on 2018-09-20
 - **`New`** SMTP server scripting features
-  - Added [`SetHELO()`](https://docs.halon.io/hsl/archive/master/helo.html#SetHELO), `$saslauthed` and `$saslusername` to HELO script
+  - Added [`SetHELO()`](https://docs.halon.io/hsl/archive/4.8-stable/helo.html#SetHELO), `$saslauthed` and `$saslusername` to HELO script
   - Added "changes" option to `GetMailFile()` to include message modifications
   - Support for meta-data queries in `GetMailQueueMetric()`
   - Preserve 7bit ASCII when the modifying messages with `MIME.setBody` if possible
 - **`Imp`** Script language improvements
-  - Added native [boolean type](https://docs.halon.io/hsl/archive/master/literals.html#boolean)
-  - Added [string repeat](https://docs.halon.io/hsl/archive/master/operators.html#repeat) and [array repeat](https://docs.halon.io/hsl/archive/master/operators.html#id5) repeat operator `*`
-  - Added [string format](https://docs.halon.io/hsl/archive/master/operators.html#format) operator `%`
-  - Added [strict comparison](https://docs.halon.io/hsl/archive/master/operators.html#comparison) operator `===`
-  - Added steps argument `::` to [slice operator](https://docs.halon.io/hsl/archive/master/operators.html#slicing)
-  - Added [`idna_encode()`](https://docs.halon.io/hsl/archive/master/functions.html#idna_encode) and `idna_decode()`
-  - Added [`aes_encrypt()`](https://docs.halon.io/hsl/archive/master/functions.html#aes_encrypt) and `aes_decrypt()`
-  - Added [`random_bytes()`](https://docs.halon.io/hsl/archive/master/functions.html#core.random_bytes)
+  - Added native [boolean type](https://docs.halon.io/hsl/archive/4.8-stable/literals.html#boolean)
+  - Added [string repeat](https://docs.halon.io/hsl/archive/4.8-stable/operators.html#repeat) and [array repeat](https://docs.halon.io/hsl/archive/4.8-stable/operators.html#id5) repeat operator `*`
+  - Added [string format](https://docs.halon.io/hsl/archive/4.8-stable/operators.html#format) operator `%`
+  - Added [strict comparison](https://docs.halon.io/hsl/archive/4.8-stable/operators.html#comparison) operator `===`
+  - Added steps argument `::` to [slice operator](https://docs.halon.io/hsl/archive/4.8-stable/operators.html#slicing)
+  - Added [`idna_encode()`](https://docs.halon.io/hsl/archive/4.8-stable/functions.html#idna_encode) and `idna_decode()`
+  - Added [`aes_encrypt()`](https://docs.halon.io/hsl/archive/4.8-stable/functions.html#aes_encrypt) and `aes_decrypt()`
+  - Added [`random_bytes()`](https://docs.halon.io/hsl/archive/4.8-stable/functions.html#core.random_bytes)
 - **`Imp`** API improvements
   - Added API call `mailQueueDownload` to download a message (original or with modifications)
   - `hslCacheClear`, `hslRateClear` and `statClear` returns affected rows
@@ -51,24 +51,24 @@ Released on 2018-08-07
 Released on 2018-07-09 
 - **`New`** SMTP server scripting features
   - Live debugging with breakpoints via live staging
-  - [`HELO`](https://docs.halon.io/hsl/helo.html) phase script
-  - Support `arc` (Authenticated Received Chain) in [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
-  - Added `ed25519-sha256` (EdDSA) to [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
-  - [`ed25519_sign()`](https://docs.halon.io/hsl/functions.html) and `ed25519_verify()` functions
-  - [`rsa_sign()`](https://docs.halon.io/hsl/functions.html) and `rsa_verify()` functions
-  - Added `timeout` and `dns_function` options to [`DKIMSDID()`](https://docs.halon.io/hsl/data.html#DKIMSDID)
-  - Added `oversign_headers` option to [`DKIMSign()`](https://docs.halon.io/hsl/data.html#data.DKIMSign)
-  - `getHeaders()` function in the [`MIME`](https://docs.halon.io/hsl/data.html?highlight=getheader#MIME) class
-  - Added `field` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) returning entire line
-  - Added `encode` option to [`MIME.addHeader()`](https://docs.halon.io/hsl/data.html#MIME.getHeader) and `setHeader()`
+  - [`HELO`](https://docs.halon.io/hsl/archive/4.7-stable/helo.html) phase script
+  - Support `arc` (Authenticated Received Chain) in [`DKIMSign()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#data.DKIMSign)
+  - Added `ed25519-sha256` (EdDSA) to [`DKIMSign()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#data.DKIMSign)
+  - [`ed25519_sign()`](https://docs.halon.io/hsl/archive/4.7-stable/functions.html) and `ed25519_verify()` functions
+  - [`rsa_sign()`](https://docs.halon.io/hsl/archive/4.7-stable/functions.html) and `rsa_verify()` functions
+  - Added `timeout` and `dns_function` options to [`DKIMSDID()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#DKIMSDID)
+  - Added `oversign_headers` option to [`DKIMSign()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#data.DKIMSign)
+  - `getHeaders()` function in the [`MIME`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#MIME) class
+  - Added `field` option to [`MIME.getHeader()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#MIME.getHeader) returning entire line
+  - Added `encode` option to [`MIME.addHeader()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#MIME.getHeader) and `setHeader()`
 - **`New`** SMTP server features
   - Support for multiple IPs and netmasks in live staging
   - Require HELO option
   - Support for PKCS#8 private keys
 - **`Imp`** Script language improvements
-  - Reworked [`DKIMVerify()`](https://docs.halon.io/hsl/data.html#DKIMVerify) function
+  - Reworked [`DKIMVerify()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#DKIMVerify) function
   - Added array slice assignments and `unset` slices
-  - Only return one result per domain in [`DKIMSDID()`](https://docs.halon.io/hsl/data.html#DKIMSDID)
+  - Only return one result per domain in [`DKIMSDID()`](https://docs.halon.io/hsl/archive/4.7-stable/data.html#DKIMSDID)
 - **`Imp`** SMTP server improvements
   - Change default TLS ciphers to `HIGH:MEDIUM`
   - Updated Cyren outbound configuration
@@ -98,23 +98,23 @@ Released on 2018-07-09
 Released on 2018-05-03
 - **`Bug`** Fixed regression in SMTP server affecting implicit TLS on port 465
 - **`Bug`** Fixed issue with FreeBSD 11.1-RELEASE-p8 (SA-18:03) affecting some CPUs
-- **`Bug`** Fixed [`TLSSocket.getpeercert()`](https://docs.halon.io/hsl/functions.html#TLSSocket.getpeercert) MD5 fingerprint option
+- **`Bug`** Fixed [`TLSSocket.getpeercert()`](https://docs.halon.io/hsl/archive/4.6-stable/functions.html#TLSSocket.getpeercert) MD5 fingerprint option
 
 ## 4.6
 Released on 2018-04-28
-- **`New`** Support for Cyren [outbound anti-spam](https://docs.halon.io/hsl/data.html#ScanRPD)
-- **`New`** Support for SNI in [`smtp_lookup_*()`](https://docs.halon.io/hsl/functions.html#core.smtp_lookup_rcpt), [`SetTLS()`](https://docs.halon.io/hsl/predelivery.html#SetTLS) and SMTP server
+- **`New`** Support for Cyren [outbound anti-spam](https://docs.halon.io/hsl/archive/4.6-stable/data.html#ScanRPD)
+- **`New`** Support for SNI in [`smtp_lookup_*()`](https://docs.halon.io/hsl/archive/4.6-stable/functions.html#core.smtp_lookup_rcpt), [`SetTLS()`](https://docs.halon.io/hsl/archive/4.6-stable/predelivery.html#SetTLS) and SMTP server
 - **`New`** Script language features
-  - [`for`](https://docs.halon.io/hsl/structures.html#for) loops
-  - [`static`](https://docs.halon.io/hsl/operators.html#static) self-referencing support using the scope resolution operator (::)
-  - Increase/decrease [operator](https://docs.halon.io/hsl/operators.html#arithmetic)
+  - [`for`](https://docs.halon.io/hsl/archive/4.6-stable/structures.html#for) loops
+  - [`static`](https://docs.halon.io/hsl/archive/4.6-stable/operators.html#static) self-referencing support using the scope resolution operator (::)
+  - Increase/decrease [operator](https://docs.halon.io/hsl/archive/4.6-stable/operators.html#arithmetic)
 - **`Imp`** SMTP server scripting improvement
-  - Added `extended_result` to [`ScanRPD()`](https://docs.halon.io/hsl/data.html#ScanRPD), ScanKAV, ScanCLAM, ScanDLP and ScanSA
-  - Default [DKIM](https://docs.halon.io/hsl/data.html#data.DKIMSign) canonicalization changed to relaxed
-  - Added [`GetMetaData()`](https://docs.halon.io/hsl/data.html#data.GetMetaData) to DATA context
+  - Added `extended_result` to [`ScanRPD()`](https://docs.halon.io/hsl/archive/4.6-stable/data.html#ScanRPD), ScanKAV, ScanCLAM, ScanDLP and ScanSA
+  - Default [DKIM](https://docs.halon.io/hsl/archive/4.6-stable/data.html#data.DKIMSign) canonicalization changed to relaxed
+  - Added [`GetMetaData()`](https://docs.halon.io/hsl/archive/4.6-stable/data.html#data.GetMetaData) to DATA context
 - **`Imp`** Script language improvement
-  - Support for non-synchronized (local) counters in [`rate()`](https://docs.halon.io/hsl/functions.html#core.rate)
-  - Support for Unicode surrogate pairs in [`json_*()`](https://docs.halon.io/hsl/functions.html#core.json_encode) to support plane 1 SMP
+  - Support for non-synchronized (local) counters in [`rate()`](https://docs.halon.io/hsl/archive/4.6-stable/functions.html#core.rate)
+  - Support for Unicode surrogate pairs in [`json_*()`](https://docs.halon.io/hsl/archive/4.6-stable/functions.html#core.json_encode) to support plane 1 SMP
   - Scripting language optimizations (memory, comparisons, branching and loops)
   - Changed to libdouble-conversion from David M. Gay's dtoa
 - **`Imp`** SMTP server improvements
@@ -136,7 +136,7 @@ Released on 2018-04-28
   - FreeBSD 11.1-RELEASE-p4
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
   - [Cyren](http://wiki.halon.se/CYREN) ctasd 5.1.6.4 and ctipd 4.1.3.4
-- **`Bug`** Fixed issue with [`http()`](https://docs.halon.io/hsl/functions.html#core.http) background requests connection errors
+- **`Bug`** Fixed issue with [`http()`](https://docs.halon.io/hsl/archive/4.6-stable/functions.html#core.http) background requests connection errors
 - **`Bug`** The connect script was executed despite connections per IP limit
 - **`Bug`** The connect script replies didn't work with implicit TLS
 - **`Bug`** SMTP banner was sent despite connections per IP limit
