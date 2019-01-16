@@ -2,6 +2,66 @@ New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image 
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.0
+Unreleased
+- **`New`** [RESTful](https://docs.halon.io/api/) API with OpenAPI specification
+- **`New`** SMTP server scripting features
+  - Added [per-message end-of-DATA](https://docs.halon.io/hsl/archive/master/eodonce.html) script
+  - Added `snapshot()` and `restore()` to the end-of-DATA [`MIME()`](https://docs.halon.io/hsl/archive/master/eodonce.html#MIME.snapshot) class
+  - New [`$transaction`](https://docs.halon.io/hsl/archive/master/eodonce.html#transaction) variable with sender and recipients that's gradually populated
+  - New `senderlocalpart` and `recipientlocalpart` variables in original format
+  - New options in connect script's [`Accept()`](https://docs.halon.io/hsl/archive/master/connect.html#Accept) function
+    - `reason`  to set banner response
+    - `senderptr` to set sender hostname printed in "Received" header
+  - New options in  RCPT TO [`Accept()`](https://docs.halon.io/hsl/archive/master/rcptto.html#Accept) function
+    - `recipient` for overriding the default `$recipient` context variable
+    - `transportid` for overriding the default `$transportid` context variable
+  - New option `from_name` in pre/post-delivery [`SetDSN()`](https://docs.halon.io/hsl/archive/master/predelivery.html#SetDSN)
+- **`Imp`** SMTP server improvements
+  - TLS 1.3 support
+  - Wildcard matching in SNI
+  - Sender information can be overridden per queued recipient
+  - Added configuration options
+    - [Implicit TLS](https://tools.ietf.org/html/rfc8314#section-3.3) per virtual server listener
+    - Verbose logging per virtual server
+  - Bare LF is converted to CRLF
+  - Disable client-initiated TLS renegotiation
+- **`Imp`** Script language improvements
+  - Added [spread](https://docs.halon.io/hsl/archive/master/operators.html#spread) operator to array type
+  - Added wildcard function and variable [`import`](https://docs.halon.io/hsl/archive/master/structures.html#wildcard) into a namespace
+  - Added compile-time text, JSON and CSV [`import`](https://docs.halon.io/hsl/archive/master/structures.html#data) into a variable 
+  - Added [`csv_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#core.csv_decode) function that parses a string according to a schema 
+  - Added [`array_find()`](https://docs.halon.io/hsl/archive/master/functions.html#core.array_find) function
+  - New [`LDAP()`](https://docs.halon.io/hsl/archive/master/functions.html#core.LDAP) class
+  - Reworked standard library functions
+    - [`length()`](https://docs.halon.io/hsl/archive/master/functions.html#core.length) function that supports multiple data types
+    - `array_join()`, `array_includes()` and `array_range()`
+    - `str_find()`, `str_rfind()`, `str_lower()`, `str_upper()`, `str_slice()` and `str_strip()`
+    - `random_number()`
+  - Added [`getPath()`](https://docs.halon.io/hsl/archive/master/functions.html#File.getPath) and `readline()` methods to [`File()`](https://docs.halon.io/hsl/archive/master/functions.html#File) class
+  - New `allow_comments` option in [`json_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#json_decode)
+  - New `type` option in [`dns()`](https://docs.halon.io/hsl/archive/master/functions.html#dns)
+- **`Imp`** Web administration improvements
+  - Script editor improvement 
+    - [Custom input controllers](https://support.halon.io/hc/en-us/articles/360002203039) for CSV files using schemas
+    - CSV import using custom delimiter
+    - Syntax highlighting for JSON files
+    - Scratchpad for quickly writing and running code
+  - History and queue search support `>=` and `<=` operators
+  - Moved catch-all domain settings to virtual server configuration
+  - Moved SSH, HTTPS and FTP TLS keys to host server configuration
+- **`Imp`** Ability to configure HTTP proxy, used by all HTTP clients throughout the system
+- **`Imp`** Updated system packages
+  - [FreeBSD](https://www.freebsd.org/releases/12.0R/announce.html) 12.0-RELEASE-p2
+  - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
+  - PostgreSQL 11.1
+- **`Bug`** Fix issue with `lagg` network interfaces on boot
+- **`Dep`** `is_number()` to no longer return true on boolean variables
+- **`Dep`** Removed `$tlsprotocol`, `$tlscipher` and `$tlskeysize` variables from RCPT script
+- **`Dep`** Removed calling a function as a string from `cache`
+- **`Dep`** Removed `Deliver()` from post-delivery script
+- **`Dep`** Removed `system_default_transport`
+
 ## 4.8-r1
 Released on 2018-11-01
 - **`Imp`** Added a [`crypt()`](https://docs.halon.io/hsl/archive/4.8-stable/functions.html#core.crypt) function
