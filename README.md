@@ -41,6 +41,7 @@ Unreleased
   - Added [`getPath()`](https://docs.halon.io/hsl/archive/master/functions.html#File.getPath) and `readline()` methods to [`File()`](https://docs.halon.io/hsl/archive/master/functions.html#File) class
   - New `allow_comments` option in [`json_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#json_decode)
   - New `type` option in [`dns()`](https://docs.halon.io/hsl/archive/master/functions.html#dns)
+  - New [`proxy`](https://curl.haxx.se/libcurl/c/CURLOPT_PROXY.html) option in [`http()`](https://docs.halon.io/hsl/archive/master/functions.html#http) to override the system default
 - **`Imp`** Web administration improvements
   - Script editor improvement 
     - [Custom input controllers](https://support.halon.io/hc/en-us/articles/360002203039) for CSV files using schemas
@@ -50,7 +51,9 @@ Unreleased
   - History and queue search support `>=` and `<=` operators
   - Moved catch-all domain settings to virtual server configuration
   - Moved SSH, HTTPS and FTP TLS keys to host server configuration
-- **`Imp`** Ability to configure HTTP proxy, used by all HTTP clients throughout the system
+- **`Imp`** System distribution improvements 
+  - Ability to configure HTTP proxy, used by all HTTP clients throughout the system
+  - Ability to clear individual entries from built-in DNS cache
 - **`Imp`** Updated system packages
   - [FreeBSD](https://www.freebsd.org/releases/12.0R/announce.html) 12.0-RELEASE-p2
   - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
