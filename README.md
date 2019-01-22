@@ -30,15 +30,16 @@ Unreleased
   - Added [spread](https://docs.halon.io/hsl/archive/master/operators.html#spread) operator to array type
   - Added wildcard function and variable [`import`](https://docs.halon.io/hsl/archive/master/structures.html#wildcard) into a namespace
   - Added compile-time text, JSON and CSV [`import`](https://docs.halon.io/hsl/archive/master/structures.html#data) into a variable 
-  - Added [`csv_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#core.csv_decode) function that parses a string according to a schema 
+  - Added [`csv_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#core.csv_decode) function that parses a string according to a schema
+  - Added [`inet_reverse()`](https://docs.halon.io/hsl/archive/master/functions.html#core.inet_reverse) function that creates a reverse DNS for PTR or DNSxL lookups
   - Added [`array_find()`](https://docs.halon.io/hsl/archive/master/functions.html#core.array_find) function
   - New [`LDAP()`](https://docs.halon.io/hsl/archive/master/functions.html#core.LDAP) class
   - Reworked standard library functions
     - [`length()`](https://docs.halon.io/hsl/archive/master/functions.html#core.length) function that supports multiple data types
     - `array_join()`, `array_includes()` and `array_range()`
     - `str_find()`, `str_rfind()`, `str_lower()`, `str_upper()`, `str_slice()` and `str_strip()`
-    - `random_number()`
-  - Added [`getPath()`](https://docs.halon.io/hsl/archive/master/functions.html#File.getPath) and `readline()` methods to [`File()`](https://docs.halon.io/hsl/archive/master/functions.html#File) class
+    - `random_number()`, `domain_includes()`, `inet_includes()`
+  - Added [`getPath()`](https://docs.halon.io/hsl/archive/master/functions.html#File.getPath) and [`readline()`](https://docs.halon.io/hsl/archive/master/functions.html#File.readline) methods to [`File()`](https://docs.halon.io/hsl/archive/master/functions.html#File) class
   - New `allow_comments` option in [`json_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#json_decode)
   - New `type` option in [`dns()`](https://docs.halon.io/hsl/archive/master/functions.html#dns)
   - New [`proxy`](https://curl.haxx.se/libcurl/c/CURLOPT_PROXY.html) option in [`http()`](https://docs.halon.io/hsl/archive/master/functions.html#http) to override the system default
@@ -54,6 +55,7 @@ Unreleased
 - **`Imp`** System distribution improvements 
   - Ability to configure HTTP proxy, used by all HTTP clients throughout the system
   - Ability to clear individual entries from built-in DNS cache
+  - DHCP support for DNS resolvers
 - **`Imp`** Updated system packages
   - [FreeBSD](https://www.freebsd.org/releases/12.0R/announce.html) 12.0-RELEASE-p2
   - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
