@@ -1,4 +1,5 @@
-New systems are deployed by [downloading](http://dl.halon.se/vsp/) a disk image or virtual machine template. Existing systems can be [updated](http://wiki.halon.se/Software_update) by (for example) simply pressing web admin's update button.
+[Halon](https://halon.io/) is a fast, flexible and powerful MTA for demanding uses such as large-scale email services. 
+New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
