@@ -7,17 +7,17 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Unreleased
 - **`New`** [RESTful](https://docs.halon.io/api/) API with OpenAPI specification
 - **`New`** SMTP server scripting features
-  - Added [per-message end-of-DATA](https://docs.halon.io/hsl/archive/master/eodonce.html) script
-  - Added `snapshot()` and `restore()` to the end-of-DATA [`MIME()`](https://docs.halon.io/hsl/archive/master/eodonce.html#MIME.snapshot) class
-  - New [`$transaction`](https://docs.halon.io/hsl/archive/master/eodonce.html#transaction) variable with sender and recipients that's gradually populated
+  - Added [per-message end-of-DATA](https://docs.halon.io/hsl/archive/5.0-stable/eodonce.html) script
+  - Added `snapshot()` and `restore()` to the end-of-DATA [`MIME()`](https://docs.halon.io/hsl/archive/5.0-stable/eodonce.html#MIME.snapshot) class
+  - New [`$transaction`](https://docs.halon.io/hsl/archive/5.0-stable/eodonce.html#transaction) variable with sender and recipients that's gradually populated
   - New `senderlocalpart` and `recipientlocalpart` variables in original format
-  - New options in connect script's [`Accept()`](https://docs.halon.io/hsl/archive/master/connect.html#Accept) function
+  - New options in connect script's [`Accept()`](https://docs.halon.io/hsl/archive/5.0-stable/connect.html#Accept) function
     - `reason`  to set banner response
     - `senderptr` to set sender hostname printed in "Received" header
-  - New options in  RCPT TO [`Accept()`](https://docs.halon.io/hsl/archive/master/rcptto.html#Accept) function
+  - New options in  RCPT TO [`Accept()`](https://docs.halon.io/hsl/archive/5.0-stable/rcptto.html#Accept) function
     - `recipient` for overriding the default `$recipient` context variable
     - `transportid` for overriding the default `$transportid` context variable
-  - New option `from_name` in pre/post-delivery [`SetDSN()`](https://docs.halon.io/hsl/archive/master/predelivery.html#SetDSN)
+  - New option `from_name` in pre/post-delivery [`SetDSN()`](https://docs.halon.io/hsl/archive/5.0-stable/predelivery.html#SetDSN)
 - **`Imp`** SMTP server improvements
   - TLS 1.3 support
   - Wildcard matching in SNI
@@ -28,22 +28,22 @@ Unreleased
   - Bare LF is converted to CRLF
   - Disable client-initiated TLS renegotiation
 - **`Imp`** Script language improvements
-  - Added [spread](https://docs.halon.io/hsl/archive/master/operators.html#spread) operator to array type
-  - Added wildcard function and variable [`import`](https://docs.halon.io/hsl/archive/master/structures.html#wildcard) into a namespace
-  - Added compile-time text, JSON and CSV [`import`](https://docs.halon.io/hsl/archive/master/structures.html#data) into a variable 
-  - Added [`csv_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#core.csv_decode) function that parses a string according to a schema
-  - Added [`inet_reverse()`](https://docs.halon.io/hsl/archive/master/functions.html#core.inet_reverse) function that creates a reverse DNS for PTR or DNSxL lookups
-  - Added [`array_find()`](https://docs.halon.io/hsl/archive/master/functions.html#core.array_find) function
-  - New [`LDAP()`](https://docs.halon.io/hsl/archive/master/functions.html#core.LDAP) class
+  - Added [spread](https://docs.halon.io/hsl/archive/5.0-stable/operators.html#spread) operator to array type
+  - Added wildcard function and variable [`import`](https://docs.halon.io/hsl/archive/5.0-stable/structures.html#wildcard) into a namespace
+  - Added compile-time text, JSON and CSV [`import`](https://docs.halon.io/hsl/archive/5.0-stable/structures.html#data) into a variable 
+  - Added [`csv_decode()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#core.csv_decode) function that parses a string according to a schema
+  - Added [`inet_reverse()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#core.inet_reverse) function that creates a reverse DNS for PTR or DNSxL lookups
+  - Added [`array_find()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#core.array_find) function
+  - New [`LDAP()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#core.LDAP) class
   - Reworked standard library functions
-    - [`length()`](https://docs.halon.io/hsl/archive/master/functions.html#core.length) function that supports multiple data types
+    - [`length()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#core.length) function that supports multiple data types
     - `array_join()`, `array_includes()` and `array_range()`
     - `str_find()`, `str_rfind()`, `str_lower()`, `str_upper()`, `str_slice()` and `str_strip()`
     - `random_number()`, `domain_includes()`, `inet_includes()`
-  - Added [`getPath()`](https://docs.halon.io/hsl/archive/master/functions.html#File.getPath) and [`readline()`](https://docs.halon.io/hsl/archive/master/functions.html#File.readline) methods to [`File()`](https://docs.halon.io/hsl/archive/master/functions.html#File) class
-  - New `allow_comments` option in [`json_decode()`](https://docs.halon.io/hsl/archive/master/functions.html#json_decode)
-  - New `type` option in [`dns()`](https://docs.halon.io/hsl/archive/master/functions.html#dns)
-  - New [`proxy`](https://curl.haxx.se/libcurl/c/CURLOPT_PROXY.html) option in [`http()`](https://docs.halon.io/hsl/archive/master/functions.html#http) to override the system default
+  - Added [`getPath()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#File.getPath) and [`readline()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#File.readline) methods to [`File()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#File) class
+  - New `allow_comments` option in [`json_decode()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#json_decode)
+  - New `type` option in [`dns()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#dns)
+  - New [`proxy`](https://curl.haxx.se/libcurl/c/CURLOPT_PROXY.html) option in [`http()`](https://docs.halon.io/hsl/archive/5.0-stable/functions.html#http) to override the system default
 - **`Imp`** Web administration improvements
   - Script editor improvement 
     - [Custom input controllers](https://support.halon.io/hc/en-us/articles/360002203039) for CSV files using schemas
