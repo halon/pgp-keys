@@ -4,7 +4,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.0
-Unreleased
+Released on 2019-01-24
 - **`New`** [RESTful](https://docs.halon.io/api/) API with OpenAPI specification
 - **`New`** SMTP server scripting features
   - Added [per-message end-of-DATA](https://docs.halon.io/hsl/archive/5.0-stable/eodonce.html) script
