@@ -63,13 +63,14 @@ Unreleased
   - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
   - PostgreSQL 11.1
 - **`Bug`** Fix issue with `lagg` network interfaces on boot
-- **`Dep`** `is_number()` to no longer return true on boolean variables
-- **`Dep`** Removed `$tlsprotocol`, `$tlscipher` and `$tlskeysize` variables from RCPT script
-- **`Dep`** Removed calling a function as a string from `cache`
-- **`Dep`** Removed `Deliver()` from post-delivery script
-- **`Dep`** The `Quarantine()` function's option parameter must be an array 
-- **`Dep`** Removed `system_default_transport`
-- **`Dep`** Renamed processes `dlpd` and `queued`
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes50)
+  - The `is_number()` function to no longer return true on boolean variables
+  - Removed `$tlsprotocol`, `$tlscipher` and `$tlskeysize` variables from RCPT script
+  - Removed calling a function as a string from `cache`
+  - Removed `Deliver()` from post-delivery script
+  - The `Quarantine()` function's option parameter must be an array 
+  - Removed `system_default_transport`
+  - Renamed processes `dlpd` and `queued`
 
 ## 4.8-r1
 Released on 2018-11-01
@@ -108,9 +109,10 @@ Released on 2018-09-20
   - FreeBSD 11 [quarterly](http://pkg.freebsd.org/freebsd:10:x86:64/quarterly/) packages
 - **`Bug`** Debug points were removed when clearing debug results
 - **`Bug`** The video console interface could not run programs (like ping)
-- **`Dep`** Replaced `radius_authen()`, [new implementation](https://github.com/halon/hsl-examples/tree/master/protocols/radius) using `Socket()`
-- **`Dep`** Removed `tacplus_authen()` and `tacplus_author()` (TACACS+)
-- **`Dep`** Removed `system_disk_cache` configuration key (ATA disk cache)
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes48)
+  - Replaced `radius_authen()`, [new implementation](https://github.com/halon/hsl-examples/tree/master/protocols/radius) using `Socket()`
+  - Removed `tacplus_authen()` and `tacplus_author()` (TACACS+)
+  - Removed `system_disk_cache` configuration key (ATA disk cache)
 
 ## 4.7-p1
 Released on 2018-08-07
@@ -157,11 +159,12 @@ Released on 2018-07-09
 - **`Bug`** Fix issue with DATA script scan functions caching and extended results
 - **`Bug`** Fix bug with negative indexes and append
 - **`Bug`** Deleting statistic values on graph page for all hosts didn't work
-- **`Dep`** Switched to regular peer name checks in `SetTLS`
-- **`Dep`** DNS functions no longer support hostnames as resolver server option
-- **`Dep`** Renamed `rate()` option `local` to `sync`
-- **`Dep`** Removed [`DKIMADSP()`](https://wiki.halon.io/Deprecation#DKIMADSP)
-- **`Dep`** Removed [historic variables](https://wiki.halon.io/Deprecation#Historic_variables_in_connect_context) from connect script
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes47)
+  - Switched to regular peer name checks in `SetTLS`
+  - DNS functions no longer support hostnames as resolver server option
+  - Renamed `rate()` option `local` to `sync`
+  - Removed [`DKIMADSP()`](https://docs.halon.io/hsl/archive/4.6-stable/data.html#data.DKIMADSP)
+  - Removed historic variables from connect script
 
 ## 4.6-p1
 Released on 2018-05-03
@@ -212,7 +215,8 @@ Released on 2018-04-28
 - **`Bug`** Fixed issue with client certificates
 - **`Bug`** Clearing chart data could cause it to be removed on another node
 - **`Bug`** Fixed issue with firewall script and passive FTP
-- **`Dep`** Deprecated the `ScanRPDAV()` function
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes46)
+  - Deprecated the `ScanRPDAV()` function
 
 ## 4.5-p2
 Released on 2018-01-29
@@ -277,13 +281,14 @@ Released on 2018-01-22
 - **`Bug`** Improved DSN parsing in [`GetDSN()`](http://docs.halon.se/hsl/data.html#GetDSN) with multiline headers
 - **`Bug`** Bug with behaviour on [`Quarantine()`](http://docs.halon.se/hsl/data.html#Quarantine) reject => false followed by Quarantine reject => true
 - **`Bug`** Fix bug with DKIM delivery block in Web UI
-- **`Dep`** Aliased `error_code` to `extended_result` in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/functions.html#smtp_lookup_rcpt)
-- **`Dep`** Aliased all `ssl_` options to `tls_` in [`http()`](http://docs.halon.se/hsl/functions.html#http)
-- **`Dep`** Removed `object []` syntax (in favour of class syntax)
-- **`Dep`** Default action is now to block on script errors in [firewall script](http://docs.halon.se/hsl/firewall.html#on-script-error)
-- **`Dep`** Made `$connection` and `$transaction` read-only in `smtpd`'s context
-- **`Dep`** $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/rcptto.html#GetTLS)
-- **`Dep`** If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/data.html#ScanDLP) with regular expresssions, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes45)
+  - Aliased `error_code` to `extended_result` in [`smtp_lookup_rcpt()`](http://docs.halon.se/hsl/archive/4.6-stable/functions.html#smtp_lookup_rcpt)
+  - Aliased all `ssl_` options to `tls_` in [`http()`](http://docs.halon.se/hsl/archive/4.6-stable/functions.html#http)
+  - Removed `object []` syntax (in favour of class syntax)
+  - Default action is now to block on script errors in [firewall script](http://docs.halon.se/hsl/archive/4.6-stable/firewall.html#on-script-error)
+  - Made `$connection` and `$transaction` read-only in `smtpd`'s context
+  - $tlsprotocol, $tlscipher, $tlskeysize in [RCPT TO](http://docs.halon.se/hsl/archive/4.6-stable/rcptto.html) context in favor of [`GetTLS()`](http://docs.halon.se/hsl/archive/4.6-stable/rcptto.html#GetTLS)
+  - If using the `RULE` syntax to [ScanDLP()](http://docs.halon.se/hsl/archive/4.6-stable/data.html#ScanDLP) with regular expresssions, you may need to add modifiers to keep compatibility (eg. `//i` for filenames).
 
 ## 4.4-p2
 Released on 2017-12-04
@@ -352,9 +357,10 @@ Released on 2017-10-26
 - **`Bug`** Fixed a syslog issue by properly using a blocking socket
 - **`Bug`** Fixed regression with `system-storage-` graphs and `iostats` command for some storage disks
 - **`Bug`** DSNs Arrival-Date wasn't properly set to the original message arrival date
-- **`Dep`** Deprecated [`Deliver`](http://wiki.halon.se/Deprecation#Deliver) function in post-delivery script
-- **`Dep`** Renamed `GenerateDSN()` to [`Bounce()`](http://docs.halon.se/hsl/postdelivery.html#Bounce) in post-delivery script
-- **`Dep`** Replaced `DeliverWithDKIM()` with `DKIMSign()` in simple flow compilations
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes44)
+  - Deprecated `Deliver` function in post-delivery script
+  - Renamed `GenerateDSN()` to [`Bounce()`](http://docs.halon.se/hsl/archive/4.6-stable/postdelivery.html#Bounce) in post-delivery script
+  - Replaced `DeliverWithDKIM()` with `DKIMSign()` in simple flow compilations
 
 ## 4.3-p1
 Released on 2017-09-06
