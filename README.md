@@ -57,6 +57,7 @@ Unreleased
   - Ability to configure HTTP proxy, used by all HTTP clients throughout the system
   - Ability to clear individual entries from built-in DNS cache
   - DHCP support for DNS resolvers
+  - Configuration now accepts `/` in IDs, used for folders in the script editor
 - **`Imp`** Updated system packages
   - [FreeBSD](https://www.freebsd.org/releases/12.0R/announce.html) 12.0-RELEASE-p2
   - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
@@ -66,7 +67,9 @@ Unreleased
 - **`Dep`** Removed `$tlsprotocol`, `$tlscipher` and `$tlskeysize` variables from RCPT script
 - **`Dep`** Removed calling a function as a string from `cache`
 - **`Dep`** Removed `Deliver()` from post-delivery script
+- **`Dep`** The `Quarantine()` function's option parameter must be an array 
 - **`Dep`** Removed `system_default_transport`
+- **`Dep`** Renamed processes `dlpd` and `queued`
 
 ## 4.8-r1
 Released on 2018-11-01
