@@ -3,6 +3,16 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.0-p1
+Released on 2019-02-20
+- **`Bug`** Properly detect the Amazon EC2 hypervisor
+- **`Bug`** Inline delivery wasn't logging sender information on errors
+- **`Bug`** Numerically named HSL include files could not be checked for errors
+- **`Bug`** Fixed a rare crash that could occur during DKIM signing
+- **`Bug`** Outbound RPD score wasn't showing correctly in web administration
+- **`Bug`** Remote host information wasn't showing correctly on some pages in web administration
+- **`Bug`** Fix bug when creating a new cluster in web administration
+
 ## 5.0
 Released on 2019-01-24
 - **`New`** [RESTful](https://docs.halon.io/api/) API with OpenAPI specification
