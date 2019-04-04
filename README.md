@@ -3,15 +3,26 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.0-p2
+Released on 2019-03-04
+- **`Bug`** Fix issues in web administration with new REST API
+- **`Bug`** Fix issue with license user count expiration
+- **`Bug`** Use true/false rather than 1/0 for all boolean types
+  - rate() return type
+  - smtp_lookup_rcpt() flag for TLS started
+- **`Bug`** Fix issues with [firewall script](https://docs.halon.io/hsl/archive/5.0-stable/firewall.html)
+  - Include files in folders could not be used in firewall script
+  - The built-in FTP server’s passive mode didn't work with a firewall script
+- **`Bug`** Fix memory leak in new LDAP class
+- **`Bug`** Suppress harmless warning in quarantine retention cleanup
+
 ## 5.0-p1
 Released on 2019-02-20
 - **`Bug`** Properly detect the Amazon EC2 hypervisor
 - **`Bug`** Inline delivery wasn't logging sender information on errors
-- **`Bug`** Numerically named HSL include files could not be checked for errors
+- **`Bug`** Numerically named include files could not be checked for errors
 - **`Bug`** Fixed a rare crash that could occur during DKIM signing
-- **`Bug`** Outbound RPD score wasn't showing correctly in web administration
-- **`Bug`** Remote host information wasn't showing correctly on some pages in web administration
-- **`Bug`** Fix bug when creating a new cluster in web administration
+- **`Bug`** Fix regressions in web administration with new REST API
 
 ## 5.0
 Released on 2019-01-24
