@@ -4,7 +4,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.1
-Unreleased
+Released on 2019-04-25
 - **`New`** SMTP server scripting features
   - New [“proxy”](https://docs.halon.io/hsl/archive/master/proxy.html) script executed on every SMTP command
   - New `$connection` and `$arguments` arrays that contains all predefined input variables
