@@ -6,9 +6,9 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 ## 5.1
 Released on 2019-04-25
 - **`New`** SMTP server scripting features
-  - New [“proxy”](https://docs.halon.io/hsl/archive/master/proxy.html) script executed on every SMTP command
+  - New [“proxy”](https://docs.halon.io/hsl/archive/5.1-stable/proxy.html) script executed on every SMTP command
   - New `$connection` and `$arguments` arrays that contains all predefined input variables
-  - New mail message [queue()](https://docs.halon.io/hsl/archive/master/eodonce.html#MailMessage.queue), in-line [deliver()](https://docs.halon.io/hsl/archive/master/eodonce.html#MailMessage.deliver) and [toFile()](https://docs.halon.io/hsl/archive/master/eodonce.html#MailMessage.toFile) functions
+  - New mail message [queue()](https://docs.halon.io/hsl/archive/5.1-stable/eodonce.html#MailMessage.queue), in-line [deliver()](https://docs.halon.io/hsl/archive/5.1-stable/eodonce.html#MailMessage.deliver) and [toFile()](https://docs.halon.io/hsl/archive/5.1-stable/eodonce.html#MailMessage.toFile) functions
 - **`Imp`** SMTP server improvements
   - Support for PROXY protocol v2
   - Added wildcard matching in domain relay table
@@ -19,16 +19,16 @@ Released on 2019-04-25
     - Added various settings for DMARC and Cyren RPD
   - Compatibility mode for previous predefined variables and setter functions
 - **`Imp`** Script language improvements
-  - Added [pkcs7_sign()](https://docs.halon.io/hsl/archive/master/functions.html#pkcs7_sign) function for S/MIME
-  - Added [xtext_decode()](https://docs.halon.io/hsl/archive/master/functions.html#xtext_decode) and encode functions useful for parsing SMTP parameters
-  - Added [X.509](https://docs.halon.io/hsl/archive/master/functions.html#X509) class returned by many functions
-  - Added [header_addresslist_extract()](https://docs.halon.io/hsl/archive/master/functions.html#header_addresslist_extract) and [header_dkim_decode()](https://docs.halon.io/hsl/archive/master/functions.html#header_dkim_decode) functions
-  - Reworked [spf_query()](https://docs.halon.io/hsl/archive/master/functions.html#spf_query) and [dns_query()](https://docs.halon.io/hsl/archive/master/functions.html#dns_query) with improved return types
-  - Added `encode` option to MIME [addHeader()](https://docs.halon.io/hsl/archive/master/functions.html#MIME.addHeader)
-  - Added to `tls_client_cert` to [http()](https://docs.halon.io/hsl/archive/master/functions.html#http)
-  - Added `local` timezone flag to [strftime()](https://docs.halon.io/hsl/archive/master/functions.html#strftime) and strptime()
-  - Added `getpeerx509()` to [LDAP](https://docs.halon.io/hsl/archive/master/functions.html#LDAP) class
-  - Added [`readonly`](https://docs.halon.io/hsl/archive/master/structures.html#permissions) variables to classes
+  - Added [pkcs7_sign()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#pkcs7_sign) function for S/MIME
+  - Added [xtext_decode()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#xtext_decode) and encode functions useful for parsing SMTP parameters
+  - Added [X.509](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#X509) class returned by many functions
+  - Added [header_addresslist_extract()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#header_addresslist_extract) and [header_dkim_decode()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#header_dkim_decode) functions
+  - Reworked [spf_query()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#spf_query) and [dns_query()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#dns_query) with improved return types
+  - Added `encode` option to MIME [addHeader()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#MIME.addHeader)
+  - Added to `tls_client_cert` to [http()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#http)
+  - Added `local` timezone flag to [strftime()](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#strftime) and strptime()
+  - Added `getpeerx509()` to [LDAP](https://docs.halon.io/hsl/archive/5.1-stable/functions.html#LDAP) class
+  - Added [`readonly`](https://docs.halon.io/hsl/archive/5.1-stable/structures.html#permissions) variables to classes
   - Support for remainder `…$rest` in destructing assignments
   - Allow access to private properties in anonymous functions returned from classes (with closure)
 - **`Imp`** Updated system packages
@@ -40,7 +40,7 @@ Released on 2019-04-25
   - The SMTP server reject/defer functions doesn’t prepend pre-defined messages
   - Underscores are now allowed in variable names
   - Removed "null" as literal null transport destination
-  - Removed size limit from mail message [getBody()](https://docs.halon.io/hsl/archive/master/eodonce.html#MIMEPart.getBody)
+  - Removed size limit from mail message [getBody()](https://docs.halon.io/hsl/archive/5.1-stable/eodonce.html#MIMEPart.getBody)
 
 ## 5.0-p2
 Released on 2019-03-04
