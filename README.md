@@ -3,6 +3,10 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.1-p1
+Released on 2019-05-08
+- **`Bug`** Resolve DANE-TA issue by switching from LDNS to OpenSSL's DANE implementation
+
 ## 5.1
 Released on 2019-04-25
 - **`New`** SMTP server scripting features
