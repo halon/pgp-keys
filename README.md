@@ -3,6 +3,10 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.1-p2
+Released on 2019-05-15
+- **`Bug`** New $connection variable were populated incorrectly in regards to local/remote information.
+
 ## 5.1-p1
 Released on 2019-05-08
 - **`Bug`** Resolve DANE-TA issue by switching from LDNS to OpenSSL's DANE implementation
