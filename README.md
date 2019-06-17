@@ -3,6 +3,16 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.1-p3
+Released on 2019-06-17
+- **`Bug`** Fallback to HELO if EHLO fail and we do not require TLS
+- **`Bug`** Reintroduce accept reason in delivery log
+- **`Bug`** Fixes Cyren issue with a cache purging command
+- **`Bug`** Web administration regressions
+  - Fix clearing individual cache items
+  - Fix multi-select on queue items 
+  - Fix issue with showing clustered graphs
+
 ## 5.1-p2
 Released on 2019-05-15
 - **`Bug`** New $connection variable were populated incorrectly in regards to local/remote information.
