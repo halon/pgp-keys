@@ -3,6 +3,26 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.2
+Unreleased
+- **`New`** Queue subsystem features
+  - Asynchronous SMTP and DNS connection processing 
+  - [Concurrency and rate](https://docs.halon.io/manual/queue.html#queue-pickup-policies) control in active queue
+    - Custom counters with [regex/wildcard](https://docs.halon.io/manual/queue.html#policy-counter-groups) matching for rollup
+    - Job ID field for scriptable/custom match parameters
+    - Dynamic control via [script](https://docs.halon.io/hsl/archive/master/predelivery.html#PickupSuspend) and API
+  - Queuing to multiple source IP/HELO pairs with round-robin and exclusion via suspend
+  - Transport group hierarchy with setting inheritance
+  - Simplified pre- and post-delivery scripts with new `Try()`, `Queue()` and [`$message`](https://docs.halon.io/hsl/archive/master/predelivery.html) symbols
+  - Added [`mx_include`](https://docs.halon.io/hsl/archive/master/predelivery.html#Try)/exclude options to deliver functions to control MX resolution
+- **`New`** Script language features
+  - Added [FFI](https://docs.halon.io/hsl/archive/master/functions.html#ffi) class for calling routines in external libraries 
+  - Added [shared memory](https://docs.halon.io/hsl/archive/master/functions.html#shared-memory) functions and API for counting and caching
+  - Added `redirects` option to [http()](https://docs.halon.io/hsl/archive/master/functions.html#http)
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes52)
+  - Removed the options for MX delivery (zone= and query=)
+  - Removed the transport profile priority and pause setting in favour for virtual queues, hold and suspend 
+  
 ## 5.1-p3
 Released on 2019-06-17
 - **`Bug`** Fallback to HELO if EHLO fail and we do not require TLS
