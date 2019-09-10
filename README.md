@@ -18,6 +18,7 @@ Unreleased
 - **`New`** Script language features
   - Added [FFI](https://docs.halon.io/hsl/archive/master/functions.html#ffi) class for calling routines in external libraries 
   - Added [shared memory](https://docs.halon.io/hsl/archive/master/functions.html#shared-memory) functions and API for counting and caching
+  - Added [csv_encode()](https://docs.halon.io/hsl/archive/master/functions.html#csv_encode) function useful for CSV logging
   - Added `redirects` option to [http()](https://docs.halon.io/hsl/archive/master/functions.html#http)
 - **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes52)
   - Removed the options for MX delivery (zone= and query=)
