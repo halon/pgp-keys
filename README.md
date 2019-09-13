@@ -23,6 +23,7 @@ Unreleased
 - **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes52)
   - Removed the options for MX delivery (zone= and query=)
   - Removed the transport profile priority and pause setting in favour for virtual queues, hold and suspend 
+  - Enabled forward-confirmed reverse DNS lookups (used in *Received* header) by default
   
 ## 5.1-p3
 Released on 2019-06-17
