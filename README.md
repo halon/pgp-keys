@@ -20,6 +20,12 @@ Unreleased
   - Added [shared memory](https://docs.halon.io/hsl/archive/master/functions.html#shared-memory) functions and API for counting and caching
   - Added [csv_encode()](https://docs.halon.io/hsl/archive/master/functions.html#csv_encode) function useful for CSV logging
   - Added `redirects` option to [http()](https://docs.halon.io/hsl/archive/master/functions.html#http)
+- **`Imp`** Web administration improvements
+  - New queue distribution page which can group by age and next retry
+  - New process statistics page that shows internal counters
+- **`Imp`** Updated system packages
+  - FreeBSD 12.0-RELEASE-p10
+  - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
 - **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes52)
   - Removed the options for MX delivery (zone= and query=)
   - Removed the transport profile priority and pause setting in favour for virtual queues, hold and suspend 
