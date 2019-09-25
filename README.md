@@ -4,7 +4,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.2
-Unreleased
+Released on 2019-09-25
 - **`New`** Queue subsystem features
   - Asynchronous SMTP and DNS connection processing 
   - [Concurrency and rate](https://docs.halon.io/manual/queue.html#queue-pickup-policies) control in active queue
