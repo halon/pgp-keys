@@ -3,6 +3,11 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.2-p1
+Released on 2019-10-10
+- **`Bug`** Fixed issue with listen address when IPv6 is disabled
+- **`Bug`** Fixed issue when adding policy to suspend entire active queue
+
 ## 5.2
 Released on 2019-09-25
 - **`New`** Queue subsystem features
