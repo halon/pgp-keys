@@ -5,6 +5,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 5.2-p1
 Released on 2019-10-10
+- **`Imp`** Added `timeout` option to SMTP client delivery options
 - **`Bug`** Fixed issue with listen address when IPv6 is disabled
 - **`Bug`** Fixed issue when adding policy to suspend entire active queue
 
