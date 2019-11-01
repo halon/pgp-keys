@@ -3,6 +3,12 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.2-p2
+Unreleased
+- **`Imp`** Support overlapping active queue policy groupings by order of appreance
+- **`Imp`** Added `environment.syslog.mask` option to startup configurations
+- **`Bug`** Prevent adding multiple queue policy counters on same field in web administration
+
 ## 5.2-p1
 Released on 2019-10-10
 - **`Imp`** Added `timeout` option to SMTP client delivery options
