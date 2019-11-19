@@ -7,6 +7,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Unreleased
 - **`Imp`** Support overlapping active queue policy groupings by order of appreance
 - **`Imp`** Added `environment.syslog.mask` option to startup configurations
+- **`Bug`** Fixed regression which could cause DSNs to be sent too early
 - **`Bug`** Prevent adding multiple queue policy counters on same field in web administration
 
 ## 5.2-p1
