@@ -3,6 +3,11 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.2-p3
+Released on 2019-12-27
+- **`Bug`** Fixed issue with long-running script hooks which could cause interal congestions
+- **`Bug`** Fixed stability issue with newly implemented TLS 1.3
+
 ## 5.2-p2
 Released on 2019-12-06
 - **`Imp`** Support overlapping active queue policy groupings by order of appreance
