@@ -5,7 +5,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 5.2-p3
 Released on 2019-12-27
-- **`Bug`** Fixed issue with long-running script hooks which could cause interal congestions
+- **`Bug`** Fixed issue with long-running script hooks which could cause internal congestions
 - **`Bug`** Fixed stability issue with newly implemented TLS 1.3
 
 ## 5.2-p2
