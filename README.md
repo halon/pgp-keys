@@ -7,6 +7,9 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Unreleased
 - **`Imp`** Option to use operating system's network interface order instead of by MAC/hardware address
 - **`Imp`** Added software update version selector to web administration (patch/major)
+- **`Bug`** Fixed protocol violation with LMTP and STARTTLS
+- **`Bug`** Fixed issue with smtp_lookup_rcpt() function
+- **`Bug`** Fixed memory leak in TLSA DNS resolving
 
 ## 5.2-p3
 Released on 2019-12-27
