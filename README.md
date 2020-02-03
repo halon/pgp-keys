@@ -3,6 +3,10 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.2-p5
+Released on 2019-02-03
+- **`Bug`** Fixed regression regarding interface order
+
 ## 5.2-p4
 Released on 2019-01-29
 - **`Imp`** Option to use operating system's network interface order instead of by MAC/hardware address
