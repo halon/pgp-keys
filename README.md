@@ -4,7 +4,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 # 5.3
-Unreleased
+Released on 2019-02-11
 - **`New`** Queue features and API
   - Connection [pooling](https://docs.halon.io/manual/archive/5.3-stable/queue.html#delivery-settings) (reuse)
   - Fine-grained queue query [API](https://docs.halon.io/manual/archive/5.3-stable/api.html) (for [list](https://docs.halon.io/manual/archive/5.3-stable/cli.html#queue-management), update and distribution)
