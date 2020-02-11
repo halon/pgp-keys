@@ -4,7 +4,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 # 5.3
-Released on 2019-02-11
+Released on 2020-02-11
 - **`New`** Queue features and API
   - Connection [pooling](https://docs.halon.io/manual/archive/5.3-stable/queue.html#delivery-settings) (reuse)
   - Fine-grained queue query [API](https://docs.halon.io/manual/archive/5.3-stable/api.html) (for [list](https://docs.halon.io/manual/archive/5.3-stable/cli.html#queue-management), update and distribution)
@@ -40,11 +40,11 @@ Released on 2019-02-11
   - Merged *smtpd* and *queued* processes which affects logging
 
 ## 5.2-p5
-Released on 2019-02-03
+Released on 2020-02-03
 - **`Bug`** Fixed regression regarding interface order
 
 ## 5.2-p4
-Released on 2019-01-29
+Released on 2020-01-29
 - **`Imp`** Option to use operating system's network interface order instead of by MAC/hardware address
 - **`Imp`** Added software update version selector to web administration (patch/major)
 - **`Imp`** Support DANE for non-MX destinations
