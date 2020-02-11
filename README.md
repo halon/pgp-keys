@@ -3,6 +3,42 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+# 5.3
+Unreleased
+- **`New`** Queue features and API
+  - Connection [pooling](https://docs.halon.io/manual/archive/5.3-stable/queue.html#delivery-settings) (reuse)
+  - Fine-grained queue query [API](https://docs.halon.io/manual/archive/5.3-stable/api.html) (for [list](https://docs.halon.io/manual/archive/5.3-stable/cli.html#queue-management), update and distribution)
+  - Improved [queue quota](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#queue_quota) functionality
+  - Added delivery settings for [active queue fields](https://docs.halon.io/manual/archive/5.3-stable/queue.html#delivery-settings)
+  - Added active [queue suspend and policy](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#queue_suspend) functions to more script hooks
+  - Added message size including modifications to [pre-](https://docs.halon.io/hsl/archive/5.3-stable/postdelivery.html#message) and post-delivery script
+  - New [on-disk queue format](https://docs.halon.io/manual/archive/5.3-stable/queue.html#on-disk-format)
+- **`New`** Command-line inteface tool [halonctl](https://docs.halon.io/manual/archive/5.3-stable/cli.html)
+- **`New`** SMTP server scripting features
+  - Added timestamp, expiration and identity options to the [signDKIM](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#MailMessage.signDKIM) functions
+  - Added `signature_exclude` option to [ScanCLAM](https://docs.halon.io/hsl/archive/5.3-stable/eodonce.html#eodonce.ScanCLAM)
+- **`Imp`** Script language improvements
+  - New [Iconv()](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#Iconv) class for internationalization conversion
+  - Added [array_every](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#array_every) function to test all element against callback
+  - Re-implemented [barrier](https://docs.halon.io/hsl/archive/5.3-stable/structures.html#barrier) using shared [memory](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#shared-memory) functions
+  - Added Base64 encoding option to the MIME set/[addHeader](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#MIME.addHeader) functions
+- **`Imp`** Web administration queue improvements
+  - Merged open connections with message queue for better overview
+  - Powerful filter dialogue using the new queue conditions
+  - Column selector and inline messages preview in message viewer
+- **`Imp`** Certificate can be in [reloadable configuration](https://docs.halon.io/manual/archive/5.3-stable/config_smtpd.html#confval-pki.private[]) even if private key is in [startup](https://docs.halon.io/manual/archive/5.3-stable/config_startup.html#confval-pki.private[])
+- **`Imp`** Added graceful draining to the background [http()](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#http) process *httprd*
+- **`Imp`** Added idle timeout to [virtual servers](https://docs.halon.io/manual/archive/5.3-stable/config_smtpd.html#confval-servers[].timeout.idle)
+- **`Imp`**  Updated system packages
+  - FreeBSD [12.1](https://www.freebsd.org/releases/12.1R/announce.html)-RELEASE-p1
+  - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
+- **`Bug`** Patched Net-SMTP to fix memory leak
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes53)
+  - Removed SOAP API
+  - Removed several REST API queue commands in favour for [new queue API](https://docs.halon.io/manual/archive/5.3-stable/api.html)
+  - Removed GetMailQueueMetrics() in favour for new [queue_quota()](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#queue_quota) function
+  - Merged *smtpd* and *queued* processes which affects logging
+
 ## 5.2-p5
 Released on 2019-02-03
 - **`Bug`** Fixed regression regarding interface order
