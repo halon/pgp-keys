@@ -7,7 +7,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 ## 5.3-p1
 Released on 2020-02-24
 - **`Imp`**  Added SMTP state information to delivery error logs
-- **`Imp`**  Added `port` option to [dns_query](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#dns_query) function
+- **`Imp`**  Added `port` option to [dns_query()](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#dns_query) function
 - **`Bug`**  Fixed issue with duplicate messages API call
 - **`Bug`**  Fixed "neq" condition (not equal) with "size" and "retry_count" fields
 - **`Bug`**  Fixed issue with message size variable and per-recipient end-of-DATA script
