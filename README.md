@@ -3,6 +3,23 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+
+## 5.3-p1
+Released on 2020-02-24
+- **`Imp`**  Added SMTP state information to delivery error logs
+- **`Imp`**  Added `port` option to [dns_query](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#dns_query) function
+- **`Bug`**  Fixed issue with duplicate messages API call
+- **`Bug`**  Fixed "neq" condition (not equal) with "size" and "retry_count" fields
+- **`Bug`**  Fixed issue with message size variable and per-recipient end-of-DATA script
+- **`Bug`** Web administration fixes
+  - Re-add quarantine view selector on queued messages page
+  - Re-add confirm dialog on all queue message actions
+  - Fixed display of file name of attachment in preview
+  - Fixed preview buttons of messages with invalid MIME formatting
+  - Fixed issue with FN/FP reporting links
+- **`Bug`**  Updated system packages
+  - ClamAV 0.102.2
+
 # 5.3
 Released on 2020-02-11
 - **`New`** Queue features and API
