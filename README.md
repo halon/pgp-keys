@@ -49,7 +49,7 @@ Released on 2020-02-11
 - **`Imp`**  Updated system packages
   - FreeBSD [12.1](https://www.freebsd.org/releases/12.1R/announce.html)-RELEASE-p1
   - FreeBSD 12 [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
-- **`Bug`** Patched Net-SMTP to fix memory leak
+- **`Bug`** Patched Net-SNMP to fix memory leak
 - **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes53)
   - Removed SOAP API
   - Removed several REST API queue commands in favour for [new queue API](https://docs.halon.io/manual/archive/5.3-stable/api.html)
