@@ -3,6 +3,12 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.3-p2
+Unreleased
+- **`Imp`**  Support more charsets by inclusion of latest GNU iconv
+- **`Bug`**  Fixed issue with active queue policy with certain groupings
+- **`Bug`**  Fixed regression with decoding of certain charsets
+- **`Bug`**  Fixed regression with Mellanox (mlx5en) network adapters
 
 ## 5.3-p1
 Released on 2020-02-24
