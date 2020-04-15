@@ -41,7 +41,7 @@ Released on 2020-02-24
 - **`Bug`**  Updated system packages
   - ClamAV 0.102.2
 
-# 5.3
+## 5.3
 Released on 2020-02-11
 - **`New`** Queue features and API
   - Connection [pooling](https://docs.halon.io/manual/archive/5.3-stable/queue.html#delivery-settings) (reuse)
