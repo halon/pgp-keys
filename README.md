@@ -1,7 +1,20 @@
+# Halon MTA changelog
+
+**[5.3](#53-p3) | [5.2](#52-p6)**
+
+---
+
 [Halon](https://halon.io/) is a fast, flexible and powerful MTA for demanding uses such as large-scale email services. 
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.3-p3
+Unreleased
+- **`Imp`** Removed unsupported ClamAV safebrowsing 
+- **`Bug`** Fixed SpamAssassin SPF issue
+- **`Bug`** Fixed web administration issue on Safari
+- **`Bug`** Fixed IP address configuration regression in video console interface
 
 ## 5.3-p2
 Released on 2020-03-10
@@ -63,6 +76,14 @@ Released on 2020-02-11
   - Removed several REST API queue commands in favour for [new queue API](https://docs.halon.io/manual/archive/5.3-stable/api.html)
   - Removed GetMailQueueMetrics() in favour for new [queue_quota()](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#queue_quota) function
   - Merged *smtpd* and *queued* processes which affects logging
+
+## 5.2-p6
+Unreleased
+- **`Imp`** Changed log level of ldap_auth() function failures
+- **`Imp`** Removed unsupported ClamAV safebrowsing 
+- **`Bug`** Fixed SpamAssassin SPF issue
+- **`Bug`** Fixed web administration issue on Safari
+- **`Bug`** Fixed IP address configuration regression in video console interface
 
 ## 5.2-p5
 Released on 2020-02-03
