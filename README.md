@@ -10,7 +10,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.3-p3
-Unreleased
+Released on 2020-05-04
 - **`Imp`** Removed unsupported ClamAV safebrowsing 
 - **`Bug`** Fixed SpamAssassin SPF issue
 - **`Bug`** Fixed web administration issue on Safari
@@ -78,7 +78,7 @@ Released on 2020-02-11
   - Merged *smtpd* and *queued* processes which affects logging
 
 ## 5.2-p6
-Unreleased
+Released on 2020-05-04
 - **`Imp`** Changed log level of ldap_auth() function failures
 - **`Imp`** Removed unsupported ClamAV safebrowsing 
 - **`Bug`** Fixed SpamAssassin SPF issue
