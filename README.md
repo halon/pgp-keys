@@ -9,6 +9,16 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.3-p4
+Unreleased
+- **`Bug`** Fixed issue with server connection concurrency limit
+- **`Bug`** Fixed tags (comments) for some types of manual active queue suspends
+- **`Bug`** Fixed issue with the proxy script hook
+- **`Bug`** Fixed web administration bug when adding active queue policy without concurrency value
+- **`Bug`** Fixed minor issue with integrated package's shell console interface
+- **`Bug`** Fixed locking issue with integrated package IDE's built-in run script window
+- **`Bug`** Increased the integrated package's max threads per process limit
+
 ## 5.3-p3
 Released on 2020-05-04
 - **`Imp`** Removed unsupported ClamAV safebrowsing 
@@ -76,6 +86,15 @@ Released on 2020-02-11
   - Removed several REST API queue commands in favour for [new queue API](https://docs.halon.io/manual/archive/5.3-stable/api.html)
   - Removed GetMailQueueMetrics() in favour for new [queue_quota()](https://docs.halon.io/hsl/archive/5.3-stable/functions.html#queue_quota) function
   - Merged *smtpd* and *queued* processes which affects logging
+
+## 5.2-p7
+Unreleased
+- **`Bug`** Fixed issue with server connection concurrency limit
+- **`Bug`** Fixed tags (comments) for some types of manual active queue suspends
+- **`Bug`** Fixed issue with the proxy script hook
+- **`Bug`** Fixed minor issue with integrated package's shell console interface
+- **`Bug`** Fixed locking issue with integrated package IDE's built-in run script window
+- **`Bug`** Increased the integrated package's max threads per process limit
 
 ## 5.2-p6
 Released on 2020-05-04
