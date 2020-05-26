@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.3](#53-p3) | [5.2](#52-p6)**
+**[5.3](#53-p4) | [5.2](#52-p7)**
 
 ---
 
@@ -10,7 +10,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.3-p4
-Unreleased
+Released on 2020-05-26
 - **`Bug`** Fixed issue with server connection concurrency limit
 - **`Bug`** Fixed tags (comments) for some types of manual active queue suspends
 - **`Bug`** Fixed issue with the proxy script hook
@@ -88,7 +88,7 @@ Released on 2020-02-11
   - Merged *smtpd* and *queued* processes which affects logging
 
 ## 5.2-p7
-Unreleased
+Released on 2020-05-26
 - **`Bug`** Fixed issue with server connection concurrency limit
 - **`Bug`** Fixed tags (comments) for some types of manual active queue suspends
 - **`Bug`** Fixed issue with the proxy script hook
