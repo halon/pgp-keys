@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.3](#53-p4) | [5.2](#52-p7)**
+**[5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,10 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.3-p5
+Released on 2020-06-10
+- **`Bug`** Fixed a stability issue with the connection pool
 
 ## 5.3-p4
 Released on 2020-05-26
