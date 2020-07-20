@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.3](#53-p5) | [5.2](#52-p7)**
+**[5.4](#54) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,77 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.4
+Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54) for notable changes
+- **`New`** CHUNKING/BDAT and the SIZE service extension
+- **`New`** [Disconnect script](https://docs.halon.io/hsl/archive/5.4-stable/disconnect.html) hook
+- **`New`** [`yaml_decode()`](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#yaml_decode) function and [import loader](https://docs.halon.io/hsl/archive/5.4-stable/structures.html#data) (similar to JSON)
+- **`New`** Ability to export an File classes as a [C++ std::istream](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#File.toFFIValue)
+- **`New`** Ability to export an X.509 resources as a [OpenSSL pointer](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#X509.toFFIValue)
+- **`New`** [FFI callback](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#FFI.callback) function
+- **`New`** [DSN options](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Bounce) to `Bounce()` and `Queue()` that allows you to override things like content, headers and delay
+- **`New`** Pre-defined variable of the [DSN that is to be generated](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#d1)
+- **`New`** `Default()` function in post-delivery to [terminate script](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Default) based on delivery result and settings
+- **`New`** Settings for minimum amount of free [inodes](https://docs.halon.io/manual/archive/master/config_startup.html#confval-spool.minfree.inodes) and bytes for receiving email
+- **`New`** Setting for [fsync](https://docs.halon.io/manual/archive/master/config_startup.html#confval-spool.fsync) before 250 on DATA
+- **`New`** Settings for number of [max hops](https://docs.halon.io/manual/archive/master/config_smtpd.html#confval-servers[].phases.data.maxhops) (loop protection)
+- **`New`** Timeout settings for Sophos and ClamAV, with new defaults of 30 seconds
+- **`New`** Pre-defined [variable for username](https://docs.halon.io/hsl/archive/5.4-stable/connect.html#v-a1) when accepting email on local Unix socket
+- **`New`** `http()` [callback function](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#http) for POST data
+- **`New`** MailMessage [`queue()`](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#MailMessage.queue) function
+- **`New`** [MailMessage](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#_CPPv211MailMessage) `get/setPreamble()` and `get/setEpilogue()` functions
+- **`New`** MailMessage `modifyContent()` function advanced, [direct modification](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#MailMessage.modifyContent) of email data
+- **`New`** Static `File::read()` function that [returns all data](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#File) from a file path
+- **`New`** LDAP class [`getoption()`](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#LDAP.getoption) function
+- **`New`** Numeric [separator](https://docs.halon.io/hsl/archive/5.4-stable/literals.html#number)
+- **`New`** [Zero-fill right shift](https://docs.halon.io/hsl/archive/5.4-stable/operators.html#bitwise) bitwise operator
+- **`Imp`** Ability to change `import` loader type
+- **`Imp`** Includes SIZE= in MAIL FROM if server announces SIZE service extension
+- **`Imp`** SMTP client always send EHLO first (and then try HELO)
+- **`Imp`** Do not include detail in local-part in license count (user+detail@domain)
+- **`Imp`** MIME `queue()` [options for delay and hold](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#MIME.queue)
+- **`Imp`** Ability to override recipient domain for MX lookup in [pre-delivery](https://docs.halon.io/hsl/archive/5.4-stable/predelivery.html#Try) and all other places
+- **`Imp`** Access to the queued [email data in pre/post-delivery](https://docs.halon.io/hsl/archive/5.4-stable/predelivery.html#f1) as a `File` resource
+- **`Imp`** `dns_query()` option for extended results including [TTL and type-specific fields](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#dns_query)
+- **`Imp`** Added [reply code option](https://docs.halon.io/hsl/archive/5.4-stable/connect.html#Accept) to all `Accept()` functions
+- **`Imp`** `Auto-Submitted` header to bounces (rfc3834)
+- **`Imp`** Active queue policy, suspend and delivery configurations in web admin code editor
+- **`Imp`** Saving custom views on queue pages
+- **`Imp`** Custom metadata groupings and columns on queue pages
+- **`Imp`** Number compare for metadata filters on queue pages
+- **`Imp`** Partial and case sensitive matching of local parts on queue pages
+- **`Imp`** Real-time rates for counters on process statistics page
+- **`Imp`** Added multiple *recipientdomain* and *remotemx* option to *if* statements in delivery configuration
+- **`Imp`** Network matching in queue conditions for *sender-*, *local-* and *remoteip&
+- **`Imp`** The API output is always normalised as UTF-8
+- **`Imp`** The API supports comparing queue metadata as numbers
+- **`Imp`** The `MIMEPart.setBody()` and `MailMessage.toString()` limitation of 1 MiB is now removed
+- **`Imp`** Extended error reporting from Sophos AV
+- **`Imp`** Added *-R* to `hsh` to override *scripting.rootpath*
+- **`Imp`** Added *--ffi* to `hsh` to override *scripting.ffi*
+- **`Imp`** Added *--binary* flag to `hsh`
+- **`Imp`** Added support for FFI in `hsl-lint`
+- **`Imp`** Added script finished thread stats
+- **`Imp`** Integrated package is based on FreeBSD [12.1](https://www.freebsd.org/releases/12.1R/announce.html)-RELEASE-p7 with [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
+- **`Imp`** Protobuf schemas are now part of the Linux package
+- **`Imp`** Removed `httprd` from the Linux package
+- **`Bug`** Resolved issue with SMTPUTF8 and connection pooling
+- **`Bug`** Wait for support processes like `rated` and `dlpd`
+- **`Bug`** Log thread creation errors in *updateQueue*
+- **`Bug`** Make the `domain_includes()` function non-case-sensitive
+- **`Bug`** Fixed an issue with multiple network interfaces using DHCP
+- **`Bug`** Fixed an issue with storage disk resizing
+- **`Bug`** Fixed an issue with history search filter matching and less- and greater-than
+- **`Bug`** Added rate of script information in process statistics page
+- **`Bug`** Depend on `uuidd` runtime on Linux
+- **`Dep`** The `Queue()` function (which override the built-in logic) may now exceed the max retry as configured on the transport
+- **`Dep`** The `SetDSN()` function has been deprecated in favour of using the "dsn" option to Bounce() and Queue()
+- **`Dep`** The `inet_includes()` function now return none on errors
+- **`Dep`** The `LDAPResult.next()` and `File.readline()` now return false on end-of-data instead of none
+- **`Dep`** The `MIMEPart.setBody()` limitation of 1 MiB is now removed
+- **`Dep`** The dns_query() function's *ttl* result property of has been removed in favour of the new *extended_result* option
+- **`Dep`** All messages in the active queue now have at least one *localip* (instead of showing an empty address)
 
 ## 5.3-p5
 Released on 2020-06-10
