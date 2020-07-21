@@ -20,9 +20,9 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`New`** [DSN options](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Bounce) to `Bounce()` and `Queue()` that allows overriding content, headers, delay, etc
 - **`New`** Pre-defined variable of the [DSN that is to be generated](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#d1)
 - **`New`** `Default()` function in post-delivery to [terminate script](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Default) based on delivery result and settings
-- **`New`** Settings for minimum amount of free [inodes](https://docs.halon.io/manual/archive/master/config_startup.html#confval-spool.minfree.inodes) and bytes for receiving email
-- **`New`** Setting for [fsync](https://docs.halon.io/manual/archive/master/config_startup.html#confval-spool.fsync) before 250 on DATA
-- **`New`** Settings for number of [max hops](https://docs.halon.io/manual/archive/master/config_smtpd.html#confval-servers[].phases.data.maxhops) (loop protection)
+- **`New`** Settings for minimum amount of free [inodes](https://docs.halon.io/manual/archive/5.3-stable/config_startup.html#confval-spool.minfree.inodes) and bytes for receiving email
+- **`New`** Setting for [fsync](https://docs.halon.io/manual/archive/5.3-stable/config_startup.html#confval-spool.fsync) before 250 on DATA
+- **`New`** Settings for number of [max hops](https://docs.halon.io/manual/archive/5.3-stable/config_smtpd.html#confval-servers[].phases.data.maxhops) (loop protection)
 - **`New`** Timeout settings for Sophos and ClamAV, with new defaults of 30 seconds
 - **`New`** Pre-defined [variable for username](https://docs.halon.io/hsl/archive/5.4-stable/connect.html#v-a1) when accepting email on local Unix socket
 - **`New`** `http()` [callback function](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#http) for POST data
