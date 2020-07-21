@@ -64,6 +64,7 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`Imp`** Update to Sophos 3.2.07.379.0
 - **`Imp`** Protobuf schemas are now part of the Linux package
 - **`Imp`** Removed `httprd` from the Linux package
+- **`Imp`** Added *queue load* command to `halonctl` to import messages
 - **`Bug`** Resolved issue with SMTPUTF8 and connection pooling
 - **`Bug`** Wait for support processes like `rated` and `dlpd`
 - **`Bug`** Log thread creation errors in *updateQueue*
