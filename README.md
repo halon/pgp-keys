@@ -17,7 +17,7 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`New`** Ability to export an File classes as a [C++ std::istream](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#File.toFFIValue)
 - **`New`** Ability to export an X.509 resources as a [OpenSSL pointer](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#X509.toFFIValue)
 - **`New`** [FFI callback](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#FFI.callback) function
-- **`New`** [DSN options](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Bounce) to `Bounce()` and `Queue()` that allows you to override things like content, headers and delay
+- **`New`** [DSN options](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Bounce) to `Bounce()` and `Queue()` that allows overriding content, headers, delay, etc
 - **`New`** Pre-defined variable of the [DSN that is to be generated](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#d1)
 - **`New`** `Default()` function in post-delivery to [terminate script](https://docs.halon.io/hsl/archive/5.4-stable/postdelivery.html#Default) based on delivery result and settings
 - **`New`** Settings for minimum amount of free [inodes](https://docs.halon.io/manual/archive/master/config_startup.html#confval-spool.minfree.inodes) and bytes for receiving email
@@ -49,6 +49,7 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`Imp`** Number compare for metadata filters on queue pages
 - **`Imp`** Partial and case sensitive matching of local parts on queue pages
 - **`Imp`** Real-time rates for counters on process statistics page
+- **`Imp`** Added process stat counter for finished script hooks
 - **`Imp`** Added multiple *recipientdomain* and *remotemx* option to *if* statements in delivery configuration
 - **`Imp`** Network matching in queue conditions for *sender-*, *local-* and *remoteip&
 - **`Imp`** The API output is always normalised as UTF-8
@@ -59,7 +60,6 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`Imp`** Added *--ffi* to `hsh` to override *scripting.ffi*
 - **`Imp`** Added *--binary* flag to `hsh`
 - **`Imp`** Added support for FFI in `hsl-lint`
-- **`Imp`** Added script finished thread stats
 - **`Imp`** Integrated package is based on FreeBSD [12.1](https://www.freebsd.org/releases/12.1R/announce.html)-RELEASE-p7 with [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
 - **`Imp`** Protobuf schemas are now part of the Linux package
 - **`Imp`** Removed `httprd` from the Linux package
@@ -70,7 +70,6 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`Bug`** Fixed an issue with multiple network interfaces using DHCP
 - **`Bug`** Fixed an issue with storage disk resizing
 - **`Bug`** Fixed an issue with history search filter matching and less- and greater-than
-- **`Bug`** Added rate of script information in process statistics page
 - **`Bug`** Depend on `uuidd` runtime on Linux
 - **`Dep`** The `Queue()` function (which override the built-in logic) may now exceed the max retry as configured on the transport
 - **`Dep`** The `SetDSN()` function has been deprecated in favour of using the "dsn" option to Bounce() and Queue()
