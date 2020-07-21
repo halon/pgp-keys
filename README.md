@@ -61,6 +61,7 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`Imp`** Added *--binary* flag to `hsh`
 - **`Imp`** Added support for FFI in `hsl-lint`
 - **`Imp`** Integrated package is based on FreeBSD [12.1](https://www.freebsd.org/releases/12.1R/announce.html)-RELEASE-p7 with [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
+- **`Imp`** Update to Sophos 3.2.07.379.0
 - **`Imp`** Protobuf schemas are now part of the Linux package
 - **`Imp`** Removed `httprd` from the Linux package
 - **`Bug`** Resolved issue with SMTPUTF8 and connection pooling
@@ -71,12 +72,12 @@ Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54)
 - **`Bug`** Fixed an issue with storage disk resizing
 - **`Bug`** Fixed an issue with history search filter matching and less- and greater-than
 - **`Bug`** Depend on `uuidd` runtime on Linux
-- **`Dep`** The `Queue()` function (which override the built-in logic) may now exceed the max retry as configured on the transport
-- **`Dep`** The `SetDSN()` function has been deprecated in favour of using the "dsn" option to Bounce() and Queue()
+- **`Dep`** The `Queue()` function (overrides the built-in logic) may now exceed the transport's max retry count
+- **`Dep`** The `SetDSN()` function has been deprecated in favour of the "dsn" option to Bounce() and Queue()
 - **`Dep`** The `inet_includes()` function now return none on errors
 - **`Dep`** The `LDAPResult.next()` and `File.readline()` now return false on end-of-data instead of none
 - **`Dep`** The `MIMEPart.setBody()` limitation of 1 MiB is now removed
-- **`Dep`** The dns_query() function's *ttl* result property of has been removed in favour of the new *extended_result* option
+- **`Dep`** The dns_query() function's *ttl* result property has been removed in favour of the *extended_result* option
 - **`Dep`** All messages in the active queue now have at least one *localip* (instead of showing an empty address)
 
 ## 5.3-p5
