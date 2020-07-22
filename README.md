@@ -10,7 +10,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.4
-Unreleased, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54) for notable changes
+Released on 2020-07-22, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54) for notable changes
 - **`New`** CHUNKING/BDAT and the SIZE service extension
 - **`New`** [Disconnect script](https://docs.halon.io/hsl/archive/5.4-stable/disconnect.html) hook
 - **`New`** [`yaml_decode()`](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#yaml_decode) function and [import loader](https://docs.halon.io/hsl/archive/5.4-stable/structures.html#data) (similar to JSON)
