@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.4](#54) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.4](#54-p1) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,14 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.4-p1
+Released on 2020-08-14
+- **`Imp`** [UUID version](https://docs.halon.io/manual/config_startup.html#confval-environment.uuid.version) selector (time/v1 or random/v4)
+- **`Imp`** Integrated package is updated to FreeBSD 12.1-RELEASE-p8
+- **`Bug`** Fix default enhanced status code in bounces for certain errors
+- **`Bug`** Added validation of certain [CLI](https://docs.halon.io/go/clitool) arguments to improve error reporting
+- **`Bug`** Fix web administration regression when adding servers and transports
 
 ## 5.4
 Released on 2020-07-22, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54) for notable changes
