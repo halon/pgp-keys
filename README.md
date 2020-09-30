@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.4](#54-p1) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.4](#54-p2) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,18 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.4-p2
+Unreleased
+- **`Imp`** Detect certain hardware to support iDRAC keyboard delay (VM)
+- **`Imp`** Updated to FreeBSD 12.1-RELEASE-p10 (VM)
+- **`Bug`** Fixed issue with PROXY protocol and implicit TLS
+- **`Bug`** Fixed proxy script and lint issue with `halonconfig`
+- **`Bug`** Fixed counting issue with the `scripts.proxy.running`/`finished` process stats
+- **`Bug`** Fixed issue where chunking wasn't disabled as per default configuration (VM)
+- **`Bug`** Restored the `id` and `ts` fields in `ScanDMARC()` output
+- **`Bug`** Enable queuing of messages from `hsh`
+- **`Bug`** Fixed sorting and paging on web administration rate and suspend pages
 
 ## 5.4-p1
 Released on 2020-08-14
