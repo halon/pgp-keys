@@ -10,7 +10,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.4-p2
-Unreleased
+Released on 2020-10-01
 - **`Imp`** Detect certain hardware to support iDRAC keyboard delay (VM)
 - **`Imp`** Updated to FreeBSD 12.1-RELEASE-p10 (VM)
 - **`Bug`** Fixed issue with PROXY protocol and implicit TLS
