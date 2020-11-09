@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.4](#54-p2) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,16 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+
+## 5.4-p3
+Released on 2020-11-09
+- **`Bug`** Support binary POST data in background `http()` calls 
+- **`Bug`** Fixed MIME's `verifyDKIM()` after doing message modification 
+- **`Bug`** Fixed error flat issue with consequeve calls to `ScanKAV()` (on same message)
+- **`Bug`** Prevent announcing extensions from HELO/EHLO script hook on `HELO`
+- **`Bug`** Fixed `halonctl` missing fields `senderhelo`, `saslusername` and `duration`
+- **`Bug`** Fixed issue with queue list duration sort order
 
 ## 5.4-p2
 Released on 2020-10-01
