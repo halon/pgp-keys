@@ -14,7 +14,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 Released on 2020-11-09
 - **`Bug`** Support binary POST data in background `http()` calls 
 - **`Bug`** Fixed MIME's `verifyDKIM()` after doing message modification 
-- **`Bug`** Fixed error flag issue with consequeve calls to `ScanKAV()` (on same message)
+- **`Bug`** Fixed error flag issue with consecutive calls to `ScanKAV()` (on same message)
 - **`Bug`** Prevent announcing extensions from HELO/EHLO script hook on `HELO`
 - **`Bug`** Fixed `halonctl` missing fields `senderhelo`, `saslusername` and `duration`
 - **`Bug`** Fixed issue with queue list duration sort order
