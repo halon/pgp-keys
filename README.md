@@ -10,7 +10,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.5
-Unreleased
+Unreleased, see the [release notes](https://docs.halon.io/go/releasenotes55) for notable changes
 - **`New`** [DSN extension](https://support.halon.io/hc/en-us/articles/360017337479) support
 - **`New`** [Outbound PROXY protocol](https://support.halon.io/hc/en-us/articles/360017394679) support
 - **`New`** [Function generators](https://docs.halon.io/hsl/archive/5.5-stable/structures.html#id11) and `yield`
@@ -76,7 +76,7 @@ Released on 2020-08-14
 - **`Bug`** Fix web administration regression when adding servers and transports
 
 ## 5.4
-Released on 2020-07-22, see the [5.4 release notes](https://docs.halon.io/go/releasenotes54) for notable changes
+Released on 2020-07-22, see the [release notes](https://docs.halon.io/go/releasenotes54) for notable changes
 - **`New`** CHUNKING/BDAT and the SIZE service extension
 - **`New`** [Disconnect script](https://docs.halon.io/hsl/archive/5.4-stable/disconnect.html) hook
 - **`New`** [`yaml_decode()`](https://docs.halon.io/hsl/archive/5.4-stable/functions.html#yaml_decode) function and [import loader](https://docs.halon.io/hsl/archive/5.4-stable/structures.html#data) (similar to JSON)
