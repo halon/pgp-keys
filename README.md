@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,42 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.5
+Unreleased
+- **`New`** [DSN extension](https://support.halon.io/hc/en-us/articles/360017337479) support
+- **`New`** [Outbound PROXY protocol](https://support.halon.io/hc/en-us/articles/360017394679) support
+- **`New`** [Function generators](https://docs.halon.io/hsl/archive/5.5-stable/structures.html#id11) and `yield`
+- **`New`** [`Map()`](https://docs.halon.io/hsl/archive/5.5-stable/functions.html#Map) and `Set()` data container classes
+- **`New`** Ability to disable [`sourceip_random`](https://docs.halon.io/hsl/archive/5.5-stable/predelivery.html#Try), useful during for example IP warmup
+- **`New`** Added [`halonctl hsl memory list`](https://docs.halon.io/manual/archive/5.5-stable/cli.html#shared-memory-functions) and corresponding `HSLMemoryListRequest` API
+- **`New`** Added [`base32_encode`](https://docs.halon.io/hsl/archive/5.5-stable/functions.html#base32_encode) and decode functions
+- **`New`** Added [`url_encode`](https://docs.halon.io/hsl/archive/5.5-stable/functions.html#url_encode) and decode functions
+- **`New`** Test command for the asynchronous DNS resolver [`halonctl resolver query`](https://docs.halon.io/manual/archive/5.5-stable/cli.html#dns-resolver)
+- **`New`** Queue suspend filters with `halonctl queue suspend list` and `SuspendRequest` API 
+- **`New`** Settings for [max messages](https://docs.halon.io/manual/archive/5.5-stable/config_smtpd.html#confval-servers[].phases.mailfrom.maxmessages), recipients and hops
+- **`New`** Added `unix_socket_path` option to [`http()`](https://docs.halon.io/hsl/archive/5.5-stable/functions.html#http) function
+- **`New`** Added `sender` option and `scantime` result to [`ScanSA()`](https://docs.halon.io/hsl/archive/5.5-stable/integrations.html#ScanSA) function
+- **`New`** Added [`spool.corrupt`](https://docs.halon.io/manual/archive/5.5-stable/config_startup.html#confval-spool.corrupt) setting for controlling handling of bad queue files
+- **`New`** High-resolution process runtime counter `process.elapsed`
+- **`New`** Active queue performance counters `queue.pickup.X`
+- **`New`** Script error counters `servers.X.scripts.Y.errors`
+- **`Imp`** Fraction of second in [`sleep()`](https://docs.halon.io/hsl/archive/5.5-stable/functions.html#sleep)
+- **`Imp`** Improved performance for large active queue policy rate buckets and exclude lists
+- **`Imp`** Ability to specify an ID for dynamic active queue suspensions and policy conditions
+- **`Imp`** Ability to filter `halonctl hsl rate list` based on conditions
+- **`Imp`** More relaxed rules for naming of ID and file path in YAML schemas
+- **`Imp`** Improved `smtpd` process shutdown
+- **`Imp`** Improved SMTP command diagnostics ("in reply to") in bounces
+- **`Imp`** Added Original-Envelope-ID and Original-Recipient headers to bounces
+- **`Imp`** Consider all 2xx-codes successful in SMTP client
+- **`Imp`** File descriptor exhaustion error logging and handling improved
+- **`Imp`** Improvements to [integrated (VM) package](https://docs.halon.io/manual/integrated.html)
+  - [Custom HTTP API](https://support.halon.io/hc/en-us/articles/360016534179-Host-a-custom-API-service-on-the-Halon-platform) endpoint hosting on the [web admin](http://demo.halon.io/pages/webadmin/) page
+  - Ability to stop and start `smtpd` from the [services](http://demo.halon.io/pages/smtp/?demo) section
+  - Firewall rules (`ipfw`) may now be added to `/cfg/rc.halon` startup script
+  - Ability to add custom local DNS records (A/AAAA/MX/TXT and PTR) to built-in [DNS resolver](http://demo.halon.io/pages/dns/?demo)
+  - Ability to sort and search by finished (rather than received) time in [message history](http://demo.halon.io/pages/tracking/?demo)
+  - Updated to FreeBSD [12.2](https://www.freebsd.org/releases/12.2R/announce.html)-RELEASE with [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
 
 ## 5.4-p3
 Released on 2020-11-09
