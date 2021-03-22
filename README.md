@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.6](#56) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,46 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.6
+Released on 2021-03-22, see the [release notes](https://docs.halon.io/go/releasenotes56) for notable changes
+- **`New`** Added native [plugin](https://docs.halon.io/manual/archive/master/plugins_native.html) support by loading C ABI compatible libraries
+- **`New`** Added CSV schema validation support in [`import`](https://docs.halon.io/hsl/archive/master/structures.html#data) so that imported files gets typed
+- **`Imp`** Ability to start the server without any listeners in order to drain queue
+- **`Imp`** Allow server control socket to listen on IP in addition to socket file
+- **`Imp`** Ability to group queue distribution view by sending domain
+- **`Imp`** Added variables for [disconnect reason](https://docs.halon.io/hsl/archive/5.6-stable/disconnect.html#arguments) to disconnect script hook
+- **`Imp`** [`http()`](https://docs.halon.io/hsl/archive/master/functions.html#http) function now supports explicit ``http_version`` and ``post_size``
+- **`Imp`** Ability to modify (rather than just add and delete) queue suspend and policy items
+- **`Imp`** Added total count in API response for queue `list` and `groupby` CLI/API commands
+- **`Imp`** Possibility to disable the Received header (instead of having to delete it from script)
+- **`Imp`** Added In-Reply-To to DSN messages (to support [threaded](https://docs.halon.io/hsl/archive/master/predelivery.html#Try) bounces)
+- **`Imp`** Added decode option to [MIMEPart.getHeader](https://docs.halon.io/hsl/archive/master/functions.html#MIMEPart.getHeader) functions
+- **`Imp`** Added binary option to all hashing functions (eg. [sha2](https://docs.halon.io/hsl/archive/master/functions.html#sha2) function)
+- **`Imp`** Improved concurrent cache miss behaviour in the HSL [`cache`](https://docs.halon.io/hsl/archive/master/structures.html#cache)
+- **`Imp`** Added possibility to disable [hook](https://docs.halon.io/manual/archive/master/config_smtpd.html#confval-servers[].logging.hook) logs
+- **`Imp`** [`Default()`](https://docs.halon.io/hsl/archive/master/postdelivery.html#Default) function now allows configuration of bounce settings
+- **`Imp`** [`Try()`](https://docs.halon.io/hsl/archive/master/predelivery.html#Try) function IP include and excludes (similar to ``mx_include`` and ``mx_exclude``)
+- - **`Imp`** Improvements to [integrated (VM) package](https://docs.halon.io/manual/integrated.html)
+  - Added support for Spamhaus DQS
+  - Added `/cfg/rc-storage.halon` (after storage mount)
+  - Added `/cfg/rc-booted.halon` (after boot completed)
+  - Updated to FreeBSD [12.2](https://www.freebsd.org/releases/12.2R/announce.html)-RELEASE-p3 with [quarterly](http://pkg.freebsd.org/freebsd:12:x86:64/quarterly/) packages
+- **`Bug`** Resolved an issue with the queue updates
+- **`Bug`** Resolved an issue with the import statements and reloads
+- **`Bug`** Fix bug with paging of Halon script rates
+- **`Bug`** Fix a memory leak in the backend authentication script (with modules)
+- **`Bug`** Missing error counters on connect and disconnect
+- **`Bug`** Halon script Socket classes' close() method could cause unexpected disconnect behaviours
+- **`Bug`** Fix support for BDAT and the proxy script hook
+- **`Bug`** Fix an issue with SNMP and the firewall script
+- **`Bug`** Fix an issue when sorting email history by "Received" date in the REST API for the integrated (VM) package
+- **`Dep`** [`queue_suspend()`](https://docs.halon.io/hsl/archive/master/functions.html#queue_suspend) and [`queue_policy()`](https://docs.halon.io/hsl/archive/master/functions.html#queue_policy) has changed its return value
+- **`Dep`** Text log formats has been slightly changed
+- **`Dep`** [`File.toFFIValue()`](https://docs.halon.io/hsl/archive/master/functions.html#File.toFFIValue) function now returns C-compatible FILE pointer.
+- **`Dep`** Remove functions a per the [deprecation](https://docs.halon.io/go/releasenotes56) note
+- **`Dep`** Queue suspend and policy API calls return UUIDs instead of `uint64`
+- **`Dep`** Minimum [supported](https://docs.halon.io/manual/archive/master/api_reference.html#version-compatibility) API version is (5.6)
 
 ## 5.5
 Released on 2020-11-16, see the [release notes](https://docs.halon.io/go/releasenotes55) for notable changes
