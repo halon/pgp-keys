@@ -28,7 +28,8 @@ Released on 2021-03-22, see the [release notes](https://docs.halon.io/go/release
 - **`Imp`** Added possibility to disable [hook](https://docs.halon.io/manual/archive/5.6-stable/config_smtpd.html#confval-servers[].logging.hook) logs
 - **`Imp`** [`Default()`](https://docs.halon.io/hsl/archive/5.6-stable/postdelivery.html#Default) function now allows configuration of bounce settings
 - **`Imp`** [`Try()`](https://docs.halon.io/hsl/archive/5.6-stable/predelivery.html#Try) function IP include and excludes (similar to ``mx_include`` and ``mx_exclude``)
-- - **`Imp`** Improvements to [integrated (VM) package](https://docs.halon.io/manual/integrated.html)
+- **`Imp`** Improvements to [integrated (VM) package](https://docs.halon.io/manual/integrated.html)
+  - Added validation of YAML and JSON files in script editor (JSON schemas)
   - Added support for Spamhaus DQS
   - Added `/cfg/rc-storage.halon` (after storage mount)
   - Added `/cfg/rc-booted.halon` (after boot completed)
