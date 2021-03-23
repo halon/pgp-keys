@@ -531,7 +531,7 @@ Released on 2018-09-20
 - **`Bug`** Debug points were removed when clearing debug results
 - **`Bug`** The video console interface could not run programs (like ping)
 - **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes48)
-  - Replaced `radius_authen()`, [new implementation](https://github.com/halon/hsl-examples/tree/master/protocols/radius) using `Socket()`
+  - Replaced `radius_authen()`, [new implementation](https://github.com/halon-extras/radius/) using `Socket()`
   - Removed `tacplus_authen()` and `tacplus_author()` (TACACS+)
   - Removed `system_disk_cache` configuration key (ATA disk cache)
 
@@ -878,7 +878,7 @@ Released on 2017-05-10
   - Sophos 3.2.7.368
 - **`Imp`** Make searchlog use time hint for RSET message id
 - **`Bug`** Closure over function scope caused memory leak
-- **`Dep`** Removed `dovecot_lookup_auth()` and `ident_lookup()`, [new implementations](https://github.com/halon/hsl-examples/tree/master/protocols/) using `Socket()`
+- **`Dep`** Removed `dovecot_auth()` and `ident_lookup()`, [new implementations](https://github.com/halon-extras/dovecot/) using `Socket()`
 - **`Dep`** Doesn't explicitly set `$error` in RCPT TO script any more 
 
 ## 4.0-p1
