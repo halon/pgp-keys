@@ -12,7 +12,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 ## 5.6
 Released on 2021-03-22, see the [release notes](https://docs.halon.io/go/releasenotes56) for notable changes
 - **`New`** Added native [plugin](https://docs.halon.io/manual/archive/5.6-stable/plugins_native.html) support by loading C ABI compatible libraries
-- **`New`** Added CSV schema validation support in [`import`](https://docs.halon.io/hsl/archive/5.6-stable/structures.html#data) so that imported files gets typed
+- **`New`** Added CSV schema validation support in [`import`](https://docs.halon.io/hsl/archive/5.6-stable/structures.html#data) so that imported files gets validated
 - **`Imp`** Ability to start the server without any listeners in order to drain queue
 - **`Imp`** Allow server control socket to listen on IP in addition to socket file
 - **`Imp`** Ability to group queue distribution view by sending domain
