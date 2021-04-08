@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.6](#56) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.6](#56-p1) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,13 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.6-p1
+Released on 2021-04-08
+- **`Imp`** Updated to FreeBSD 12.2-RELEASE-p5 (VM) with OpenSSL fixes
+- **`Imp`** Updated to SpamAssassin 3.4.5
+- **`Bug`** Fixes a race condition in the queue script
+- **`Bug`** Restricts NTP timesync access
 
 ## 5.6
 Released on 2021-03-22, see the [release notes](https://docs.halon.io/go/releasenotes56) for notable changes
