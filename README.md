@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.6](#56-p1) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.6](#56-p2) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,15 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.6-p2
+Released on 2021-05-28
+- **`Imp`** Updated to FreeBSD 12.2-RELEASE-p7 (VM)
+- **`Bug`** Updated to [ClamAV 0.103.2](https://blog.clamav.net/2021/04/clamav-01032-security-patch-release.html) (VM)
+- **`Bug`** Add library path for plugin libraries (VM) 
+- **`Bug`** Fixed issue with updated variables and logging in per-recipient end-of-DATA script 
+- **`Bug`** Fixed auto generation of transaction ID on API `QueueImport`
+- **`Bug`** Fixed encoding issue in `xtext_encode()`
 
 ## 5.6-p1
 Released on 2021-04-08
