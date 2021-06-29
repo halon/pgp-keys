@@ -9,6 +9,17 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.6-p3
+Released on 2021-06-29
+- **`Imp`** Updated to FreeBSD 12.2-RELEASE-p8 (VM)
+- **`Bug`** Issue with the `cache []` when exception was thrown from cached function
+- **`Bug`** Context switching with plugins wasn't supported in the PROXY script
+- **`Bug`** The `$context` variable wasn't updated after the EOD script hook
+- **`Bug`** Only one DKIM signature was supported on the `MIME()` object
+- **`Bug`** Unable to rename a used disconnect script in the web administration
+- **`Bug`** Imported function could not resolve nested function in some special cases 
+- **`Bug`** Imported object between multiple hooks could not resolve imported functions in some special cases 
+
 ## 5.6-p2
 Released on 2021-05-28
 - **`Imp`** Updated to FreeBSD 12.2-RELEASE-p7 (VM)
