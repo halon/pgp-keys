@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.6](#56-p3) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -8,6 +8,15 @@
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.6-p4
+Released on 2021-07-19
+- **`Bug`** No longer passes function pointers from in `$context` (only data is supported)
+- **`Bug`** Fixed long loading times of `hsl-lint` and `halonconfig` with large YAML files
+- **`Bug`** Resolved issue with `queue_suspend()` and `queue_policy()` argument order
+- **`Bug`** Connection pooling didn't work with outbound PROXY protocol
+- **`Bug`** Issue with `cache []` size if is set to `2**32`
+- **`Bug`** The transport retry intervals didn't override the transport group's intervals
 
 ## 5.6-p3
 Released on 2021-06-29
