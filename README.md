@@ -15,6 +15,7 @@ Released on 2021-07-19
 - **`Bug`** Fixed long loading times of `hsl-lint` and `halonconfig` with large YAML files
 - **`Bug`** Resolved issue with `queue_suspend()` and `queue_policy()` argument order
 - **`Bug`** Connection pooling didn't work with outbound PROXY protocol
+- **`Bug`** In post-delivery attempt array, localip was not set correctly with outbound PROXY protocol
 - **`Bug`** Issue with `cache []` size if is set to `2**32`
 - **`Bug`** The transport retry intervals didn't override the transport group's intervals
 
