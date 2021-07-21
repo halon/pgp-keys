@@ -34,7 +34,7 @@ Released 2021-07-21
 - **`Imp`** Added `depth` option to `domain_includes()` function
 - **`Imp`** Ability to use `response_headers` with `extended_result` in `http()`
 - **`Imp`** Support for loading `File` from standard input when running in `hsh`
-- **`Dep`** The `=~` and `!~` operators now throws on invalid regular expressions
+- **`Dep`** The `=~` and `!~` operators now throws on invalid regular expressions
 - **`Dep`** Messages with empty `remotemx` or `jobid` are not matched against queue policies with those
 - **`Dep`** Modules loaded with `import` can no longer access global user-defined functions
 - **`Dep`** Removed `mail()` option `rawbody` and URI fallback for `ldap_bind()` (deprecated since 4.8)
