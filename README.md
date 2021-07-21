@@ -1,13 +1,44 @@
 # Halon MTA changelog
 
-**[5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.7](#57) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
-[Halon](https://halon.io/) is a fast, flexible and powerful MTA for demanding uses such as large-scale email services. 
+[Halon MTA](https://halon.io/) is a fast, flexible and powerful email gateway for demanding uses such as large-scale email services. 
+It's available as a Linux package for various LTS distributions, as well as convenient integrated (VM) packages for various hypervisors. 
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.7
+Release 2021-07-21
+- **`New`** Introducing [exception handling](https://docs.halon.io/hsl/archive/5.7-stable/functions.html?#_CPPv29Exception) with accompanying `try`, `catch` and `throw` control structures
+- **`New`** [Visual Studio Code plugin](https://docs.halon.io/manual/vscode.html) support for debugging script in the `smtpd` MTA process
+- **`New`** Inbound connection list in web administration and `ServerConnectionsListRequest` API
+- **`New`** Ability to close inbound connections with `ServerConnectionsCloseRequest` API
+- **`New`** Added [`array_unique()`](https://docs.halon.io/hsl/archive/5.7-stable/functions.html?#array_unique) and `array_shuffle()` functions
+- **`New`** Added [`pcre_compile()`](https://docs.halon.io/hsl/archive/5.7-stable/functions.html?#pcre_compile) function to pre-compile regular expressions from user input
+- **`New`** Added [`#/myregexpattern/`](https://docs.halon.io/hsl/archive/5.7-stable/literals.html#regex) syntax for creating pre-compiled regular expressions
+- **`New`** Added [`X509::String()`](https://docs.halon.io/hsl/archive/5.7-stable/functions.html#X509.String) method for creating an X.509 resource from PEM or DER
+- **`New`** Added [`MIME.send()`](https://docs.halon.io/hsl/archive/5.7-stable/functions.html#MIME.send) method for inline delivery directly from MIME object
+- **`Imp`** New HQF2 queue file format which combines .eml and .hqf
+- **`Imp`** Added `--unpack` option to `halonconfig` to reverse packing
+- **`Imp`** The `halonconfig` command now validates plugin configuration schemas
+- **`Imp`** Added `additional_headers` option to pre-delivery `Try()` function for passing data
+- **`Imp`** Added `modified_original` DSN option to post-delivery `Bounce()` for altering original headers
+- **`Imp`** Added connection `id` and `remoteuid` to SMTP server `$connection` array
+- **`Imp`** Added `remove_if_zero ` argument to `memory_dec()` for automatic cleanup
+- **`Imp`** Added `json` and `regex` formatters to `import` and `csv_decode()`
+- **`Imp`** Ability to `import` text file lines as `Set` object items for fast lookups
+- **`Imp`** Allow `foreach` on `$this` in classes to iterate all instance properties
+- **`Imp`** Added `depth` option to `domain_includes()` function
+- **`Imp`** Ability to use `response_headers` with `extended_result` in `http()`
+- **`Imp`** Support for loading `File` from standard input when running in `hsh`
+- **`Dep`** The `=~` and `!~` operators now throws on invalid regular expressions
+- **`Dep`** Messages with empty `remotemx` or `jobid` are not matched against queue policies with those
+- **`Dep`** Modules loaded with `import` can no longer access global user-defined functions
+- **`Dep`** Removed `mail()` option `rawbody` and URI fallback for `ldap_bind()` (deprecated since 4.8)
+
 
 ## 5.6-p4
 Released on 2021-07-19
