@@ -11,7 +11,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.7
-Release 2021-07-21
+Released 2021-07-21
 - **`New`** Introducing [exception handling](https://docs.halon.io/hsl/archive/5.7-stable/functions.html?#_CPPv29Exception) with accompanying `try`, `catch` and `throw` control structures
 - **`New`** [Visual Studio Code plugin](https://docs.halon.io/manual/vscode.html) support for debugging script in the `smtpd` MTA process
 - **`New`** Inbound connection list in web administration and `ServerConnectionsListRequest` API
