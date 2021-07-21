@@ -21,7 +21,6 @@ Released on 2021-07-19
 
 ## 5.6-p3
 Released on 2021-06-29
-- **`Imp`** Updated to FreeBSD 12.2-RELEASE-p8 (VM)
 - **`Bug`** Issue with the `cache []` when exception was thrown from cached function
 - **`Bug`** Context switching with plugins wasn't supported in the PROXY script
 - **`Bug`** The `$context` variable wasn't updated after the EOD script hook
