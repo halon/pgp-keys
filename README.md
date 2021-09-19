@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.7](#57-p2) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.7](#57-p3) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -10,6 +10,10 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.7-p3
+Released on 2021-09-19
+- **`Bug`** Fixed an issue with direct deliver in EOD rcpt hook
+ 
 ## 5.7-p2
 Released on 2021-08-24
 - **`Bug`** Fixed an issue with file type detection in DLP engine
