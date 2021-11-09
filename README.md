@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.7](#57-p3) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -10,19 +10,25 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.7-p4
+Released on 2021-11-09
+- **`Bug`** MIME formatting issue with append/prependPart() on non-MIME messages
+- **`Bug`** Issue with DKIM signature in bounces
+- **`Bug`** `MIME()` not storing decoded headers when queuing
+
 ## 5.7-p3
 Released on 2021-09-19
-- **`Bug`** Fixed an issue with direct deliver in EOD rcpt hook
+- **`Bug`** Direct deliver in EOD rcpt hook
  
 ## 5.7-p2
 Released on 2021-08-24
-- **`Bug`** Fixed an issue with file type detection in DLP engine
+- **`Bug`** File type detection in DLP engine
 
 ## 5.7-p1
 Released on 2021-08-06
 - **`Bug`** Make linter recognise `$connection["tls"]["sni"]`
-- **`Bug`** Fix issue with startup bulk synchronisation in `rated`
-- **`Bug`** Fix issue with PROXY protocol heartbeat connections
+- **`Bug`** Startup bulk synchronisation in `rated`
+- **`Bug`** PROXY protocol heartbeat connections
 
 ## 5.7
 Released 2021-07-21
