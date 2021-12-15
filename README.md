@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.8](#58) | **[5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,72 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.8
+Released 2021-12-13
+- **`New`** Templates for [Docker and Kubernetes](https://github.com/halon/halon-docker)
+  - The `dlpd` content filtering connection now uses a HTTP based API
+  - The `rated` rate control connection supports DNS with dynamic re-resolve
+- **`New`** APT/deb and RPM [repositories](https://docs.halon.io/manual/archive/5.8-stable/comp_install.html)
+  - Components are now in separate packages (MTA, rate control, content inspection, etc.)
+  - Added separate `dlpctl` an `ratectl` tools for the respective new packages
+- **`New`** MTA features
+  - [HTTP submission](https://docs.halon.io/manual/archive/5.8-stable/http_submission.html) API for pre-formatted RFC822 messages
+  - [`halontop`](https://docs.halon.io/manual/archive/5.8-stable/cli.html#halontop) program showing realtime process metrics
+  - Faster DKIM dual-signing with `additional_signatures` to [`signDKIM()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#MIME.signDKIM)
+  - Ability to use multiple [spool paths](https://docs.halon.io/manual/archive/5.8-stable/config_startup.html#confval-spool.paths-.path)
+  - Added support [`reserved`](https://docs.halon.io/manual/archive/5.8-stable/config_smtpd.html#confval-servers-.concurrency.reserved.total) connection slots
+  - Export message using with `QueueExportRequest` [API](https://docs.halon.io/manual/archive/5.8-stable/api_reference.html#command-list) 
+- **`New`** Native (C ABI) plugin features
+  - Added [`Halon_command_execute()`](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.Halon_command_execute) function, supporting `argv` style of arguments
+  - Added [`Halon_early_init()`](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.Halon_early_init) function, supporting early initialization
+  - Added [`HalonMTA_hsl_value_to_json()`](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.HalonMTA_hsl_value_to_json) and [`HalonMTA_hsl_value_from_json()`](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.HalonMTA_hsl_value_from_json) functions
+  - Added [`HalonMTA_hsl_value_array_length`](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.HalonMTA_hsl_value_array_length) function
+  - [Autoloading](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html) plugins without configuration
+  - Support for [objects](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#objects)
+  - Support for [exceptions](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.HalonMTA_hsl_throw)
+  - Support for [static](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#c.HalonMTA_hsl_register_static_function) functions
+  - Support for running [Halon script functions](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#callable) in C
+  - Support for working with [lists](https://docs.halon.io/manual/archive/5.8-stable/plugins_native.html#lists-plugin) function in C
+  - Support for more types in C API such as `X509`, `File` objects
+- **`Imp`** Script language improvements
+  - Added [`zlib_compress()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#zlib_compress) and uncompress functions
+  - Added [`MIME.toFile()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#MIME.toFile) function
+  - Added [`MIME.setDate()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#MIME.setDate) function
+  - Added [`X509.extensions()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#X509.extensions) function
+  - Added [`X509.verify()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#X509.verify) function
+  - Added [`X509::String()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#X509.String) function
+  - Added [`queue_policy_delete`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#queue_policy_delete) function
+  - Added [`import`](https://docs.halon.io/hsl/archive/5.8-stable/structures.html#data) support for multiple X509 certificates (.crt)
+  - Added [`import`](https://docs.halon.io/hsl/archive/5.8-stable/structures.html#data) support for rfc822 message files (.eml)
+  - Added [`glob import`](https://docs.halon.io/hsl/archive/5.8-stable/structures.html#wildcard-file-imports) support
+  - Added support for `srv` records in [`dns_query()`](https://docs.halon.io/hsl/archive/5.8-stable/functions.html#dns_query) function
+- **`Imp`** MTA improvements
+  - Improved DSN generation by supporting to include full original messages and DSN field customization
+  - Include DSN arguments in post-delivery `$arguments["dsn"]` array 
+  - Include queue policy insights in post-delivery `$arguments["policy"]` array 
+  - Added support for customization of the Received header (`tls` and `for`)
+  - Order queue list by retrycount
+  - Support message retry with a jitter (distribution) in queue actions
+  - Added support for queue message grouping of remoteip and remotemx
+  - Added lists, grouping of conditions, and custom properties to active queue policy and delivery settings
+  - Allow configuration of multiple [`pickup`](https://docs.halon.io/manual/archive/5.8-stable/config_startup.html#confval-queues.threads.pickup) threads
+  - Added [delivery counters](https://docs.halon.io/manual/archive/5.8-stable/cli.html#halonctl) to process stats
+  - Added support for `.halonignore` files when packaging configuration using `halonconfig`
+- **`Imp`** Improvements to integrated (VM) package
+  - Added support Cyren anti-malware in [`ScanRPD()`](https://docs.halon.io/hsl/archive/5.8-stable/integrations.html#ScanRPD) (requires an extra license)
+  - Added option to include HSL plugins in script editor "run" on VM package
+  - Updated FreeBSD packages (including Sophos och Cyren)
+  - Added support to configure ciphers for the HTTPS web administration
+- **`Bug`** Fix bug with localip in smtpd-delivery.yaml
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes58)
+  - Removed the deprecated `GetMailFile()` function
+  - It's no longer valid to send message to plain IP addresses `user@ip`
+  - Disabled PhishingScanURLs in ClamAV
+  - Removed `signature_exclude` support from ScanCLAM()
+  - Standard ciphers names are now used in logs (instead of OpenSSL convention)
+  - Graceful shutdown for inbound connections
+  - Renamed process threads (visible in `top`)
 
 ## 5.7-p4
 Released on 2021-11-09
