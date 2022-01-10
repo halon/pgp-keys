@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.8](#58) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.8](#58-p1) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,12 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.8-p1
+Released on 2022-01-10
+- **`Bug`** Privdrop after creating control socket in `rated`
+- **`Bug`** Fix `rated` startup rate hit sync
+- **`Bug`** Fix minor issue parsing bad headers
 
 ## 5.8
 Released 2021-12-13
