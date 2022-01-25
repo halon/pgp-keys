@@ -10,6 +10,10 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.8-p2
+Released on 2022-01-25
+- **`Bug`** DKIM validation issue under certain circumstances
+
 ## 5.8-p1
 Released on 2022-01-10
 - **`Bug`** Privdrop after creating control socket in `rated`
