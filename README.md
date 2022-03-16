@@ -10,6 +10,10 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
+## 5.8-p4
+Released 2022-03-16
+- **`Sec`** Updated OpenSSL to fix [CVE-2022-0778](https://www.freebsd.org/security/advisories/FreeBSD-SA-22:03.openssl.asc)
+
 ## 5.8-p3
 Released 2022-02-10
 - **`Bug`** Issue when using Cyren anti-spam (ctipd and ctasd) with a HTTP proxy fixed
