@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.9](#59) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,77 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.9
+Released 2022-05-30
+- **`Imp`** Added support to create MailMessages from File objects using [`MailMessage::File()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MailMessage.File)
+- **`Imp`** Added HSL array dereference with [spread](https://docs.halon.io/hsl/archive/5.9-stable/operators.html#spread) operator inside of arrays
+- **`Imp`** Detect MIME parsing errors with [`MailMessage.getErrors()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIMEPart.getErrors)
+- **`Imp`** Added reason for policy result and detailed error/errno to spf_query() output
+- **`Imp`** Added [`setFileName()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setFileName) and [`setDisposition()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setDisposition) functions to MIME()
+- **`Imp`** Added support for more AUTH mechanisms in SMTP clients (eg. XOAUTH2)
+- **`Imp`** Made ip_exclude_temporary also work with mx_exclude in SMTP clients
+- **`Imp`** Added dane_fallback_require as TLS mode in SMTP clients
+- **`Imp`** Allow upcast of TLSSocket to Socket with [`TLSocket.toSocket()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#TLSSocket.toSocket)
+- **`Imp`** C-API added support to get object properties with [`HalonMTA_hsl_object_property_get()`](https://docs.halon.io/manual/archive/5.9-stable/plugins_native.html#c.HalonMTA_hsl_object_property_get)
+- **`Imp`** C-API create MailMessage and File classes from strings with [`HalonMTA_hsl_value_set()`](https://docs.halon.io/manual/archive/5.9-stable/plugins_native.html#c.HalonMTA_hsl_value_set)
+- **`Imp`** C-API detect MailMessage type with [`HalonMTA_hsl_value_type()`](https://docs.halon.io/manual/archive/5.9-stable/plugins_native.html#c.HalonMTA_hsl_value_type)
+- **`Imp`** Added /-/health endpoint to HTTP submission API to be used with load balancers.
+- **`Imp`** Added $arguments[“headers”] to EOD for HTTP submissions
+- **`Imp`** Added concurrency limit setting to HTTP submission API per server
+- **`Imp`** Added support for HTTPS submission API certificates to be soft reloadable in configuration
+- **`Imp`** Protobuf API also include HTTP connection in ServerConnectionsList replies
+- **`Imp`** Protobuf API now has support for close reason of HTTP connections with ServerConnectionsClose 
+- **`Imp`** Added support for priority of messages in the queue
+- **`Imp`** Added max age of messages in queue (retry.during) as an alternative to retry.count
+- **`Imp`** Added support for thread priority for various thread pools and event loops
+- **`Imp`** Added possibility to configure custom script thread pools per hook
+- **`Imp`** Randomize the order of equal-preference MX host addresses.
+- **`Imp`** In protobuf API added option to reset transactionid, ts and retrycount upon message import
+- **`Imp`** Added $arguments[“expired”] to post-delivery hook to indicate that message was bounced due to message age or max retry count.
+- **`Imp`** Delivery settings may now change max retries/during and retry intervals
+- **`Imp`** Added regex support in StringMatch in API for message conditions
+- **`Imp`** Added queues.maxmessages to limit number of messages to hold in memory
+- **`Imp`** Added ability to change transportid in Try()
+- **`Imp`** Added unique count feature to groupby
+- **`Imp`** Added data.fixheaders (false) and data.mimepart.fixheaders (false) to inject \r\n before bad headers
+- **`Imp`** All halonctl commands accepting time now allows for X[dhms] syntax
+- **`Imp`** Added dist-check command to halonconfig to check generated configuration
+- **`Imp`** Added option to stop-on-match in smtpd-policy.yaml when matching rules
+- **`Imp`** Added reason to Delete() in the pre-delivery hook
+- **`Imp`** Added support for DSN options to Bounce in the pre-delivery hook
+- **`Imp`** Add configurable rate sync delay to improve UDP synchronization reliability
+- **`Imp`** Added max values to protobuf process-stats and present them nicely in halontop
+- **`Imp`** Postmaster address may be configured separately as localpart and domain (inherit from reporting-mta)
+- **`Imp`** Added queue.loader.active counter to hold total messages currently loaded
+- **`Imp`** Added possibility to disable MIME multipart parsing for performance
+- **`Imp`** Added possibility to configure maxparts (this was previously hard-coded)
+- **`Imp`** In protobuf API bounce action may set status and diagnosticcode on queue updates
+- **`Imp`** Improvements to integrated (VM) package 
+  - Added support for EU-only Cyren datacenter for RPD and globalview
+  - Added support to configure reserved IPs for SMTP servers in WebUI
+  - Include updated spamassassin-dqs with support for DBL with hostnames
+  - Allow access to Sophos AV unix socket using Socket() class in HSL
+  - Enable scanning of Msi files with Sophos AV
+  - PHP IMAP module now available in custom-www
+  - PHP DNS resolving is now available in custom-www
+  - Updated to FreeBSD 12.3-RELEASE-p5 with quarterly packages
+- **`Bug`** Fix validation bug in JSON schema with HTTP submission API
+- **`Bug`** Fix validation bug in post-delivery hook with $arguments["dsn"]["status", "diagnost...]
+- **`Bug`** Allow long lines in message body when receiving messages with CHUNKING
+- **`Bug`** Fix rate issue with dynamic policies which could cause MTA restarts
+- **`Bug`** HTTP submission API header name “X-API-Key” was not case insensitive
+- **`Bug`** Statistics queue.policy.rate.suspends not decreased on manual message deletes
+- **`Bug`** Fix bug in C API when invoking function pointers in class member functions
+- **`Bug`** DNS zone flush with unbound in VM package did not clear all record types
+- **`Bug`** Do not rescan messages with ScanCLAM() and ScanRPD() if failed
+- **`Bug`** Properly detect temperror in ScanDMARC()
+- **`Bug`** Fix escaping of email addresses by escaping additional characters
+- **`Bug`** Added detection newer versions of .docx and .xlsx files in ScanDLP()
+- **`Dep`** Removed “eodrcpt” on Linux
+- **`Dep`** Removed “rated” and “dlpd” from halonctl (use existing ratectl or dlpctl instead)
+- **`Dep`** Removed function from EOD once (only available in the 5.0 release): Queue(), GetMailMessage(), GetTLS(), GetAddressList(), DKIMSign(), DKIMSDID(), DKIMVerify()
+- **`Dep`** Deprecated use of MIME("0") in EOD, use $arguments[“mail”] or GetMailMessage()
 
 ## 5.8-p4
 Released 2022-03-16
