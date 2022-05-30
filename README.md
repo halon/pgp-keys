@@ -35,7 +35,7 @@ Released 2022-05-30
 - **`Imp`** Script language improvements
   - Added array dereference with [spread](https://docs.halon.io/hsl/archive/5.9-stable/operators.html#spread) operator inside of arrays
   - Allow upcast of TLSSocket to Socket with [`TLSocket.toSocket()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#TLSSocket.toSocket)
-  - Added [`setFileName()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setFileName) and [`setDisposition()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setDisposition) functions to MIME()
+  - Added [`setFileName()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setFileName) and [`setDisposition()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setDisposition) functions to `MIME()`
   - Detect MIME parsing errors with [`MailMessage.getErrors()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIMEPart.getErrors)
   - Added support to create `MailMessages` from `File` objects using [`MailMessage::File()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MailMessage.File)
   - Added reason for policy result and detailed error/errno to `spf_query()` output
