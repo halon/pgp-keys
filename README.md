@@ -81,10 +81,11 @@ Released 2022-05-30
 - **`Bug`** Properly detect temperror in ScanDMARC()
 - **`Bug`** Fix escaping of email addresses by escaping additional characters
 - **`Bug`** Added detection newer versions of .docx and .xlsx files in ScanDLP()
-- **`Dep`** Removed "eodrcpt" on Linux
-- **`Dep`** Removed "rated" and "dlpd" from halonctl (use existing ratectl or dlpctl instead)
-- **`Dep`** Removed deprecated functions from per-message end-of-DATA: Queue(), GetMailMessage(), GetTLS(), GetAddressList(), DKIMSign(), DKIMSDID(), DKIMVerify()
-- **`Dep`** Deprecated use of MIME("0") in EOD, use $arguments["mail"] or GetMailMessage()
+- **`Dep`** Deprecated use of MIME("0") in EOD, use $arguments["mail"] or GetMailMessage() instead
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes59)
+  - Removed "eodrcpt" from Linux builds
+  - Removed ability to control "rated" and "dlpd" from "halonctl" (use ratectl or dlpctl instead)
+  - Removed deprecated functions from per-message end-of-DATA script: Queue(), GetMailMessage(), GetTLS(), GetAddressList(), DKIMSign(), DKIMSDID(), DKIMVerify()
 
 ## 5.8-p4
 Released 2022-03-16
