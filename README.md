@@ -12,7 +12,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 5.9
 Released 2022-05-30
-- **`New`** Added priority for queued messages
+- **`New`** Added [priority](https://docs.halon.io/hsl/eodonce.html#EODMailMessage.queue) for queued messages
 - **`Imp`** MTA improvements
   - Added max age of messages in queue (retry.during) as an alternative to retry.count
   - Added support for thread priority for various thread pools and event loops
