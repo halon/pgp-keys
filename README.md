@@ -30,14 +30,14 @@ Released 2022-05-30
   - Added `maxparts` to configure max MIME parts
   - Added ability to change `transportid` in `Try()`
   - Added $arguments["expired"] to post-delivery hook to indicate bounces due to age or max retry count
-  - Added [`setFileName()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setFileName) and [`setDisposition()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setDisposition) functions to MIME()
-  - Detect MIME parsing errors with [`MailMessage.getErrors()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIMEPart.getErrors)
-  - Added support to create `MailMessages` from `File` objects using [`MailMessage::File()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MailMessage.File)
   - Added reason to `Delete()` in the pre-delivery hook
   - Added support for DSN options to `Bounce()` in the pre-delivery hook
 - **`Imp`** Script language improvements
   - Added array dereference with [spread](https://docs.halon.io/hsl/archive/5.9-stable/operators.html#spread) operator inside of arrays
   - Allow upcast of TLSSocket to Socket with [`TLSocket.toSocket()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#TLSSocket.toSocket)
+  - Added [`setFileName()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setFileName) and [`setDisposition()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIME.setDisposition) functions to MIME()
+  - Detect MIME parsing errors with [`MailMessage.getErrors()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MIMEPart.getErrors)
+  - Added support to create `MailMessages` from `File` objects using [`MailMessage::File()`](https://docs.halon.io/hsl/archive/5.9-stable/functions.html#MailMessage.File)
   - Added reason for policy result and detailed error/errno to `spf_query()` output
 - **`Imp`** Native (C ABI) plugin improvements
   - Added support to get object properties with [`HalonMTA_hsl_object_property_get()`](https://docs.halon.io/manual/archive/5.9-stable/plugins_native.html#c.HalonMTA_hsl_object_property_get)
