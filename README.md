@@ -29,7 +29,7 @@ Released 2022-05-30
   - Added possibility to disable MIME multipart parsing for performance
   - Added `maxparts` to configure max MIME parts
   - Added ability to change `transportid` in `Try()`
-  - Added $arguments["expired"] to post-delivery hook to indicate bounces due to age or max retry count
+  - Added `$arguments["expired"]` to post-delivery hook to indicate bounces due to age or max retry count
   - Added reason to `Delete()` in the pre-delivery hook
   - Added support for DSN options to `Bounce()` in the pre-delivery hook
 - **`Imp`** Script language improvements
