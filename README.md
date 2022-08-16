@@ -12,10 +12,10 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 5.9-p2
 Released 2022-08-16
-- **`Bug`** Could not override Spamhaus DQS scores in VM package
-- **`Bug`** GetTLS() in post-delivery could cause fail non-delivered messages
-- **`Bug`** Issue with Queue() in post-delivery with no retry delay
-- **`Bug`** Fixed an error message in halonconfig
+- **`Bug`** Could not override Spamhaus DQS scores in integrated (VM) package
+- **`Bug`** `GetTLS()` in post-delivery could fail on non-delivered messages
+- **`Bug`** Issue with `Queue()` in post-delivery with no retry delay
+- **`Bug`** Fixed an error message in `halonconfig`
 
 ## 5.9-p1
 Released 2022-05-31
