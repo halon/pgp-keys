@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.9](#59-p1) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.9](#59-p2) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,13 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.9-p2
+Released 2022-08-16
+- **`Bug`** Could not override Spamhaus DQS scores in VM package
+- **`Bug`** GetTLS() in post-delivery could cause fail non-delivered messages
+- **`Bug`** Issue with Queue() in post-delivery with no retry delay
+- **`Bug`** Fixed an error message in halonconfig
 
 ## 5.9-p1
 Released 2022-05-31
