@@ -19,7 +19,7 @@ Released 2022-08-16
 
 ## 5.9-p1
 Released 2022-05-31
-- **`Bug`** Fix issue with unix sockets permisson on Linux 
+- **`Bug`** Fix issue with IPC (Unix domain socket) permisson on Linux 
 
 ## 5.9
 Released 2022-05-30
