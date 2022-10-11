@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.9](#59-p2) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.10](#510) | [5.9](#59-p2) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,50 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.10
+Release 2022-10-11
+- **`New`** Web administration additions
+   * Delivery insights view
+   * Outbound connection list and ability to close connections
+   * Visual refresh
+- **`Imp`** Package and repository improvements
+   * Builds for Ubuntu 22.04 LTS
+   * Packages for [extras](http://github.com/halon-extras) projects written in Halon script
+- **`Imp`** MTA improvements
+   * Ability to change IP address family (v4/v6) preference
+   * Support for [implicit TLS](https://docs.halon.io/manual/config_smtpd.html#confval-transportgroups-.session.tls.implicit) for outbound connections
+   * New outbound TLS mode [`dane_fallback_require_verify`](https://docs.halon.io/hsl/predelivery.html#Try) for DANE/MTA-STS coexistence 
+   * Added peer certificate error and TLSA to [post-delivery's attempt](https://docs.halon.io/hsl/postdelivery.html#tls) information 
+   * Store last attempt's `localip`, `remoteip` and `remotemx` in the defer queue
+- **`Imp`** Script language improvements 
+   * Added [`domain_publicsuffix()`](https://docs.halon.io/hsl/functions.html#domain_publicsuffix) function
+   * Added [`url_parse()`](https://docs.halon.io/hsl/functions.html#url_parse) function
+   * Added `insert_function` option to `cache []`
+   * Added new [`match`](https://docs.halon.io/hsl/structures.html#match) expression
+   * `Socket.recv` may now use multiple flags as an array
+   * Added support for `body_length` in [`signDKIM()`](https://docs.halon.io/hsl/functions.html#MailMessage.signDKIM)
+   * Ability to set properties and the stop flag in for dynamic [`queue_policy()`](https://docs.halon.io/hsl/functions.html#queue_policy)
+- **`Imp`** Protobuf API improvements
+   * `QueueGroupBy` by `localip` as well
+   * `QueueGroupBy` support policy grouping (MX rollup, etc)
+   * More `ServerConnectionsList` information; transactions, local IP and ports
+- **`Imp`** Command line tool improvements
+   * `halonctl groupby` overhaul, adding lots of new functionality
+   * `halonctl queue update` now have a dry-run flag to test queries
+   * `halonctl process-stats` may now output Prometheus compatible formats
+- **`Imp`** Improvements to integrated (VM) package 
+   * Added support for Sophos Live Protection
+   * Added HTTP submission API support
+   * Updated Cyren packages to ctasd 5.5.1 and ctipd 4.5.1
+   * Updated to FreeBSD 12.3-RELEASE-p7 with quarterly packages
+   * `ScanDMARC` function how have an option to disable SHA1 signatures (rfc8301)
+   * Allow reverse lookups for private address space in unbound DNS resolver
+- **`Bug`** Fix issue with dynamic policies in the 35/8 subnet
+- **`Dep`** [Important changes](https://docs.halon.io/go/releasenotes510)
+   * The Ubuntu packages no longer depends on `halon-extras-rate` and `halon-extras-dlp` (need to be explicitly installed)
+   * The per-recipient end-of-DATA function `DirectDeliver` is deprecated, use `MailMessage.send()` instead
+   * The post-delivery function `GetTLS()` is deprecated, use the `tls` object in `$arguments` instead 
 
 ## 5.9-p2
 Released 2022-08-16
