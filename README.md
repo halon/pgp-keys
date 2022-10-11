@@ -11,7 +11,7 @@ New installations are deployed by [downloading](http://docs.halon.io/go/distdown
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.10
-Release 2022-10-11
+Released 2022-10-11
 - **`New`** Web administration additions
    * Delivery insights view
    * Outbound connection list and ability to close connections
