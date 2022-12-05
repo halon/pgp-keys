@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.10](#510) | [5.9](#59-p2) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.10](#510) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -53,6 +53,10 @@ Released 2022-10-11
    * The Ubuntu packages no longer depends on `halon-extras-rate` and `halon-extras-dlp` (need to be explicitly installed)
    * The per-recipient end-of-DATA function `DirectDeliver` is deprecated, use `MailMessage.send()` instead
    * The post-delivery function `GetTLS()` is deprecated, use the `tls` object in `$arguments` instead 
+
+## 5.9-p3
+Released 2022-12-05
+- **`Bug`** Fixed a stability issue
 
 ## 5.9-p2
 Released 2022-08-16
