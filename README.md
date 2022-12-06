@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.10](#510) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,16 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.10-p1
+Released 2022-12-06
+- **`Bug`** halonctl resolver command didn't ignore SIGPIPE
+- **`Bug`** halontop didn't show patch version properly
+- **`Bug`** On some Linux distros environment.rlimit.nice could not be set to a negative value
+- **`Bug`** Improved error handling on JSON payloads in smtpd HTTP API
+- **`Bug`** On configuration load filename was missing in error message
+- **`Bug`** Fixed a stability issue
+- **`Bug`** Updated FreeBSD ping utility (CVE-2022-23093)
 
 ## 5.10
 Released 2022-10-11
