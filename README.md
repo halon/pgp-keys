@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.11](#511) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,33 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.11
+Released 2023-02-03
+- **`Imp`** MTA improvements
+  - Added a `halonctl queue trace` command to trace outbound SMTP connections
+  - Outbound PIPELINING support
+  - Ability to change TLSv1.3 cipher suites on server and clients
+  - Queue performance optimisations
+  - Added [`setDateLater()`](https://docs.halon.io/hsl/functions.html#MIMEPart.setDateLater) function to set Date header on delivery
+  - Added connection `id` and numbers of `transactions` to [post-delivery](https://docs.halon.io/hsl/postdelivery.html) attempt connection array
+  - Added support for networks in the [`Try()`](https://docs.halon.io/hsl/predelivery.html?highlight=ip_exclude#Try) argument `ip_exclude`
+  - Allow changing jobid with `Queue()` functions in pre- and post-delivery
+- **`Imp`** Script language improvements
+  - `Map`/`Set` iterator are now thread safe with imports (modifications are not)
+  - Added support for [data types](https://docs.halon.io/hsl/structures.html#data) when `import`ing YAML files
+  - Added support for private key [`import`](https://docs.halon.io/hsl/structures.html#data) (RSA and ED25519 keys)
+  - Added [`array_combine()`](https://docs.halon.io/hsl/functions.html#array_combine) function
+  - Added `exclude_headers` to `signDKIM()` functions
+- **`Imp`** Improvements to integrated (VM) package
+  - Improved DNS reliability when using the builtin DNS cache
+- **`Bug`** Fix issue with slow graceful shutdown of `smtpd`
+- **`Bug`** Fix issue with the `halonctl queue groupby` command if jobid was set with `Try()`
+- **`Dep`** Important changes
+  - Migrating away from Cyren (ctasd and ctipd)
+  - The deprecated `DirectDeliver()` function now acts as a queuing deliver
+  - Removed deprecated `GetTLS()`, `Allow()`, `Block()` and `DeliverWithDKIM()` functions
+  - On Linux, trying to reload with Halon script compilation errors will continue using the previous configuration
 
 ## 5.10-p1
 Released 2022-12-06
