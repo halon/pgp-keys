@@ -21,16 +21,28 @@ Released 2023-02-03
   - Added connection `id` and numbers of `transactions` to [post-delivery](https://docs.halon.io/hsl/postdelivery.html) attempt connection array
   - Added support for networks in the [`Try()`](https://docs.halon.io/hsl/predelivery.html?highlight=ip_exclude#Try) argument `ip_exclude`
   - Allow changing jobid with `Queue()` functions in pre- and post-delivery
+  - Added remotemx information to outbound connection list
+  - Added support for ``--size``, ``--subject``, ``--metadata-and`` filter conditions to ``halonctl``
+  - Added the ability to clear the internal DNS cache using domain wildcards in ``halonctl``
 - **`Imp`** Script language improvements
   - `Map`/`Set` iterator are now thread safe with imports (modifications are not)
   - Added support for [data types](https://docs.halon.io/hsl/structures.html#data) when `import`ing YAML files
   - Added support for private key [`import`](https://docs.halon.io/hsl/structures.html#data) (RSA and ED25519 keys)
+  - Added [`rsa_privatekey()`](https://docs.halon.io/hsl/functions.html#rsa_privatekey) and [`ed25519_privatekey()`](https://docs.halon.io/hsl/functions.html#ed25519_privatekey) function to load keys as PrivateKey resources
   - Added [`array_combine()`](https://docs.halon.io/hsl/functions.html#array_combine) function
   - Added `exclude_headers` to `signDKIM()` functions
+  - Added support for PrivateKey resources to `signDKIM()` functions
+  - Added support for [tags](https://docs.halon.io/hsl/functions.html#yaml_decode) when `parsing`ing YAML files
+  - Added `MIMEPart.getByID()` functions to retrive a MIMEPart by ID
+  - Added support for Regex types to `MIMEPart.findByType()` and `MIMEPart.findByFileName()` functions
+  - `csv_encode()` will not added quotes to string with spaces
 - **`Imp`** Improvements to integrated (VM) package
   - Improved DNS reliability when using the builtin DNS cache
+  - In the WebUI allow building queue search filters with multiple different metadata combinations
 - **`Bug`** Fix issue with slow graceful shutdown of `smtpd`
 - **`Bug`** Fix issue with the `halonctl queue groupby` command if jobid was set with `Try()`
+- **`Bug`** Fix issue with including files using symlinks within the rootpath in HSL
+- **`Bug`** Fix issue with global functions and module imports in HSL
 - **`Dep`** Important changes
   - Migrating away from Cyren (ctasd and ctipd)
   - The deprecated `DirectDeliver()` function now acts as a queuing deliver
