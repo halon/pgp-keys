@@ -12,7 +12,7 @@ There is an [RSS feed](https://github.com/halon/changelog/releases.atom) availab
 
 ## 5.11-p2
 Released 2023-02-09
-- **`Bug`** Bug fixes to integrated (VM) package
+- **`Bug`** Fixes to integrated (VM) package
   - Lower default timeout of ScanRPD() scanning
   - Fixed error handling for ScanRPD() in case of network errors
 
