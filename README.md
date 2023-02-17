@@ -16,10 +16,10 @@ Released 2023-02-17
 - **`Bug`** Fix error message with `halonconfig --dist-check` and missing schemas
 - **`Bug`** Fixes to integrated (VM) package
   - Upgraded ClamAV to 1.0.1 to address CVE-2023-20032 and CVE-2023-20052
-    - *Note that ClamAV will be removed in 5.12*
-  - Could not add custom domains in webui
-  - Relaxed DangerousExtensions in eXpurgate (to address FP)
-  - Allow changing DangerousExtensions using `antispam_expurgate_dangerous_extensions`
+  - Fix web adminsitration bug when adding domains
+  - Relaxed *DangerousExtensions* classification in eXpurgate (caused false positives)
+  - Allow changing *DangerousExtensions* with `antispam_expurgate_dangerous_extensions` setting
+- **`Dep`** Please note that ClamAV is deprecated and will be removed in 5.12
 
 ## 5.11-p2
 Released 2023-02-09
