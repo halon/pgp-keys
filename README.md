@@ -1,6 +1,6 @@
 # Halon MTA changelog
 
-**[5.11](#511-p2) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,16 @@ It's available as a Linux package for various LTS distributions, as well as conv
 New installations are deployed by [downloading](http://docs.halon.io/go/distdownload) a disk image or virtual machine template. Existing systems can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.11-p3
+Released 2023-02-17
+- **`Bug`** Improved error handling with HTTP submissions API
+- **`Bug`** Fix error message with halonconfig --dist-check and missing schemas
+- **`Bug`** Fixes to integrated (VM) package
+  - Upgraded clamav to 1.0.1 to address CVE-2023-20032 and CVE-2023-20052
+  - Could not add custom domains in webui
+  - Relaxed DangerousExtensions in eXpurgate (to address FP)
+  - Allow changing DangerousExtensions using antispam_expurgate_dangerous_extensions
 
 ## 5.11-p2
 Released 2023-02-09
