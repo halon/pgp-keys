@@ -19,6 +19,7 @@ Released 2023-02-17
   - Fix web adminsitration bug when adding domains
   - Relaxed *DangerousExtensions* classification in eXpurgate (caused false positives)
   - Allow changing *DangerousExtensions* with `antispam_expurgate_dangerous_extensions` setting
+- **`Bug`** Fix rare issue connection retry
 - **`Dep`** Please note that ClamAV is deprecated and will be removed in 5.12
 
 ## 5.11-p2
