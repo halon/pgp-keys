@@ -1,6 +1,6 @@
 # Halon changelog
 
-**[5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.12](#512) | [5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,53 @@ It's available as a Linux package for various LTS distributions, as well as inte
 Halon can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.12
+Released 2023-04-12
+- **`Imp`** MTA improvements
+  - Faster policy evaluations and subdomain matching
+  - Added a new [grouping](https://docs.halon.io/manual/archive/5.12-stable/config_smtpd.html#confval-queues.grouping) field to the queue structure to be used for combined recipientdomain/remotemx groupings
+  - Added `LOGIN` parameter support to the `XCLIENT` command
+  - Added support for network matching in [`PROXY`](https://docs.halon.io/manual/archive/5.12-stable/config_startup.html#confval-servers-.proxyprotocol), [`XCLIENT`](https://docs.halon.io/manual/archive/5.12-stable/config_smtpd.html#confval-servers-.extensions.xclient) and [TLS client cert](https://docs.halon.io/manual/archive/5.12-stable/config_smtpd.html#confval-servers-.tls.clientcert) settings
+  - Added connection pooling reuse [setting](https://docs.halon.io/manual/archive/5.12-stable/config_smtpd.html#confval-queues.pooling.policy) based on remotemx
+  - Various improvements to DNS resolving
+    - Added a global DNS domain cache
+    - Restructured DNS cache to resolve all addresses, with deduplication
+    - Added global settings for [`resolver.mx.exclude.ip`](https://docs.halon.io/manual/archive/5.12-stable/config_smtpd.html#confval-resolver.mx.exclude.ip) and [`resolver.mx.exclude.mx`](https://docs.halon.io/manual/archive/5.12-stable/config_smtpd.html#confval-resolver.mx.exclude.mx)
+  - Priority messages now also have priority in resolver and script execution queues
+  - Allow overriding serverhost (`servers[].hostname`) in connect hooks's `Accept()` function
+  - Added ability to read plugin configurations from file paths
+  - Improvements to `halonctl`
+    - Added `--no-pipelining` options to queue trace command
+    - More precise time (usec) resolution in queue trace command
+    - Queue update command now supports changing only localpart or domain of senders/recipients
+  - `halontop` now resizes layout to terminal size
+  - Added a new C-API ([`HalonMTA_deliver_trace`](https://docs.halon.io/manual/archive/5.12-stable/plugins_native.html#c.HalonMTA_deliver_trace)) to do custom trace outputs in delivery plugins 
+  - Added a new C-API for [queue pickup](https://docs.halon.io/manual/archive/5.12-stable/plugins_native.html#c.Halon_queue_pickup_acquire2) plugins
+- **`Imp`** Script language improvements
+  - Added support for multiline CSV data in [`csv_encode()`](https://docs.halon.io/hsl/archive/5.12-stable/functions.html#csv_encode) and [`csv_decode()`](https://docs.halon.io/hsl/archive/5.12-stable/functions.html#csv_decode)
+  - Added option to allow non-convertible objects to be converted to none in
+ [`json_encode()`](https://docs.halon.io/hsl/archive/5.12-stable/functions.html#json_encode)
+- **`Imp`** Improvements to integrated (VM) package
+  - Based on FreeBSD 13.2, and latest quarterly packages
+  - Pre-packed with http-bulk plugin
+- **`Dep`** Important changes
+  - Deprecated ClamAV in integrated (VM) package
+  - Deprecated `ScanDMARC()` in componentized package (install `halon-extras-dmarc`)
+  - Deprecated builtin `LDAP` class in componentized package (install `halon-extras-ldap`)
+  - Removed `MailMessage.deliver` (deprecated since 5.2, use `MailMessage.queue()` instead)
+  - Removed `/dev/null` as special transport destination
+  - Removed `GetMailQueueMetric()` (deprecated since 5.3)
+- **`Bug`** Various bug fixes
+  - Missing dynamic policy id in `$arguments` in post-delivery on rate only policy conditions 
+  - Fixed timeout issue with PIPELINING
+  - `queue_policy_delete()` function was missing in AUTH hook
+  - Fix issue with `unset` in `foreach` loops
+  - Fix issue with `scripting.rootpath` ending with `/ `
+  - In HSL do not allow index dereference of string with key types other than numbers
+  - In HSL do not allow slice operator dereference with key types other than numbers
+  - `jobid` set in pre-delivery `Try()` function was not updated in post-delivery hook 
+  - Fixed rare crash with queue trace command on busy systems
 
 ## 5.11-p3
 Released 2023-02-17
