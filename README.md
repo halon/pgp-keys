@@ -1,6 +1,6 @@
 # Halon changelog
 
-**[5.12](#512) | [5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+**[5.12](#512-p1) | [5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,10 @@ It's available as a Linux package for various LTS distributions, as well as inte
 Halon can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.12-p1
+Released 2023-05-02
+- **`Bug`** In HSL fix an issue with Map/Sets iterators and foreach
 
 ## 5.12
 Released 2023-04-12
