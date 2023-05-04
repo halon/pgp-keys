@@ -11,7 +11,7 @@ Halon can be easily [updated](http://docs.halon.io/go/distupdateguide), after ha
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
 
 ## 5.12-p1
-Released 2023-05-02
+Released 2023-05-03
 - **`Bug`** In HSL fix an issue with Map/Sets iterators and foreach
 
 ## 5.12
