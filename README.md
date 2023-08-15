@@ -1,6 +1,6 @@
 # Halon changelog
 
-**[5.12](#512-p1) | [5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
+** [5.13](#513) | [5.12](#512-p1) | [5.11](#511-p3) | [5.10](#510-p1) | [5.9](#59-p3) | [5.8](#58-p4) | [5.7](#57-p4) | [5.6](#56-p4) | [5.5](#55) | [5.4](#54-p3) | [5.3](#53-p5) | [5.2](#52-p7)**
 
 ---
 
@@ -9,6 +9,17 @@ It's available as a Linux package for various LTS distributions, as well as inte
 Halon can be easily [updated](http://docs.halon.io/go/distupdateguide), after having familiarised yourself with the [release notes](http://docs.halon.io/go/distreleasenotes).
 
 There is an [RSS feed](https://github.com/halon/changelog/releases.atom) available.
+
+## 5.13
+Released 2023-08-15
+- **`Imp`** Updated version of eleven eXpurgate anti-spam daemon (4.47.0)
+- **`Imp`** Added selector field to DMARC reporting
+- **`Imp`** Increased SA custom rules limit
+- **`Imp`** Improved query builder for metadata fields in queue listing
+- **`Imp`** Based on FreeBSD 13.2, and latest quarterly packages
+- **`Bug`** Fix issue with SpamHaus DQS
+- **`Bug`** Fix issue with memory_store HSL function
+- **`Dep`** Removed deprecated ClamAV (ScanCLAM() is now a no-op)
 
 ## 5.12-p1
 Released 2023-05-03
